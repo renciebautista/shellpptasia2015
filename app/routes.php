@@ -18,3 +18,5 @@
 // });
 
 Route::get('/', 'HomeController@index');
+Route::get('/login', 'HomeController@create');
+Route::get('/programme', 'HomeController@show');

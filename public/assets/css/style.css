@@ -125,6 +125,7 @@ a:hover { text-decoration: none; }
 .timer .seconds {
     font-size: 80px;
     line-height: 90px;
+    color: #FFD700;
 }
 
 
@@ -188,7 +189,7 @@ a:hover { text-decoration: none; }
     height: 46px;
     margin: 0;
     padding: 0;
-    background: #e75967;
+    background: #FFD700;
     border: 0;
     font-family: 'Lato', Arial, sans-serif;
     font-size: 18px;
@@ -209,12 +210,13 @@ a:hover { text-decoration: none; }
 }
 
 .subscribe form button:hover {
-    background: #e75967;
+    background: #FFD000;
     color: #fff;
 }
 
 .subscribe form button:active {
-    background: #e75967;
+    /*background: #e75967;*/
+     background: #FFD700;
     color: #fff;
 }
 

@@ -32,33 +32,12 @@
 
     <body>
 
-        <!-- Header -->
-        <div class="container">
-             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        {{ HTML::linkAction('HomeController@index', 'Home') }}
-                    </li>
-                    <li>
-                        {{ HTML::linkAction('HomeController@create', 'Login') }}
-                    </li>
-                    <li>
-                        {{ HTML::linkAction('HomeController@show', 'Programme') }}
-                    </li>
-                </ul>
-            </div>
-        </div>
-
         <!-- Coming Soon -->
         <div class="coming-soon">
             <div class="inner-bg">
                 <div class="container">
                     <div class="row">
                         <div class="span12">
-
-                            <h2>Shell Powering Progress Together</h2>
-                            <h3>Forum on energy, water and food</h3>
-                            <p>Manila, Philippines - February 6th 2014</p>
                             <div class="timer">
                                 <div class="days-wrapper">
                                     <span class="days"></span> <br>days
@@ -73,6 +52,11 @@
                                     <span class="seconds"></span> <br>seconds
                                 </div>
                             </div>
+                            <h2>Shell Powering Progress Together</h2>
+                            <h3>Forum on energy, water and food</h3>
+                            <p>Manila, Philippines - February 6th 2014</p>
+                            <a class="page-scroll btn btn-xl" href="/login">Login</a>
+                            <a class="page-scroll btn btn-xl" href="/programme">Programme</a>
                         </div>
                     </div>
                 </div>
@@ -81,19 +65,24 @@
 
         <!-- Content -->
         <div class="container">
-            <div class="row">
+            <div class="row" style="padding-top:20px">
                 @yield('content')
             </div>
-            <div class="row">
-                <div class="span12 social">
-                    <a href="" class="facebook" rel="tooltip" data-placement="top" data-original-title="Facebook"></a>
-                    <a href="" class="twitter" rel="tooltip" data-placement="top" data-original-title="Twitter"></a>
-                </div>
+
+            <div class="row" style="padding-bottom:50px;">
+                <h2 class="section-heading text-center">Powered by</h2>
+                <div class="sponsor">
+                    <span>
+                        <img  alt="" src="assets/img/sponsors/shell-small.jpg">
+                    </span>
+                </div>     
             </div>
+            
+        </div>
         </div>
 
         <!-- Javascript -->
-        <script src="assets/js/jquery-1.8.2.min.js"></script>
+        <script src="assets/js/jquery-1.11.1.min.js"></script>
         <script src="assets/bootstrap/js/bootstrap.min.js"></script>
         <script src="assets/js/jquery.backstretch.min.js"></script>
         <script src="assets/js/jquery.countdown.js"></script>

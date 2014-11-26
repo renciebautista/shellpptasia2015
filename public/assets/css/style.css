@@ -402,7 +402,10 @@ a:hover { text-decoration: none; }
 .content {
     width: 60%;
     margin: 0 auto;
+    margin-bottom: 10px;
 }
+
+
 
 .btn-xl {
     background-color: #fed136;
@@ -412,7 +415,7 @@ a:hover { text-decoration: none; }
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 18px;
     font-weight: 700;
-    padding: 10px 20px;
+    padding: 8px 20px;
     text-transform: uppercase;
 }
 .footer{

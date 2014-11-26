@@ -146,8 +146,9 @@ a:hover { text-decoration: none; }
 /***** Content *****/
 
 .subscribe {
-    margin-top: 30px;
+    margin-top: 20px;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .subscribe h3 {
@@ -398,12 +399,8 @@ a:hover { text-decoration: none; }
     margin: 0 auto;
 }
 
-span.centerImage {
-    text-align: center;
-}
-
-#programee{
-    width: 80%;
+.content {
+    width: 60%;
     margin: 0 auto;
 }
 
@@ -417,6 +414,9 @@ span.centerImage {
     font-weight: 700;
     padding: 10px 20px;
     text-transform: uppercase;
+}
+.footer{
+    background-color: #f7f7f7;
 }
 /*.navbar-default {
     background-color: #222;

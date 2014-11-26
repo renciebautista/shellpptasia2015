@@ -18,5 +18,8 @@
 // });
 
 Route::get('/', 'HomeController@index');
-Route::get('/login', 'HomeController@create');
-Route::get('/programme', 'HomeController@show');
+Route::get('login', 'HomeController@create');
+Route::get('programme', 'HomeController@show');
+
+Route::post('register', 'RegisterController@store');
+Route::get('register', 'RegisterController@create');

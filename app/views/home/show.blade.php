@@ -1,9 +1,9 @@
 @extends('layouts.layouts')
 
 @section('content')
-<div id="programee">
-  <h2 class="section-heading text-center">Programme Agenda</h2>
-  <div class="table-responsive">
+<div class="content">
+  	<h2 class="section-heading text-center">Programme Agenda</h2>
+  	<div class="table-responsive">
 	<table class="table">
 		<tbody>
 		<tr>

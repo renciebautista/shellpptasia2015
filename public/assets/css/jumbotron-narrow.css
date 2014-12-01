@@ -2,6 +2,12 @@
 body {
   padding-top: 20px;
   padding-bottom: 20px;
+  font-family: verdana,sans-serif;
+}
+
+h1, .h1, h2, .h2, h3, .h3 {
+    margin-bottom: 10px;
+    margin-top:0px;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -14,7 +20,7 @@ body {
 
 /* Custom page header */
 .header {
-  border-bottom: 1px solid #e5e5e5;
+  /*border-bottom: 1px solid #e5e5e5;*/
 }
 /* Make the masthead heading the same height as the navigation */
 .header h3 {
@@ -22,6 +28,14 @@ body {
   margin-top: 0;
   margin-bottom: 0;
   line-height: 40px;
+}
+.btn-default {
+    background-color: #f7d117;
+    color: #333;
+}
+.btn-default:hover, .btn-default:focus {
+    background-color: #f7d117;
+    color: #333;
 }
 
 /* Custom page footer */
@@ -31,10 +45,11 @@ body {
   border-top: 1px solid #e5e5e5;
 }
 
+
 /* Customize container */
 @media (min-width: 768px) {
   .container {
-    max-width: 730px;
+    max-width: 750px;
   }
 }
 .container-narrow > hr {
@@ -79,10 +94,21 @@ body {
 
 
   .page-header {
-    text-align: center;
+    margin: 45px 0 20px;
     background-image: url("../images/background.jpg");
     height: 240px;
 
   }
 
   #programme table tr td:first-child { width: 8em; }
+
+  .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+    background-color: #f7d117;
+    color: #333;
+
+}
+.nav > li > a:hover, .nav > li > a:focus {
+  background-color: #f7d117;
+  color: #333;
+};
+

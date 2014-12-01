@@ -1,4 +1,12 @@
 @extends('layouts.master')
+@section('navigation')
+  <ul class="nav nav-pills pull-right">
+    <li><a href="/">Home</a></li>
+    <li><a href="/programme">Programme</a></li>
+    <li class="active"><a href="/hotel">Hotel</a></li>
+    <li><a href="/login">Login</a></li>
+  </ul>
+@stop
 
 @section('content')
 <div class="row">
@@ -12,30 +20,20 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-sm-6">
-					<div class="team-member">
+				<div class="col-sm-6 text-center">
+					<div class="hotel" style="padding-bottom:10px;">
 						<img src="assets/images/hotel/1.jpg" class="img-responsive img-thumbnail" alt="">
-						<h4>MANILA HOTEL</h4>
+						<h4><a href="http://www.manila-hotel.com.ph">MANILA HOTEL</a></h4>
 						<p class="text-muted">Bonifacio Drive, One Rizal Park 0913, Manila Philippines</p>
-						<ul class="list-inline social-buttons">
-							<li><a href="http://www.manila-hotel.com.ph/maps"><i class="fa fa-map-marker"></i></a>
-							</li>
-							<li><a href="http://www.manila-hotel.com.ph"><i class="fa fa-globe"></i></a>
-							</li>
-						</ul>
+						<a href="http://www.manila-hotel.com.ph/maps">View Map</a>
 					</div>
 				</div>
-				<div class="col-sm-6">
-					<div class="team-member">
+				<div class="col-sm-6 text-center">
+					<div class="hotel" style="padding-bottom:10px;">
 						<img src="assets/images/hotel/2.jpg" class="img-responsive img-thumbnail" alt="">
-						<h4>HOTEL H2O</h4>
+						<h4><a href="http://www.hotelh2o.com">HOTEL H2O</a></h4>
 						<p class="text-muted">Luneta, 1000, Manila, Philippines (Behind the Quirino Grandstand)</p>
-						<ul class="list-inline social-buttons">
-							<li><a href="http://www.hotelh2o.com"><i class="fa fa-map-marker"></i></a>
-							</li>
-							<li><a href="http://www.hotelh2o.com/main/maps"><i class="fa fa-globe"></i></a>
-							</li>
-						</ul>
+						<a href="http://www.hotelh2o.com/main/maps">View Map</a>
 					</div>
 				</div>
 		</div>

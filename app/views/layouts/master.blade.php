@@ -28,14 +28,9 @@
     <div class="container">
       <div class="header">
         <nav>
-          <ul class="nav nav-pills pull-right">
-            <li  class="active"><a href="/">Home</a></li>
-            <li ><a href="/programme">Programme</a></li>
-            <li ><a href="/hotel">Hotel</a></li>
-            <li ><a href="/login">Login</a></li>
-          </ul>
+          @section('navigation')
+           @show
         </nav>
-        <h3 class="text-muted">Shell PPT Asia 2015</h3>
       </div>
 
       <div class="page-header">

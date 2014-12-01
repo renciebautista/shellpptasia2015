@@ -36,4 +36,15 @@ class OnePageController extends \BaseController {
 		return View::make('onepage.hotel');
 	}
 
+	/**
+	 * Display a listing of the resource.
+	 * GET /onepage
+	 *
+	 * @return Response
+	 */
+	public function login()
+	{
+		return View::make('onepage.login');
+	}
+
 }

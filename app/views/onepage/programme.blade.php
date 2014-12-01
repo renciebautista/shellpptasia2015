@@ -1,5 +1,14 @@
 @extends('layouts.master')
 
+@section('navigation')
+  <ul class="nav nav-pills pull-right">
+    <li><a href="/">Home</a></li>
+    <li  class="active"><a href="/programme">Programme</a></li>
+    <li><a href="/hotel">Hotel</a></li>
+    <li><a href="/login">Login</a></li>
+  </ul>
+@stop
+
 @section('content')
 <div class="row">
 	<div class="col-lg-12">

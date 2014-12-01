@@ -17,9 +17,13 @@
 // 	// return View::make('hello');
 // });
 
-Route::get('/', 'HomeController@index');
-Route::get('login', 'HomeController@create');
-Route::get('programme', 'HomeController@show');
+// Route::get('/', 'HomeController@index');
+// Route::get('login', 'HomeController@create');
+// Route::get('programme', 'HomeController@show');
 
-Route::post('register', 'RegisterController@store');
-Route::get('register', 'RegisterController@create');
+// Route::post('register', 'RegisterController@store');
+// Route::get('register', 'RegisterController@create');
+
+Route::get('/', 'OnePageController@index');
+Route::get('/programme', 'OnePageController@programme');
+Route::get('/hotel', 'OnePageController@hotel');

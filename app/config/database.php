@@ -55,8 +55,8 @@ return array(
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
-			'database'  => 'shell',
-			'username'  => 'shelluser',
+			'database'  => 'chaset7_shell',
+			'username'  => 'chaset7_shell',
 			'password'  => '031988',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',

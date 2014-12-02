@@ -29,6 +29,7 @@ Route::get('/login', 'OnePageController@login');
 Route::get('/logout', 'OnePageController@logout');
 Route::post('/login', 'OnePageController@dologin');
 Route::get('/mail', function(){
+	// return View::make('emails.registration.confirm');
 	Mail::send('emails.registration.confirm', array('key' => 'value'), function($message)
 	{
 	    $message->to('rencie.bautista@yahoo.com', 'John Smith')->subject('Welcome!');

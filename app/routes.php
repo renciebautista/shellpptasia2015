@@ -28,6 +28,9 @@
 Route::get('/login', 'OnePageController@login');
 Route::get('/logout', 'OnePageController@logout');
 Route::post('/login', 'OnePageController@dologin');
+Route::get('/mail', function(){
+	return View::make('emails.registration.confirm');
+});
 
 Route::group(array('before' => 'auth'), function()
 {
@@ -38,4 +41,6 @@ Route::group(array('before' => 'auth'), function()
 	Route::get('register', 'RegisterController@create');
 	Route::post('register', 'RegisterController@store');
 
+	Route::post('/api/rooms', 'RoomTypeController@index');
+	Route::post('/api/roomrate', 'RoomTypeController@rate');
 });

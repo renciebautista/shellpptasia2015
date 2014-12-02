@@ -33,7 +33,8 @@ class OnePageController extends \BaseController {
 	 */
 	public function hotel()
 	{
-		return View::make('onepage.hotel');
+		$hotels = Hotel::all();
+		return View::make('onepage.hotel', compact('hotels'));
 	}
 
 	/**

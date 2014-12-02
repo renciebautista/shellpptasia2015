@@ -15,6 +15,11 @@
 		<div class="row">
 			<div class="col-lg-12 text-center">
 				<h2 class="section-heading">Registration Form</h2>
+				@if ($errors->any())
+				    <ul>
+				        {{ implode('', $errors->all('<li class="error">:message</li>')) }}
+				    </ul>
+				@endif
 			</div>
 		</div>
 			
@@ -22,7 +27,7 @@
 </div>
 <div class="row">
 	<div class="col-lg-12">
-		<form role="form">
+		{{ Form::open(array('action' => 'RegisterController@store', 'id' => 'register')) }}
 			<div class="panel panel-primary">
 				<div class="panel-heading">
 					<h3 class="panel-title">Attendee Information</h3>
@@ -30,7 +35,7 @@
 				<div class="panel-body">
 					<div class="form-group">
 						<label for="prefix">Prefix/ Title</label>
-						{{ Form::select('prefix', array('default' => 'Please Select') + $prefixes, 'default', array('class' => 'form-control')) }}
+						{{ Form::select('prefix', array('0' => 'Please Select') + $prefixes, 'default', array('class' => 'form-control')) }}
 					</div>
 					<div class="form-group">
 						<label for="first_name">First Name</label>
@@ -90,36 +95,36 @@
 				<div class="panel-body">
 					<div class="form-group">
 						<label for="withhotel">Will you require a hotel room?</label>
-						{{ Form::select('withhotel', array('default' => 'Please Select') + $yesno, 'default', array('class' => 'form-control')) }}
+						{{ Form::select('withhotel', $yesno, 2, array('class' => 'form-control', 'id' => 'withhotel')) }}
 						<p class="help-block">Please note a hotel room is at your own expense.</p>
 					</div>
-					<div class="form-group">
-						<label for="job_title">For which nights do you need accommodation?</label>
+					<div class="form-group hotel">
+						<label for="night">For which nights do you need accommodation?</label>
 						<br>
 						@foreach ($available_nights as $row)
-						<label class="checkbox-inline">
-							{{ Form::checkbox('night[]',$row->id ) }}
+						<label class="checkbox-inline hotel">
+							{{ Form::checkbox('night[]',$row->id, null, array('id' => 'night')) }}
 							{{ $row->available_night }}
 						</label>
 						@endforeach
 						
 					</div>
-					<div class="form-group">
+					<div class="form-group hotel">
 						<label for="hotel">Please select a hotel below.</label>
-						{{ Form::select('hotel', array('default' => 'Please Select') + $hotels, 'default', array('class' => 'form-control')) }}
+						{{ Form::select('hotel', array('default' => 'Please Select') + $hotels, 'default', array('class' => 'form-control', 'id' => 'hotel')) }}
 						<p class="help-block">Further hotel information you can find in the Hotel information page.</p>
 					</div>
-					<div class="form-group">
+					<div class="form-group hotel">
 						<label for="room_type">Room Type</label>
-						{{ Form::select('room_type', array('default' => 'Please Select') + $hotels, 'default', array('class' => 'form-control')) }}
+						<select class="form-control" data-placeholder="SELECT CATEGORY" id="room_type" name="room_type"></select>
 					</div>
-					<div class="form-group">
+					<div class="form-group hotel">
 						<label for="rate">Room rate (per night including tax)</label>
-						{{ Form::text('rate','',array('class' => 'form-control', 'placeholder' => 'Room rate (per night including tax)')) }}
+						{{ Form::text('rate','',array('class' => 'form-control', 'placeholder' => 'Room rate (per night including tax)', 'readonly' => '', 'id' => 'rate')) }}
 					</div>
-					<div class="form-group">
+					<div class="form-group hotel">
 						<label for="billing">Billing Instructions</label>
-						{{ Form::text('billing','',array('class' => 'form-control', 'placeholder' => 'Billing Instructions')) }}
+						{{ Form::text('billing','',array('class' => 'form-control', 'placeholder' => 'Billing Instructions', 'id' => 'billing')) }}
 					</div>
 					
 				</div>
@@ -132,57 +137,56 @@
 				<div class="panel-body">
 					<div class="form-group">
 						<label for="with_arrival">Arrival transfer required?</label>
-						{{ Form::select('with_arrival', array('default' => 'Please Select') + $yesno, 'default', array('class' => 'form-control')) }}
+						{{ Form::select('with_arrival',$yesno, 2, array('class' => 'form-control', 'id' => 'with_arrival')) }}
 						<p class="help-block">Please note an arrival transfer is at your own expense.</p>
 					</div>
-					<div class="form-group">
+					<div class="form-group arrive">
 						<label for="arrival_carrier">Carrier</label>
 						{{ Form::text('arrival_carrier','',array('class' => 'form-control', 'placeholder' => 'Carrier')) }}
 					</div>
-					<div class="form-group">
+					<div class="form-group arrive">
 						<label for="arrival_no">Flight Number</label>
 						{{ Form::text('arrival_no','',array('class' => 'form-control', 'placeholder' => 'Flight Number')) }}
 						<p class="help-block">Further hotel information you can find in the Hotel information page.</p>
 					</div>
-					<div class="form-group">
+					<div class="form-group arrive">
 						<label for="arrival_date">Arrival Date</label>
-						{{ Form::text('arrival_date','',array('class' => 'form-control', 'placeholder' => 'Arrival Date')) }}
+						{{ Form::text('arrival_date','',array('class' => 'form-control', 'placeholder' => 'Arrival Date', 'id' => 'arrival_date')) }}
 					</div>
-					<div class="form-group">
+					<div class="form-group arrive">
 						<label for="arrival_time">Arrival Time</label>
-						{{ Form::text('arrival_time','',array('class' => 'form-control', 'placeholder' => 'Arrival Time')) }}
+						{{ Form::text('arrival_time','',array('class' => 'form-control', 'placeholder' => 'Arrival Time', 'id' => 'arrival_time' ,'data-date-format' => 'hh:mm A/PM')) }}
 					</div>
-					<div class="form-group">
+					<div class="form-group arrive">
 						<label for="arrival_port">Arrival Port</label>
 						{{ Form::text('arrival_port','',array('class' => 'form-control', 'placeholder' => 'Arrival Port')) }}
 					</div>
 					<br>
-					<br>
 					<div class="form-group">
 						<label for="with_departure">Departute transfer required?</label>
-						{{ Form::select('with_departure', array('default' => 'Please Select') + $yesno, 'default', array('class' => 'form-control')) }}
+						{{ Form::select('with_departure', $yesno, 2, array('class' => 'form-control' , 'id' => 'with_departure')) }}
 						<p class="help-block">Please note an arrival transfer is at your own expense.</p>
 					</div>
-					<div class="form-group">
+					<div class="form-group departure">
 						<label for="departure_carrier">Carrier</label>
 						{{ Form::text('departure_carrier','',array('class' => 'form-control', 'placeholder' => 'Carrier')) }}
 					</div>
-					<div class="form-group">
+					<div class="form-group departure">
 						<label for="departure_no">Flight Number</label>
 						{{ Form::text('departure_no','',array('class' => 'form-control', 'placeholder' => 'Flight Number')) }}
 						<p class="help-block">Further hotel information you can find in the Hotel information page.</p>
 					</div>
-					<div class="form-group">
+					<div class="form-group departure">
 						<label for="departure_date">Departute Date</label>
-						{{ Form::text('arrival_date','',array('class' => 'form-control', 'placeholder' => 'Departute Date')) }}
+						{{ Form::text('departure_date','',array('class' => 'form-control', 'placeholder' => 'Departute Date', 'id' => 'departure_date')) }}
 					</div>
-					<div class="form-group">
+					<div class="form-group departure">
 						<label for="departure_time">Departute Time</label>
-						{{ Form::text('arrival_time','',array('class' => 'form-control', 'placeholder' => 'Departute Time')) }}
+						{{ Form::text('departure_time','',array('class' => 'form-control', 'placeholder' => 'Departute Time','id' => 'departure_time' ,'data-date-format' => 'hh:mm A/PM')) }}
 					</div>
-					<div class="form-group">
+					<div class="form-group departure">
 						<label for="departure_port">Departute Port</label>
-						{{ Form::text('arrival_port','',array('class' => 'form-control', 'placeholder' => 'Departute Port')) }}
+						{{ Form::text('departure_port','',array('class' => 'form-control', 'placeholder' => 'Departute Port')) }}
 					</div>
 
 				</div>
@@ -194,10 +198,10 @@
 				</div>
 				<div class="panel-body">
 					<div class="form-group">
-						<label for="job_title">VIP Parking at venue required?</label><br>
+						<label for="withparking">VIP Parking at venue required?</label><br>
 						@foreach ($yesno as $index => $row)
 						<label class="radio-inline">
-							{{ Form::radio('parking',$index ) }}
+							{{ Form::radio('withparking',$index ) }}
 							{{ $row }}
 						</label>
 						@endforeach
@@ -210,21 +214,26 @@
 				</div>
 				<div class="panel-body">
 					<div class="form-group">
-						<label for="job_title">Emergency Contact Name</label>
-						<input type="text" class="form-control" id="job_title" name="job_title" placeholder="Job Title">
+						<label for="e_name">Emergency Contact Name</label>
+						{{ Form::text('e_name','',array('class' => 'form-control', 'placeholder' => 'Emergency Contact Name')) }}
 					</div>
 					<div class="form-group">
-						<label for="job_title">Emergency Contact Telephone Number</label>
-						<input type="text" class="form-control" id="job_title" name="job_title" placeholder="Job Title">
+						<label for="e_number">Emergency Contact Telephone Number</label>
+						{{ Form::text('e_number','',array('class' => 'form-control', 'placeholder' => 'Emergency Contact Telephone Number')) }}
 					</div>
 					<div class="form-group">
-						<label for="job_title">Relationship to attendee</label>
-						<input type="text" class="form-control" id="job_title" name="job_title" placeholder="Job Title">
+						<label for="e_relationship">Relationship to attendee</label>
+						{{ Form::text('e_relationship','',array('class' => 'form-control', 'placeholder' => 'Relationship to attendee')) }}
 					</div>
 				</div>
 			</div>
 			<button type="submit" class="btn btn-default">Submit</button>
-		</form>
+		{{ Form::close() }}
 	</div>
 </div>
+@stop
+
+@section('page-script')
+
+
 @stop

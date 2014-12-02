@@ -36,8 +36,19 @@ h1, .h1, h2, .h2, h3, .h3 {
 .btn-default:hover, .btn-default:focus {
     background-color: #f7d117;
     color: #333;
+
 }
 
+label.error {
+  color: #a94442;
+  font-style: italic;
+  padding-left: 5px;
+   font-weight: normal;
+}
+textarea.error,input.error{
+  border-color: #a94442;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+}
 /* Custom page footer */
 .footer {
   padding-top: 19px;

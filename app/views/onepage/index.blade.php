@@ -12,6 +12,21 @@
 @section('content')
 <div class="row">
 	<div class="col-lg-12">
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				@if (Session::has('message'))
+				<div class="alert alert-dismissable {{ Session::get('class') }}">
+					<button class="close" data-dismiss="alert" type="button">×</button>
+					{{ Session::get('message') }}
+				</div>
+            @endif
+			</div>
+		</div>
+			
+	</div>
+</div>
+<div class="row">
+	<div class="col-lg-12">
 		<p>Building on last year’s themes – the energy-water-food stress nexus and the role resilience can play in addressing future resource stresses – this edition of <strong>Shell Powering Progress Together Asia</strong> will focus on <strong>Resilience in an Urbanising World</strong> and the key role cities will play to be liveable and sustainable.  This is a significant topic for Asia since it is the most populous continent, and home to over half of the world’s megacities.</p>
 		<p>This one-day event will include four interactive sessions:</p>
 		<ul>

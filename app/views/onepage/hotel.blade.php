@@ -20,22 +20,16 @@
 				</div>
 			</div>
 			<div class="row">
+				@foreach ($hotels as $hotel)
 				<div class="col-sm-6 text-center">
 					<div class="hotel" style="padding-bottom:10px;">
-						<img src="assets/images/hotel/1.jpg" class="img-responsive img-thumbnail" alt="">
-						<h4><a href="http://www.manila-hotel.com.ph">MANILA HOTEL</a></h4>
-						<p class="text-muted">Bonifacio Drive, One Rizal Park 0913, Manila Philippines</p>
-						<a href="http://www.manila-hotel.com.ph/maps">View Map</a>
+						<img src="assets/images/hotel/{{ $hotel->picture }}" class="img-responsive img-thumbnail" alt="">
+						<h4><a href="{{ $hotel->website }}">{{ $hotel->name}}</a></h4>
+						<p class="text-muted">{{ $hotel->address}}</p>
+						<a href="{{ $hotel->map }}">View Map</a>
 					</div>
 				</div>
-				<div class="col-sm-6 text-center">
-					<div class="hotel" style="padding-bottom:10px;">
-						<img src="assets/images/hotel/2.jpg" class="img-responsive img-thumbnail" alt="">
-						<h4><a href="http://www.hotelh2o.com">HOTEL H2O</a></h4>
-						<p class="text-muted">Luneta, 1000, Manila, Philippines (Behind the Quirino Grandstand)</p>
-						<a href="http://www.hotelh2o.com/main/maps">View Map</a>
-					</div>
-				</div>
+				@endforeach
 		</div>
 	</div>
 </div>

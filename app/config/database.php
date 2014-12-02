@@ -55,13 +55,24 @@ return array(
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
-			'database'  => 'shellp6_shell',
-			'username'  => 'shellp6_shell',
+			'database'  => 'chaset7_shell',
+			'username'  => 'chaset7_shell',
 			'password'  => '031988',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
 		),
+
+		// 'mysql' => array(
+		// 	'driver'    => 'mysql',
+		// 	'host'      => 'localhost',
+		// 	'database'  => 'shellp6_shell',
+		// 	'username'  => 'shellp6_shell',
+		// 	'password'  => '031988',
+		// 	'charset'   => 'utf8',
+		// 	'collation' => 'utf8_unicode_ci',
+		// 	'prefix'    => '',
+		// ),
 
 		'pgsql' => array(
 			'driver'   => 'pgsql',

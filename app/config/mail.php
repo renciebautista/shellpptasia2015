@@ -54,7 +54,7 @@ return array(
 	|
 	*/
 
-	'from' => array('address' => null, 'name' => null),
+	'from' => array('address' => 'admin@shellpptasia.com', 'name' => 'admin@shellpptasia.com'),
 
 	/*
 	|--------------------------------------------------------------------------

@@ -47,4 +47,36 @@ class OnePageController extends \BaseController {
 		return View::make('onepage.login');
 	}
 
+	/**
+	 * Display a listing of the resource.
+	 * GET /onepage
+	 *
+	 * @return Response
+	 */
+	public function logout()
+	{
+		Auth::logout();
+		return Redirect::intended('/');
+	}
+
+	/**
+	 * Display a listing of the resource.
+	 * GET /onepage
+	 *
+	 * @return Response
+	 */
+	public function dologin()
+	{
+		if (Auth::attempt(array('email' => Input::get('email'), 'password' => Input::get('password')), false))
+		{
+		    return Redirect::action('RegisterController@create');
+		}
+
+		Auth::logout();
+		Session::flash('message', 'Invalid credentials, please try again');
+		Session::flash('class', 'alert alert-danger');
+		return Redirect::back();
+		
+	}
+
 }

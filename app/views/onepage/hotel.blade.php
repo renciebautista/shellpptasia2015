@@ -4,7 +4,7 @@
     <li><a href="/">Home</a></li>
     <li><a href="/programme">Programme</a></li>
     <li class="active"><a href="/hotel">Hotel</a></li>
-    <li><a href="/login">Login</a></li>
+     <li><a href="/register">Event Registration</a></li>
   </ul>
 @stop
 

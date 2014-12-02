@@ -2,16 +2,6 @@
 
 class RegisterController extends \BaseController {
 
-	/**
-	 * Display a listing of the resource.
-	 * GET /register
-	 *
-	 * @return Response
-	 */
-	public function index()
-	{
-		
-	}
 
 	/**
 	 * Show the form for creating a new resource.
@@ -21,7 +11,12 @@ class RegisterController extends \BaseController {
 	 */
 	public function create()
 	{
-		return View::make('register.create');
+		$prefixes = Prefix::orderBy('prefix')->lists('prefix', 'id');
+		$countries = Country::orderBy('name')->lists('name', 'id');
+		$yesno = array('1' => 'YES', '2' => 'NO');
+		$available_nights = AvailableNight::all();
+		$hotels = Hotel::orderBy('name')->lists('name', 'id');
+		return View::make('onepage.create', compact('prefixes', 'countries', 'yesno', 'available_nights', 'hotels'));
 	}
 
 	/**
@@ -35,52 +30,6 @@ class RegisterController extends \BaseController {
 		return Redirect::action('RegisterController@create');
 	}
 
-	/**
-	 * Display the specified resource.
-	 * GET /register/{id}
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function show($id)
-	{
-		//
-	}
 
-	/**
-	 * Show the form for editing the specified resource.
-	 * GET /register/{id}/edit
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function edit($id)
-	{
-		//
-	}
-
-	/**
-	 * Update the specified resource in storage.
-	 * PUT /register/{id}
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function update($id)
-	{
-		//
-	}
-
-	/**
-	 * Remove the specified resource from storage.
-	 * DELETE /register/{id}
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function destroy($id)
-	{
-		//
-	}
 
 }

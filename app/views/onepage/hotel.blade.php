@@ -22,7 +22,7 @@
 			<div class="row">
 				@foreach ($hotels as $hotel)
 				<div class="col-sm-6 text-center">
-					<div class="hotel" style="padding-bottom:10px;">
+					<divstyle="padding-bottom:10px;">
 						<img src="assets/images/hotel/{{ $hotel->picture }}" class="img-responsive img-thumbnail" alt="">
 						<h4><a href="{{ $hotel->website }}">{{ $hotel->name}}</a></h4>
 						<p class="text-muted">{{ $hotel->address}}</p>

@@ -122,6 +122,7 @@ return array(
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 		'Webpatser\Countries\CountriesServiceProvider',
+		'Dinesh\Barcode\BarcodeServiceProvider',
 		'Way\Generators\GeneratorsServiceProvider',
 
 	),
@@ -191,6 +192,8 @@ return array(
 		'Validator'         => 'Illuminate\Support\Facades\Validator',
 		'View'              => 'Illuminate\Support\Facades\View',
 		'Countries'         => 'Webpatser\Countries\CountriesFacade',
+		'DNS1D' 			=> 'Dinesh\Barcode\Facades\DNS1DFacade',
+        'DNS2D' 			=> 'Dinesh\Barcode\Facades\DNS2DFacade',
 
 	),
 

@@ -54,7 +54,7 @@ Your registration has been confirmed. Here are the details:
 <BR>
 Confirmation code: (pre-generated)
 <BR>
-Barcode: (pre-generated)
+Barcode: {{ DNS1D::getBarcodeHTML("4445645656", "CODE11") }}
 <BR>
 To review this registration click here: (url)
 <BR>

@@ -6,7 +6,8 @@
 	"type": "project",
 	"require": {
 		"laravel/framework": "4.2.*",
-		"webpatser/laravel-countries": "dev-master"
+		"webpatser/laravel-countries": "dev-master",
+		"dinesh/barcode": "dev-master"
 	},
 	"autoload": {
 		"classmap": [

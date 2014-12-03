@@ -55,7 +55,7 @@ Your registration has been confirmed. Here are the details:
 Confirmation code: ABCD1234
 <BR>
 Barcode:<br> 
-<img src="<?php echo $message->embed($pathToFile); ?>">
+
 <BR>
 To review this registration click here: (url)
 <BR>

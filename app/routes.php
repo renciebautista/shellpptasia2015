@@ -30,7 +30,8 @@ Route::get('/logout', 'OnePageController@logout');
 Route::post('/login', 'OnePageController@dologin');
 Route::get('/mail', function(){
 	// return View::make('emails.registration.confirm');
-	Mail::send('emails.registration.confirm', array('key' => 'value'), function($message)
+	DNS1D::getBarcodePNGPath("ABCD1234", "C39",2,60);
+	Mail::send('emails.registration.confirm', array('pathToFile' => 'www.shellpptasia.com/barcode/abcd1234.png'), function($message)
 	{
 	    $message->to('rencie.bautista@yahoo.com', 'John Smith')->subject('Welcome!');
 	});

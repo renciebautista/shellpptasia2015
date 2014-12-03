@@ -29,12 +29,14 @@ Route::get('/login', 'OnePageController@login');
 Route::get('/logout', 'OnePageController@logout');
 Route::post('/login', 'OnePageController@dologin');
 Route::get('/mail/{id}', function($id){
-	// return View::make('emails.registration.confirm');
+	
 	DNS1D::getBarcodePNGPath($id, "C39",2,60);
-	// Mail::send('emails.registration.confirm', array('pathToFile' => 'www.shellpptasia.com/barcode/abcd1234.png'), function($message)
-	// {
-	//     $message->to('rencie.bautista@yahoo.com', 'John Smith')->subject('Welcome!');
-	// });
+	// $barcode = 'http://localhost:8000/barcode/'.$id.'.png';
+	// return View::make('emails.registration.confirm',compact('barcode'));
+	Mail::send('emails.registration.confirm', array('pathToFile' => 'http://www.shellpptasia.com/barcode/'.$id.'.png'), function($message)
+	{
+	    $message->to('rencie.bautista@yahoo.com', 'John Smith')->subject('Welcome!');
+	});
 });
 
 Route::group(array('before' => 'auth'), function()

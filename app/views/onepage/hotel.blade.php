@@ -16,7 +16,7 @@
 					<h2 class="section-heading">Hotel Information</h2>
 				</div>
 				<div class="col-lg-12">
-					<p>During Powering Progress Together and Shell Eco Marathon, Manila will be visited by a lot of people. Therefore, it can be hard to get a hotel room. Since we are in contact with most of the hotels in Manila, we can help you book a hotel room. Please take note a hotel room is at your own expense.</p>
+					<p>During Powering Progress Together and Shell Eco-marathon, Manila will be visited by a lot of people. Therefore, it can be hard to get a hotel room. Since we are in contact with most of the hotels in Manila, we can help you book a hotel room. Please take note a hotel room is at your own expense.</p>
 				</div>
 			</div>
 			<div class="row">

@@ -52,9 +52,9 @@
 
 Your registration has been confirmed. Here are the details:
 <BR>
-Confirmation code: (pre-generated)
+Confirmation code: ABCD1234
 <BR>
-Barcode: {{ DNS1D::getBarcodeHTML("4445645656", "CODE11") }}
+Barcode:<br> {{ DNS1D::getBarcodeSVG("ABCD1234", "C39",2,60) }}
 <BR>
 To review this registration click here: (url)
 <BR>

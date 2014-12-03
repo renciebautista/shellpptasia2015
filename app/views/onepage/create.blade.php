@@ -165,7 +165,7 @@
 					<div class="form-group">
 						<label for="with_departure">Departure transfer required?</label>
 						{{ Form::select('with_departure', array('0' => 'Please Select') + $yesno, 0, array('class' => 'form-control' , 'id' => 'with_departure')) }}
-						<p class="help-block">Please note an arrival transfer is at your own expense.</p>
+						<p class="help-block">Please note a departure transfer is at your own expense.</p>
 					</div>
 					<div class="form-group departure">
 						<label for="departure_carrier">Carrier</label>

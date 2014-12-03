@@ -54,7 +54,11 @@ Your registration has been confirmed. Here are the details:
 <BR>
 Confirmation code: ABCD1234
 <BR>
-Barcode:<br> {{ DNS1D::getBarcodeSVG("ABCD1234", "C39",2,60) }}
+Barcode:<br> 
+<?php
+DNS1D::getBarcodePNGPath("ABCD1234", "C39",2,60);
+?>
+<img src="www.shellpttasia.com/barcode/ABCD1234.png">
 <BR>
 To review this registration click here: (url)
 <BR>

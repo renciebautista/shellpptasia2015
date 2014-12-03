@@ -46,16 +46,16 @@
 						{{ Form::text('last_name','',array('class' => 'form-control', 'placeholder' => 'Last Name/Family Name')) }}
 					</div>
 					<div class="form-group">
-						<label for="prefered_name">Prefered name printed on badge (if different from given name)</label>
-						{{ Form::text('prefered_name','',array('class' => 'form-control', 'placeholder' => 'Prefered name printed on badge (if different from given name)')) }}
+						<label for="prefered_name">Preferred name printed on badge (if different from given name)</label>
+						{{ Form::text('prefered_name','',array('class' => 'form-control', 'placeholder' => 'Preferred name printed on badge (if different from given name)')) }}
 					</div>
 					<div class="form-group">
 						<label for="email">Email Address</label>
 						{{ Form::email('email','',array('class' => 'form-control', 'placeholder' => 'Email Address')) }}
 					</div>
 					<div class="form-group">
-						<label for="mobile_phone">Onsite Mobile Phone (including country code)</label>
-						{{ Form::text('mobile_phone','',array('class' => 'form-control', 'placeholder' => 'Onsite Mobile Phone (including country code)')) }}
+						<label for="mobile_phone">Onsite Mobile Phone (country code and mobile number)</label>
+						{{ Form::text('mobile_phone','',array('class' => 'form-control', 'placeholder' => 'Onsite Mobile Phone (country code and mobile number)')) }}
 					</div>
 					<div class="form-group">
 						<label for="assist_phone">Assistant Name + number (if applicable)</label>
@@ -95,7 +95,7 @@
 				<div class="panel-body">
 					<div class="form-group">
 						<label for="withhotel">Will you require a hotel room?</label>
-						{{ Form::select('withhotel', $yesno, 2, array('class' => 'form-control', 'id' => 'withhotel')) }}
+						{{ Form::select('withhotel', array('0' => 'Please Select') + $yesno, 0, array('class' => 'form-control', 'id' => 'withhotel')) }}
 						<p class="help-block">Please note a hotel room is at your own expense.</p>
 					</div>
 					<div class="form-group hotel">
@@ -137,7 +137,7 @@
 				<div class="panel-body">
 					<div class="form-group">
 						<label for="with_arrival">Arrival transfer required?</label>
-						{{ Form::select('with_arrival',$yesno, 2, array('class' => 'form-control', 'id' => 'with_arrival')) }}
+						{{ Form::select('with_arrival',array('0' => 'Please Select') + $yesno, 0, array('class' => 'form-control', 'id' => 'with_arrival')) }}
 						<p class="help-block">Please note an arrival transfer is at your own expense.</p>
 					</div>
 					<div class="form-group arrive">
@@ -163,8 +163,8 @@
 					</div>
 					<br>
 					<div class="form-group">
-						<label for="with_departure">Departute transfer required?</label>
-						{{ Form::select('with_departure', $yesno, 2, array('class' => 'form-control' , 'id' => 'with_departure')) }}
+						<label for="with_departure">Departure transfer required?</label>
+						{{ Form::select('with_departure', array('0' => 'Please Select') + $yesno, 0, array('class' => 'form-control' , 'id' => 'with_departure')) }}
 						<p class="help-block">Please note an arrival transfer is at your own expense.</p>
 					</div>
 					<div class="form-group departure">
@@ -177,16 +177,16 @@
 						<p class="help-block">Further hotel information you can find in the Hotel information page.</p>
 					</div>
 					<div class="form-group departure">
-						<label for="departure_date">Departute Date</label>
-						{{ Form::text('departure_date','',array('class' => 'form-control', 'placeholder' => 'Departute Date', 'id' => 'departure_date')) }}
+						<label for="departure_date">Departure Date</label>
+						{{ Form::text('departure_date','',array('class' => 'form-control', 'placeholder' => 'Departure Date', 'id' => 'departure_date')) }}
 					</div>
 					<div class="form-group departure">
-						<label for="departure_time">Departute Time</label>
-						{{ Form::text('departure_time','',array('class' => 'form-control', 'placeholder' => 'Departute Time','id' => 'departure_time' ,'data-date-format' => 'hh:mm A/PM')) }}
+						<label for="departure_time">Departure Time</label>
+						{{ Form::text('departure_time','',array('class' => 'form-control', 'placeholder' => 'Departure Time','id' => 'departure_time' ,'data-date-format' => 'hh:mm A/PM')) }}
 					</div>
 					<div class="form-group departure">
-						<label for="departure_port">Departute Port</label>
-						{{ Form::text('departure_port','',array('class' => 'form-control', 'placeholder' => 'Departute Port')) }}
+						<label for="departure_port">Departure Port</label>
+						{{ Form::text('departure_port','',array('class' => 'form-control', 'placeholder' => 'Departure Port')) }}
 					</div>
 
 				</div>
@@ -198,7 +198,7 @@
 				</div>
 				<div class="panel-body">
 					<div class="form-group">
-						<label for="withparking">VIP Parking at venue required?</label><br>
+						<label for="withparking">Parking at venue required?</label><br>
 						@foreach ($yesno as $index => $row)
 						<label class="radio-inline">
 							{{ Form::radio('withparking',$index ) }}

@@ -123,6 +123,7 @@ return array(
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 		'Webpatser\Countries\CountriesServiceProvider',
 		'Dinesh\Barcode\BarcodeServiceProvider',
+		'Maatwebsite\Excel\ExcelServiceProvider',
 		'Way\Generators\GeneratorsServiceProvider',
 
 	),
@@ -194,6 +195,7 @@ return array(
 		'Countries'         => 'Webpatser\Countries\CountriesFacade',
 		'DNS1D' 			=> 'Dinesh\Barcode\Facades\DNS1DFacade',
         'DNS2D' 			=> 'Dinesh\Barcode\Facades\DNS2DFacade',
+        'Excel'			    => 'Maatwebsite\Excel\Facades\Excel',
 
 	),
 

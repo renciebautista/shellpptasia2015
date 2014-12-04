@@ -25,29 +25,32 @@
 
 
 
-Route::get('/login', 'OnePageController@login');
-Route::get('/logout', 'OnePageController@logout');
-Route::post('/login', 'OnePageController@dologin');
-Route::get('/mail/{id}', function($id){
+Route::get('login', 'OnePageController@login');
+Route::get('logout', 'OnePageController@logout');
+Route::post('login', 'OnePageController@dologin');
+
+Route::get('mail/{name?}', function($name = 'John'){
 	
-	DNS1D::getBarcodePNGPath($id, "C39",2,60);
-	// $barcode = 'http://localhost:8000/barcode/'.$id.'.png';
-	// return View::make('emails.registration.confirm',compact('barcode'));
-	Mail::send('emails.registration.confirm', array('pathToFile' => 'http://www.shellpptasia.com/barcode/'.$id.'.png'), function($message)
+	DNS1D::getBarcodePNGPath($name, "C39",2,60);
+	// $pathToFile = 'http://localhost:8000/barcode/'.$name.'.png';
+	// return View::make('emails.registration.confirm',compact('pathToFile'));
+	Mail::send('emails.registration.confirm', array('pathToFile' => 'http://www.shellpptasia.com/barcode/'.$name.'.png'), function($message)
 	{
-	    $message->to('rencie.bautista@yahoo.com', 'John Smith')->subject('Welcome!');
+	    $message->to('rencie.bautista@yahoo.com', 'Rencie Bautista')->subject('Registration Confirmation (Shell Powering Progress Together Asia 2015)');
 	});
 });
+
+Route::get('import/delegates', 'ImportController@delegates');
 
 Route::group(array('before' => 'auth'), function()
 {
 	Route::get('/', 'OnePageController@index');
-	Route::get('/programme', 'OnePageController@programme');
-	Route::get('/hotel', 'OnePageController@hotel');
+	Route::get('programme', 'OnePageController@programme');
+	Route::get('hotel', 'OnePageController@hotel');
 
 	Route::get('register', 'RegisterController@create');
 	Route::post('register', 'RegisterController@store');
 
-	Route::post('/api/rooms', 'RoomTypeController@index');
-	Route::post('/api/roomrate', 'RoomTypeController@rate');
+	Route::post('api/rooms', 'RoomTypeController@index');
+	Route::post('api/roomrate', 'RoomTypeController@rate');
 });

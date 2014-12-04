@@ -1,9 +1,11 @@
 /bootstrap/compiled.php
 /vendor
 /public/barcode
+/public/import
 composer.phar
 composer.lock
 .env.*.php
 .env.php
 .DS_Store
 Thumbs.db
+notes.txt

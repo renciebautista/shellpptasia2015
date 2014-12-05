@@ -2,6 +2,7 @@
 /vendor
 /public/barcode
 /public/import
+/mailoutput
 composer.phar
 composer.lock
 .env.*.php

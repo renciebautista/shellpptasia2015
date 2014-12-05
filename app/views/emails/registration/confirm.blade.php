@@ -69,7 +69,7 @@ Your registration has been confirmed. Here are the details:
 Confirmation code: {{ $attendee->code }}
 <BR>
 Barcode:<br> 
-<img src="<?php echo $pathToFile; ?>" alt="logo">
+<img src="<?php echo strtolower($pathToFile); ?>" alt="logo">
 <BR>
 To review this registration click here: <a href="www.shellpptasia.com">www.shellpptasia.com</a>
 <BR>

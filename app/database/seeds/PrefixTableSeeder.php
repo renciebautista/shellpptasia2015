@@ -10,9 +10,9 @@ class PrefixTableSeeder extends Seeder {
 		DB::table('prefixes')->truncate();
 
 		DB::statement("INSERT INTO prefixes (id, prefix) VALUES
-			(1, 'Mr'),
-			(2, 'Ms'),
-			(3, 'Mrs'),
+			(1, 'Mr.'),
+			(2, 'Ms.'),
+			(3, 'Mrs.'),
 			(4, 'Dr.');");
 	}
 

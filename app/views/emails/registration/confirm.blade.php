@@ -74,7 +74,7 @@ Barcode:<br>
 To review this registration click here: <a href="www.shellpptasia.com">www.shellpptasia.com</a>
 <BR>
 <BR>
-Dear Ms. Mason,
+Dear {{ ucwords(strtolower($prefix->prefix))}} {{ ucwords(strtolower($attendee->first_name))}} {{ ucwords(strtolower($attendee->last_name))}},
 <BR>
 <BR>
 Thank you for registering your attendance to <strong>Shell Powering Progress Together Asia 2015</strong> in <strong>Manila, Philippines</strong>.
@@ -118,47 +118,47 @@ Shell Powering Progress Asia 2015 Team
 <table class="otherdetails">
   <tr>
     <td>Name:</td>
-    <td>Mr. Rencie Bautista</td>
+    <td>{{ ucwords(strtolower($prefix->prefix))}} {{ ucwords(strtolower($attendee->first_name))}} {{ ucwords(strtolower($attendee->last_name))}}</td>
   </tr>
   <tr>
     <td>Preferred name printed on badge:</td>
-    <td>Renz</td>
+    <td>{{ $attendee->prefered_name }}</td>
   </tr>
   <tr>
     <td>Email Address:</td>
-    <td>rbautista@chasetech.com</td>
+    <td>{{ $attendee->email}}</td>
   </tr>
   <tr>
     <td>Onsite Mobile Phone:</td>
-    <td>639178935786</td>
+    <td>{{ $attendee->mobile_phone }}</td>
   </tr>
   <tr>
     <td>Assistant Name + number:</td>
-    <td>Renz 098218301</td>
+    <td>{{ $attendee->assist_phone }}</td>
   </tr>
   <tr>
     <td>Alternative email address:</td>
-    <td>other@yahoo.com</td>
+    <td>{{ $attendee->alternative_email }}</td>
   </tr>
   <tr>
     <td>Company Name/ Department:</td>
-    <td>Chase</td>
+    <td>{{ $attendee->company }}</td>
   </tr>
   <tr>
     <td>Address + city:</td>
-    <td>5268 Diesel St. Palanan Makati City</td>
+    <td>{{ $attendee->address }}</td>
   </tr>
   <tr>
     <td>Job Title:</td>
-    <td>Programmer</td>
+    <td>{{ $attendee->job_title }}</td>
   </tr>
   <tr>
     <td>Country:</td>
-    <td>Philippines</td>
+    <td>{{ $country->name }}</td>
   </tr>
   <tr>
     <td>Special requirements:</td>
-    <td>nothing</td>
+    <td>{{ $attendee->special }}</td>
   </tr>
 </table>
 
@@ -168,28 +168,40 @@ Shell Powering Progress Asia 2015 Team
 <table class="otherdetails">
   <tr>
     <td>Hotel room required:</td>
-    <td>YES</td>
+    <td>
+      @if($attendee->withhotel == 1)
+      YES
+      @else
+      NO
+      @endif
+    </td>
   </tr>
+  @if($attendee->withhotel == 1)
   <tr>
     <td>Selected nights:</td>
-    <td>02/26/2014, 02/27/2014, 02/28/2014</td>
+    <td>
+      @foreach($nights as $row)
+      {{ date_format(date_create($row->available_night),"m/d/Y") }},
+      @endforeach
+    </td>
   </tr>
   <tr>
     <td>Hotel:</td>
-    <td>Manila Hotel</td>
+    <td>{{ $hotel->name }}</td>
   </tr>
   <tr>
     <td>Room Type:</td>
-    <td>Suite</td>
+    <td>{{ $room->room_type }}</td>
   </tr>
   <tr>
     <td>Room rate:</td>
-    <td>1000.00</td>
+    <td>{{ $room->room_rate }}</td>
   </tr>
   <tr>
     <td>Billing Instructions:</td>
-    <td>nothinf</td>
+    <td>{{ $attendee->billing }}</td>
   </tr>
+ @endif
 </table>
 <br>
 <strong>TRAVEL INFORMATION</strong>
@@ -197,54 +209,70 @@ Shell Powering Progress Asia 2015 Team
 <table class="otherdetails">
   <tr>
     <td>Arrival transfer required:</td>
-    <td>YES</td>
+    <td>
+      @if($attendee->with_arrival == 1)
+      YES
+      @else
+      NO
+      @endif
+    </td>
   </tr>
+   @if($attendee->with_arrival == 1)
   <tr>
     <td>Carrier:</td>
-    <td>PAL</td>
+    <td>{{ $attendee->arrival_carrier }}</td>
   </tr>
   <tr>
     <td>Flight Number:</td>
-    <td>123</td>
+    <td>{{ $attendee->arrival_no }}</td>
   </tr>
   <tr>
     <td>Arrival Date:</td>
-    <td>10/10/2014</td>
+    <td>{{ date_format(date_create($attendee->arrival_date),"m/d/Y") }}</td>
   </tr>
   <tr>
     <td>Arrival Time:</td>
-    <td>10:00 AM</td>
+    <td>{{ $attendee->arrival_time }}</td>
   </tr>
   <tr>
     <td>Arrival Port:</td>
-    <td>1</td>
+    <td>{{ $attendee->arrival_port }}</td>
   </tr>
+  @endif
 </table><br>
 <table class="otherdetails">
   <tr>
     <td>Departure transfer required:</td>
-    <td>YES</td>
+    <td>
+      @if($attendee->with_departure == 1)
+      YES
+      @else
+      NO
+      @endif
+    </td>
   </tr>
+    @if($attendee->with_departure == 1)
   <tr>
     <td>Carrier:</td>
-    <td>PAL</td>
+    <td>{{ $attendee->departure_carrier }}</td>
   </tr>
   <tr>
     <td>Flight Number:</td>
-    <td>123</td>
+    <td>{{ $attendee->departure_no }}</td>
   </tr>
   <tr>
-    <td>Departure Date:</td>
-    <td>10/10/2014</td>
+    <td>Arrival Date:</td>
+    <td>{{ date_format(date_create($attendee->departure_date),"m/d/Y") }}</td>
   </tr>
   <tr>
-    <td>Departure Time:</td>
-    <td>10:00 AM</td>
+    <td>Arrival Time:</td>
+    <td>{{ $attendee->departure_time }}</td>
   </tr>
   <tr>
-    <td>Departure Port:</td>
-    <td>1</td>
+    <td>Arrival Port:</td>
+    <td>{{ $attendee->departure_port }}</td>
   </tr>
+    @endif
 </table>
 <br>
 <strong>PARKING INFORMATION</strong>
@@ -252,7 +280,13 @@ Shell Powering Progress Asia 2015 Team
 <table class="otherdetails">
   <tr>
     <td>Parking at venue required:</td>
-    <td>YES</td>
+    <td>
+      @if($attendee->withparking == 1)
+      YES
+      @else
+      NO
+      @endif
+    </td>
   </tr>
 </table>
 <br>
@@ -261,15 +295,15 @@ Shell Powering Progress Asia 2015 Team
 <table class="otherdetails">
   <tr>
     <td>Contact Name:</td>
-    <td>Mr. Rencie Bautista</td>
+    <td>{{ $attendee->e_name }}</td>
   </tr>
   <tr>
     <td>Contact Number:</td>
-    <td>8312977</td>
+    <td>{{ $attendee->e_number }}</td>
   </tr>
   <tr>
     <td>Relationship to attendee:</td>
-    <td>test</td>
+    <td>{{ $attendee->e_relationship }}</td>
   </tr>
 </table>
 </body>

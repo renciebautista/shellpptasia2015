@@ -136,13 +136,26 @@ class RegisterController extends \BaseController {
 
 				DB::table('users')->where('id', Auth::id())
 					->update(array('registered' => 2));
+
+				DNS1D::getBarcodePNGPath($attendee->code, "C39",2,60);
 				
 				$data['pathToFile'] = 'http://www.shellpptasia.com/barcode/'.$attendee->code.'.png';
 				$data['attendee'] = $attendee;
+				$data['prefix'] = Prefix::find($attendee->prefix_id);
+				$data['country'] = Country::find($attendee->country_id);
+				if($attendee->withhotel == 1){
+					$data['hotel'] = Hotel::find($attendee->hotel_id);
+					$data['room'] = RoomType::select(DB::raw("room_type, CONCAT('PHP ',format(room_rate,2)) as room_rate"))
+								->where('id',$attendee->room_type_id)->first();
+					$data['nights'] = AttendeeNight::where('attendee_id',$attendee->id)
+						->join('available_nights','attendee_nights.available_night_id','=','available_nights.id')
+						->get();
+				}
+				
 				Mail::send('emails.registration.confirm', $data, function($message) use ($attendee)
 				{
-					$prefix1 = Prefix::find($attendee->prefix_id);
-				    $message->to($attendee->email, $prefix1->prefix .' '.ucwords(strtolower($attendee->first_name)).' '.ucwords(strtolower($attendee->last_name)))->subject('Registration Confirmation (Shell Powering Progress Together Asia 2015)');
+				    $message->to($attendee->email)
+				    	->subject('Registration Confirmation (Shell Powering Progress Together Asia 2015)');
 				});
 			});
 

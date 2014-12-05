@@ -37,13 +37,13 @@ class CreateAttendesTableesTable extends Migration {
 			$table->string('arrival_carrier')->nullable();
 			$table->string('arrival_no')->nullable();
 			$table->date('arrival_date')->nullable();
-			$table->string('arrival_time');
+			$table->string('arrival_time')->nullable();
 			$table->string('arrival_port')->nullable();
 			$table->boolean('with_departure');
 			$table->string('departure_carrier')->nullable();
 			$table->string('departure_no')->nullable();
 			$table->date('departure_date')->nullable();
-			$table->string('departure_time');
+			$table->string('departure_time')->nullable();
 			$table->string('departure_port')->nullable();
 			$table->boolean('withparking');
 			$table->string('e_name');

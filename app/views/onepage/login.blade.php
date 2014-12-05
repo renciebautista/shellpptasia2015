@@ -3,28 +3,35 @@
 
 @section('content')
 <div class="row">
-
-	<div class="col-lg-12 text-center" style="margin-bottom: 20px;">
-
-		<h2 class="section-heading ">Login</h2>  
-		@if (Session::has('message'))
-				<div class="alert alert-dismissable {{ Session::get('class') }}">
-					<button class="close" data-dismiss="alert" type="button">×</button>
-					{{ Session::get('message') }}
-				</div>
-            @endif
-		{{ Form::open(array('action' => 'OnePageController@dologin','class' => 'form-inline')) }}
-		<div class="form-group">
-			<div class="input-group">
-				<label class="sr-only" for="email">Email address</label>	
-				<input type="text" class="form-control" id="email" name="email" placeholder="Enter email">
+	<div class="col-lg-12">
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<h2 class="section-heading">Login</h2>
+				@if (Session::has('message'))
+					<div class="alert alert-dismissable {{ Session::get('class') }}">
+						<button class="close" data-dismiss="alert" type="button">×</button>
+						{{ Session::get('message') }}
+					</div>
+	            @endif
 			</div>
+		</div>
+			
+	</div>
+</div>
+<div class="row">
+
+	<div class="col-lg-12 text-center" style="margin-bottom:20px;">
+		{{ Form::open(array('action' => 'OnePageController@dologin','class' => 'form-inline', 'role' => 'form')) }}
+		<form class="form-inline" role="form">
+		<div class="form-group">
+			<label class="sr-only" for="email">Email address</label>
+			<input id="email" name="email" class="form-control" type="email" placeholder="Enter email">
 		</div>
 		<div class="form-group">
 			<label class="sr-only" for="password">Password</label>
-			<input type="password" class="form-control" id="password" name="password" placeholder="Password">
+			<input id="password" name="password" class="form-control" type="password" placeholder="Password">
 		</div>
-		<button type="submit" class="btn btn-default">Login</button>
+			<button class="btn btn-default btn-responsive" type="submit">Sign in</button>
 		{{ Form::close() }}   
 	</div>
 </div>

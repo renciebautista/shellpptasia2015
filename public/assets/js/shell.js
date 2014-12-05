@@ -24,6 +24,11 @@ $(document).ready(function(){
 			$('.arrive').show();
 		}else{
 			$('.arrive').hide();
+			$('#arrival_carrier').val('');
+			$('#arrival_no').val('');
+			$('#arrival_date').val('');
+			$('#arrival_time').val('');
+			$('#arrival_port').val('');
 		}	
 	});
 
@@ -32,6 +37,12 @@ $(document).ready(function(){
 			$('.departure').show();
 		}else{
 			$('.departure').hide();
+			$('#departure_carrier').val('');
+			$('#departure_no').val('');
+			$('#departure_date').val('');
+			$('#departure_time').val('');
+			$('#departure_port').val('');
+			console.log(1);
 		}	
 	});
 
@@ -44,16 +55,17 @@ $(document).ready(function(){
 			url: "../api/rooms",
 			success: function(data){
 				$('select#room_type').empty();
-				$.each(data, function(i, text) {
-					$('<option />', {value: i, text: text}).appendTo($('select#room_type')); 
+				$.each(data, function(i, object) {
+					$('<option />', {value: object.id, text: object.room_type}).appendTo($('select#room_type')); 
 				});
 				if(data.length == 0){
 					$('select#room_type').attr('disabled', true);
 					$('select#room_type').empty();
-					$('#rate').val('');
+					
 				}else{
 					$('select#room_type').removeAttr('disabled');	
 				}
+				$('#rate').val('');
 		   }
 		});	
 	});
@@ -85,7 +97,7 @@ $(document).ready(function(){
 							return $('#register select[name="withhotel"]').val() === '1';
 						}
 					},
-					minlength: 2
+					minlength: 1
 				},
 			hotel: {
 				is_natural_no_zero: {
@@ -205,4 +217,55 @@ $(document).ready(function(){
 	$.mask.definitions['m']='[mM]';
 	$("#arrival_time").mask("99:99 am");
 	$("#departure_time").mask("99:99 am");
+
+
+	function updateHotel(){
+		$('.hotel').show();
+		$.ajax({
+			type: "GET",
+			url: "../api/rooms",
+			success: function(data){
+				if(data.error == false){
+					$('select#room_type').empty();
+					$.each(data.rooms, function(i, object) {
+						if( object.id ==  data.selected){
+							$("select#room_type").append('<option selected ="selected" value=' + object.id + '>' + object.room_type + '</option>');
+						}else{
+							$('<option />', {value: object.id, text: object.room_type}).appendTo($('select#room_type')); 
+						}
+						
+					});
+					if(data.length == 0){
+						$('select#room_type').attr('disabled', true);
+						$('select#room_type').empty();
+						
+					}else{
+						$('select#room_type').removeAttr('disabled');	
+					}
+					$('#rate').val(data.rate);
+				}else{
+
+				}
+				
+		   }
+		});	
+	}
+
+
+	function updateArrival(){
+		$('.arrive').show();
+	}
+
+
+	if($('select#withhotel').val() == 1){
+		updateHotel();
+	}
+	if($('select#with_arrival').val() == 1){
+		updateArrival()
+	}
+	if($('select#with_departure').val() == 1){
+		$('.departure').show();
+	}
+
+
 });

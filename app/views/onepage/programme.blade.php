@@ -2,11 +2,20 @@
 
 @section('navigation')
   <ul class="nav nav-pills pull-right">
-	<li><a href="/">Home</a></li>
+	<li><a href="/">Event Overview</a></li>
 	<li  class="active"><a href="/programme">Programme</a></li>
 	<li><a href="/hotel">Hotel</a></li>
 	<li><a href="/register">Event Registration</a></li>
   </ul>
+@stop
+
+@section('footer')
+<div class="navbar-collapse footer-menu">
+	<nav>
+		@section('navigation')
+		@show
+	</nav>
+</div>
 @stop
 
 @section('content')

@@ -50,7 +50,9 @@ Route::group(array('before' => 'auth'), function()
 
 	Route::get('register', 'RegisterController@create');
 	Route::post('register', 'RegisterController@store');
+	Route::put('register', 'RegisterController@update');
 
 	Route::post('api/rooms', 'RoomTypeController@index');
+	Route::get('api/rooms', 'RoomTypeController@show');
 	Route::post('api/roomrate', 'RoomTypeController@rate');
 });

@@ -27,16 +27,24 @@
 
 	<body>
 		<div class="container">
-			<div class="header">
+			<div id="navbar" class="navbar-collapse ">
 				<nav>
 					@section('navigation')
-					 @show
+					@show
 				</nav>
 			</div>
 
-			<div class="page-header"></div>
+			<div class="page-header table-responsive">
+				<div>
+					{{ HTML::image('assets/images/background.jpg' ,'a picture', array('width' => '720')) }}
+				</div>
+				
+			</div>
 			<hr>
 			@yield('content')
+
+			@section('footer')
+			@show
 			<footer class="footer">
 				<p>&copy; Company 2014 - 2015</p>
 			</footer>
@@ -51,13 +59,5 @@
 		{{ HTML::script('assets/plugins/masked-input-plugin/jquery.maskedinput.min.js') }}
 
         {{ HTML::script('assets/js/shell.js') }}
-        
-		<script type="text/javascript">
-		$(document).ready(function() {
-		@section('page-script')
-
-				@show
-				});
-		</script>
 	</body>
 </html>

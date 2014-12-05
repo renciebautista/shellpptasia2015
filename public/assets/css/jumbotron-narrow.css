@@ -70,7 +70,14 @@ textarea.error,input.error{
 	border-top: 1px solid #e5e5e5;
 }
 
-
+#programme label {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+#programme p {
+	padding-top: 10px;
+	padding-bottom: 15px;
+}
 /* Customize container */
 @media (min-width: 768px) {
 	.container {

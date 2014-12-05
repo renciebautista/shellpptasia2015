@@ -29,17 +29,17 @@ Route::get('login', 'OnePageController@login');
 Route::get('logout', 'OnePageController@logout');
 Route::post('login', 'OnePageController@dologin');
 
-Route::get('mail/{name?}', function($name = 'John'){
+// Route::get('mail/{name?}', function($name = 'John'){
 	
-	DNS1D::getBarcodePNGPath($name, "C39",2,60);
-	// $pathToFile = 'http://localhost:8000/barcode/'.$name.'.png';
-	// return View::make('emails.registration.confirm',compact('pathToFile'));
-	$data['pathToFile'] = 'http://www.shellpptasia.com/barcode/'.$name.'.png';
-	Mail::send('emails.registration.confirm', $data, function($message)
-	{
-	    $message->to('rencie.bautista@yahoo.com', 'Rencie Bautista')->subject('Registration Confirmation (Shell Powering Progress Together Asia 2015)');
-	});
-});
+// 	DNS1D::getBarcodePNGPath($name, "C39",2,60);
+// 	// $pathToFile = 'http://localhost:8000/barcode/'.$name.'.png';
+// 	// return View::make('emails.registration.confirm',compact('pathToFile'));
+// 	$data['pathToFile'] = 'http://www.shellpptasia.com/barcode/'.$name.'.png';
+// 	Mail::send('emails.registration.confirm', $data, function($message)
+// 	{
+// 	    $message->to('rencie.bautista@yahoo.com', 'Rencie Bautista')->subject('Registration Confirmation (Shell Powering Progress Together Asia 2015)');
+// 	});
+// });
 
 Route::get('import/delegates', 'ImportController@delegates');
 

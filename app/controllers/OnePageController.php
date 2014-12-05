@@ -21,7 +21,7 @@ class OnePageController extends \BaseController {
 	 */
 	public function programme()
 	{
-		return View::make('onepage.programme');
+		return View::make('onepage.programme2');
 	}
 
 

@@ -6,6 +6,7 @@
 	<li class="active"><a href="/programme">Programme</a></li>
 	<li ><a href="/hotel">Hotel</a></li>
 	<li><a href="/register">Event Registration</a></li>
+	<li><a href="/logout">Logout</a></li>
   </ul>
 @stop
 

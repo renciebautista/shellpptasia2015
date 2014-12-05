@@ -1,29 +1,38 @@
+To: Mr 2121 221 <rbautista@chasetech.com>
+Subject: Registration Confirmation (Shell Powering Progress Together Asia 2015)
+Message-ID: <6dc358516be9afcf55aa1e4f5650c1a5@localhost>
+Date: Fri, 05 Dec 2014 07:52:07 +0000
+From: "UI-Shell-PPT-Asia@shell.com" <UI-Shell-PPT-Asia@shell.com>
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
 <html>
   <head>
-    
-    <title id="print_title">
+   =20
+    <title id=3D"print_title">
       Print
     </title>
-    
-    <style> 
+   =20
+    <style>=20
       table.messageheader td.label {
         background-color:#E1EBFB;
-        
+       =20
         font-weight:bold;
         width:1%;
       }
-      
+     =20
       table.messageheader td {
         border-bottom-color:#E6E6E6;
-        
+       =20
         border-bottom-style:solid;
-        
+       =20
         border-bottom-width:1px;
-        
+       =20
         font-size:80%;
-        
+       =20
         padding:0.5em;
-        
+       =20
         font-family: sans-serif;
       }
 
@@ -40,56 +49,69 @@
       table.otherdetails td:first-child {
         width: 250px;
       }
-      
+     =20
       a {
         text-decoration:none;
       }
-      
+     =20
       a:hover {
         text-decoration:underline;
       }
-      
-      @media print{
-        
+     =20
+      @media  print{
+       =20
         div.yjmthloginarea {
           display:none;
         }
-        
+       =20
         #print_title {
           display:none;
         }
       }
-      
+     =20
     </style>
   </head>
-  <body style="background-color:#FFF;" dir="ltr">
+  <body style=3D"background-color:#FFF;" dir=3D"ltr">
 
 Your registration has been confirmed. Here are the details:
 <BR>
-Confirmation code: {{ $attendee->code }}
+Confirmation code: IATXX9D3MP
 <BR>
-Barcode:<br> 
-<img src="<?php echo $pathToFile; ?>" alt="logo">
+Barcode:<br>=20
+<img src=3D"http://www.shellpptasia.com/barcode/IATXX9D3MP.png" alt=3D"logo=
+">
 <BR>
-To review this registration click here: <a href="www.shellpptasia.com">www.shellpptasia.com</a>
+To review this registration click here: <a href=3D"www.shellpptasia.com">ww=
+w.shellpptasia.com</a>
 <BR>
 <BR>
 Dear Ms. Mason,
 <BR>
 <BR>
-Thank you for registering your attendance to <strong>Shell Powering Progress Together Asia 2015</strong> in <strong>Manila, Philippines</strong>.
+Thank you for registering your attendance to <strong>Shell Powering Progres=
+s Together Asia 2015</strong> in <strong>Manila, Philippines</strong>.
 <BR>
 <BR>
-Below are the details you have completed to date. We recommend that you read and ensure you have entered your details and requirements correctly. Should you need to revisit the site to edit or add missing information, you may revisit the site by clicking on the link above. 
+Below are the details you have completed to date. We recommend that you rea=
+d and ensure you have entered your details and requirements correctly. Shou=
+ld you need to revisit the site to edit or add missing information, you may=
+ revisit the site by clicking on the link above.=20
 <BR>
 <BR>
-Approximately 2 weeks prior to the event, you will receive Joining Instructions with further detailed information.
+Approximately 2 weeks prior to the event, you will receive Joining Instruct=
+ions with further detailed information.
 <BR>
 <BR>
-Please print and bring this confirmation email to present at the registration desk at the event. Badges will be issued upon registering and, for security reasons, must be worn for the duration of the event.
+Please print and bring this confirmation email to present at the registrati=
+on desk at the event. Badges will be issued upon registering and, for secur=
+ity reasons, must be worn for the duration of the event.
 <BR>
 <BR>
-If you have any questions, please contact us at +632 501 9588 and look for Ms. Tiffany Mason <a href="mailto:stiffany.mason@protegepr.com" target="_top">(tiffany.mason@protegepr.com)</a> or Ms. Zoe Magallanes <a href="mailto:oe.magallanes@protegepr.com" target="_top">(zoe.magallanes@protegepr.com)</a>.
+If you have any questions, please contact us at +632 501 9588 and look for =
+Ms. Tiffany Mason <a href=3D"mailto:stiffany.mason@protegepr.com" target=3D=
+"_top">(tiffany.mason@protegepr.com)</a> or Ms. Zoe Magallanes <a href=3D"m=
+ailto:oe.magallanes@protegepr.com" target=3D"_top">(zoe.magallanes@protegep=
+r.com)</a>.
 <BR>
 <BR>
 Kind regards,
@@ -99,10 +121,10 @@ Shell Powering Progress Asia 2015 Team
 <BR>
 <BR>
 <hr>
-<table class="event">
+<table class=3D"event">
   <tr>
     <td>Event:</td>
-    <td>Powering Progress Together – Asia</td>
+    <td>Powering Progress Together =E2=80=93 Asia</td>
   </tr>
   <tr>
     <td>Date:</td>
@@ -115,7 +137,7 @@ Shell Powering Progress Asia 2015 Team
 </table><br>
 <strong>ATTENDEE INFORMATION</strong>
 <hr>
-<table class="otherdetails">
+<table class=3D"otherdetails">
   <tr>
     <td>Name:</td>
     <td>Mr. Rencie Bautista</td>
@@ -165,7 +187,7 @@ Shell Powering Progress Asia 2015 Team
 <br>
 <strong>HOTEL INFORMATION</strong>
 <hr>
-<table class="otherdetails">
+<table class=3D"otherdetails">
   <tr>
     <td>Hotel room required:</td>
     <td>YES</td>
@@ -194,7 +216,7 @@ Shell Powering Progress Asia 2015 Team
 <br>
 <strong>TRAVEL INFORMATION</strong>
 <hr>
-<table class="otherdetails">
+<table class=3D"otherdetails">
   <tr>
     <td>Arrival transfer required:</td>
     <td>YES</td>
@@ -220,7 +242,7 @@ Shell Powering Progress Asia 2015 Team
     <td>1</td>
   </tr>
 </table><br>
-<table class="otherdetails">
+<table class=3D"otherdetails">
   <tr>
     <td>Departure transfer required:</td>
     <td>YES</td>
@@ -249,7 +271,7 @@ Shell Powering Progress Asia 2015 Team
 <br>
 <strong>PARKING INFORMATION</strong>
 <hr>
-<table class="otherdetails">
+<table class=3D"otherdetails">
   <tr>
     <td>Parking at venue required:</td>
     <td>YES</td>
@@ -258,7 +280,7 @@ Shell Powering Progress Asia 2015 Team
 <br>
 <strong>EMERGENCY CONTACT INFORMATION</strong>
 <hr>
-<table class="otherdetails">
+<table class=3D"otherdetails">
   <tr>
     <td>Contact Name:</td>
     <td>Mr. Rencie Bautista</td>

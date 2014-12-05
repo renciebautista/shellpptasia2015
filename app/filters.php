@@ -48,6 +48,19 @@ Route::filter('auth', function()
 	}
 });
 
+Route::filter('admin', function()
+{
+    if(!User::admin()) {
+        return Redirect::guest('login');
+    }
+});
+
+Route::filter('attendee', function()
+{
+    if(!User::attendee()) {
+        return Redirect::guest('login');
+    }
+});
 
 Route::filter('auth.basic', function()
 {

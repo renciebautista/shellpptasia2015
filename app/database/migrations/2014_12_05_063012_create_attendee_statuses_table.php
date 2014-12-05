@@ -3,7 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-class AddRegisteredOnUsersTable extends Migration {
+class CreateAttendeeStatusesTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,9 +12,10 @@ class AddRegisteredOnUsersTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::table('users', function(Blueprint $table)
+		Schema::create('attendee_statuses', function(Blueprint $table)
 		{
-			$table->boolean('registered')->after('remember_token')->default(1);
+			$table->increments('id');
+			$table->string('status');
 		});
 	}
 
@@ -26,10 +27,7 @@ class AddRegisteredOnUsersTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::table('users', function(Blueprint $table)
-		{
-			$table->dropColumn('registered');
-		});
+		Schema::drop('attendee_statuses');
 	}
 
 }

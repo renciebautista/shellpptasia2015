@@ -34,7 +34,8 @@ Route::get('mail/{name?}', function($name = 'John'){
 	DNS1D::getBarcodePNGPath($name, "C39",2,60);
 	// $pathToFile = 'http://localhost:8000/barcode/'.$name.'.png';
 	// return View::make('emails.registration.confirm',compact('pathToFile'));
-	Mail::send('emails.registration.confirm', array('pathToFile' => 'http://www.shellpptasia.com/barcode/'.$name.'.png'), function($message)
+	$data['pathToFile'] = 'http://www.shellpptasia.com/barcode/'.$name.'.png';
+	Mail::send('emails.registration.confirm', $data, function($message)
 	{
 	    $message->to('rencie.bautista@yahoo.com', 'Rencie Bautista')->subject('Registration Confirmation (Shell Powering Progress Together Asia 2015)');
 	});
@@ -43,16 +44,27 @@ Route::get('mail/{name?}', function($name = 'John'){
 Route::get('import/delegates', 'ImportController@delegates');
 
 Route::group(array('before' => 'auth'), function()
-{
-	Route::get('/', 'OnePageController@index');
-	Route::get('programme', 'OnePageController@programme');
-	Route::get('hotel', 'OnePageController@hotel');
+{	
+	Route::group(array('before' => 'attendee'), function(){
+		Route::get('/', 'OnePageController@index');
+		Route::get('programme', 'OnePageController@programme');
+		Route::get('hotel', 'OnePageController@hotel');
 
-	Route::get('register', 'RegisterController@create');
-	Route::post('register', 'RegisterController@store');
-	Route::put('register', 'RegisterController@update');
+		Route::get('register', 'RegisterController@create');
+		Route::post('register', 'RegisterController@store');
+		Route::put('register', 'RegisterController@update');
 
-	Route::post('api/rooms', 'RoomTypeController@index');
-	Route::get('api/rooms', 'RoomTypeController@show');
-	Route::post('api/roomrate', 'RoomTypeController@rate');
+		Route::post('api/rooms', 'RoomTypeController@index');
+		Route::get('api/rooms', 'RoomTypeController@show');
+		Route::post('api/roomrate', 'RoomTypeController@rate');
+	});
+
+	Route::group(array('before' => 'admin'), function(){
+		Route::resource('admin', 'AdminController');
+		Route::get('attendee/upload', 'AttendeeController@upload');
+		Route::post('attendee/upload', 'AttendeeController@doUpload');
+		Route::resource('attendee', 'AttendeeController');
+	});
+	
 });
+

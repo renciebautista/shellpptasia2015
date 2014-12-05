@@ -66,7 +66,7 @@
 
 Your registration has been confirmed. Here are the details:
 <BR>
-Confirmation code: ABCD1234
+Confirmation code: {{ $attendee->code }}
 <BR>
 Barcode:<br> 
 <img src="<?php echo $pathToFile; ?>" alt="logo">

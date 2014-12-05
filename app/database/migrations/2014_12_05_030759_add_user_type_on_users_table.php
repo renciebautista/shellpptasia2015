@@ -3,7 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-class AddRegisteredOnUsersTable extends Migration {
+class AddUserTypeOnUsersTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -14,7 +14,8 @@ class AddRegisteredOnUsersTable extends Migration {
 	{
 		Schema::table('users', function(Blueprint $table)
 		{
-			$table->boolean('registered')->after('remember_token')->default(1);
+			$table->integer('type')->after('email')->default(1);
+
 		});
 	}
 
@@ -28,7 +29,7 @@ class AddRegisteredOnUsersTable extends Migration {
 	{
 		Schema::table('users', function(Blueprint $table)
 		{
-			$table->dropColumn('registered');
+			$table->dropColumn('type');
 		});
 	}
 

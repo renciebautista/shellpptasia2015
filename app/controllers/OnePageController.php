@@ -70,7 +70,12 @@ class OnePageController extends \BaseController {
 	{
 		if (Auth::attempt(array('email' => Input::get('email'), 'password' => Input::get('password')), false))
 		{
-		    return Redirect::action('RegisterController@create');
+			if(User::admin()){
+				return Redirect::action('AttendeeController@index');
+			}else{
+				return Redirect::action('RegisterController@create');
+			}
+		    
 		}
 
 		Auth::logout();

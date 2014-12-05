@@ -135,7 +135,14 @@ class RegisterController extends \BaseController {
 				
 
 				DB::table('users')->where('id', Auth::id())
-					->update(array('registered' => 1));
+					->update(array('registered' => 2));
+				$prefix1 = Prefix::find($attendee->prefix_id);
+				$data['pathToFile'] = 'http://www.shellpptasia.com/barcode/'.$name.'.png';
+				$data['attendee'] = $attendee;
+				Mail::send('emails.registration.confirm', $data, function($message)
+				{
+				    $message->to($attendee->email, $prefix1->prefix .' '.ucwords(strtolower($attendee->first_name)).' '.ucwords(strtolower($attendee->last_name)))->subject('Registration Confirmation (Shell Powering Progress Together Asia 2015)');
+				});
 			});
 
 			$prefix = Prefix::find($attendee->prefix_id);

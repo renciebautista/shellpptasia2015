@@ -60,7 +60,6 @@ class OnePageController extends \BaseController {
 		return Redirect::action('OnePageController@login')
 				->with('class', 'alert-info')
 				->with('message', 'You have successfully logged out.');
-		return Redirect::intended('/');
 	}
 
 	/**

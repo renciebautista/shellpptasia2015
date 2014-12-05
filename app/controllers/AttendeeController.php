@@ -129,5 +129,9 @@ class AttendeeController extends \BaseController {
 		Excel::load($file_path, function($reader) {
 			User::batchInsert($reader->get());
 		});
+
+		return Redirect::action('AttendeeController@index')
+				->with('class', 'alert-info')
+				->with('message', 'Attendee successfuly imported');
 	}
 }

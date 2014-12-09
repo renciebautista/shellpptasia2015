@@ -11,18 +11,23 @@ class RegisterController extends \BaseController {
 	 */
 	public function create()
 	{
-		$prefixes = Prefix::orderBy('prefix')->lists('prefix', 'id');
-		$countries = Country::orderBy('name')->lists('name', 'id');
-		$yesno = array('1' => 'YES', '2' => 'NO');
-		$available_nights = AvailableNight::all();
-		$hotels = Hotel::orderBy('name')->lists('name', 'id');
-		if(User::registered()){
-			$attendee = Attendee::getIdByUser(Auth::id());
-			$nights = AttendeeNight::selected($attendee->id);
-			return View::make('onepage.update', compact('prefixes', 'countries', 'yesno', 'available_nights', 'hotels', 'attendee', 'nights'));
+		if(!Auth::regret()){
+			$prefixes = Prefix::orderBy('prefix')->lists('prefix', 'id');
+			$countries = Country::orderBy('name')->lists('name', 'id');
+			$yesno = array('1' => 'YES', '2' => 'NO');
+			$available_nights = AvailableNight::all();
+			$hotels = Hotel::orderBy('name')->lists('name', 'id');
+			if(User::registered()){
+				$attendee = Attendee::getIdByUser(Auth::id());
+				$nights = AttendeeNight::selected($attendee->id);
+				return View::make('onepage.update', compact('prefixes', 'countries', 'yesno', 'available_nights', 'hotels', 'attendee', 'nights'));
+			}else{
+				return View::make('onepage.create', compact('prefixes', 'countries', 'yesno', 'available_nights', 'hotels'));
+			}
 		}else{
-			return View::make('onepage.create', compact('prefixes', 'countries', 'yesno', 'available_nights', 'hotels'));
+			return Response::view('onepage.notfound', array(), 404);
 		}
+		
 	}
 
 	/**

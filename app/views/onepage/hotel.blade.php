@@ -4,8 +4,10 @@
     <li><a href="/">Event Overview</a></li>
     <li><a href="/programme">Programme</a></li>
     <li class="active"><a href="/hotel">Hotel</a></li>
-     <li><a href="/register">Event Registration</a></li>
-     <li><a href="/logout">Logout</a></li>
+    @if(!User::regret())
+    <li><a href="/register">Event Registration</a></li>
+    @endif
+    <li><a href="/logout">Logout</a></li>
   </ul>
 @stop
 

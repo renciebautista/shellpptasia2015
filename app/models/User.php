@@ -37,6 +37,11 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 		return ($user->type == 2) ? true : false;
 	}
 
+	public static function regret(){
+		$user = self::find(Auth::id());
+		return ($user->registered == 3) ? true : false;
+	}
+
 	public static function getAttendee($status,$filter){
 		return self::select('users.id as user_id','users.email', 'users.department', 'users.designation',
 			'users.title', 'users.first_name', 'users.last_name', 'users.registered', 'attendee_statuses.*')
@@ -106,6 +111,7 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 	public static function getExport($dates){
 		return self::select('department', 'designation', 'title', 'users.first_name', 'users.last_name', 'users.email', 
 			DB::raw("CONCAT('www.shellpptasia.com/regret/',users.code) as link"))
+			->where('type',2)
 			->where(function($query) use ($dates){
 				$query->whereIn(DB::raw('DATE(created_at)'),$dates);
 			})

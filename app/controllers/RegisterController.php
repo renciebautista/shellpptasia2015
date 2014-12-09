@@ -25,7 +25,7 @@ class RegisterController extends \BaseController {
 				return View::make('onepage.create', compact('prefixes', 'countries', 'yesno', 'available_nights', 'hotels'));
 			}
 		}else{
-			return View::make('onepage.notfound');
+			return View::make('onepage.not');
 		}
 		
 	}

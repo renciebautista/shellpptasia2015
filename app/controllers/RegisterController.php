@@ -11,7 +11,7 @@ class RegisterController extends \BaseController {
 	 */
 	public function create()
 	{
-		if(!Auth::regret()){
+		if(!User::regret()){
 			$prefixes = Prefix::orderBy('prefix')->lists('prefix', 'id');
 			$countries = Country::orderBy('name')->lists('name', 'id');
 			$yesno = array('1' => 'YES', '2' => 'NO');
@@ -25,7 +25,7 @@ class RegisterController extends \BaseController {
 				return View::make('onepage.create', compact('prefixes', 'countries', 'yesno', 'available_nights', 'hotels'));
 			}
 		}else{
-			return Response::view('onepage.notfound', array(), 404);
+			return View::make('onepage.notfound');
 		}
 		
 	}

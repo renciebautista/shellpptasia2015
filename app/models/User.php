@@ -16,16 +16,6 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 	 */
 	protected $table = 'users';
 
-	public static $rules = array(
-		'department' => 'required',
-		'designation' => 'required',
-		'title' => 'required',
-		'first_name' => 'required',
-		'last_name' => 'required',
-		'email' => 'required|unique:users'
-
-	);
-
 	/**
 	 * The attributes excluded from the model's JSON form.
 	 *
@@ -48,13 +38,17 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 	}
 
 	public static function getAttendee($status,$filter){
-		return self::join('attendee_statuses','users.registered','=','attendee_statuses.id')
+		return self::select('users.id as user_id','users.email', 'users.department', 'users.designation',
+			'users.title', 'users.first_name', 'users.last_name', 'users.registered', 'attendee_statuses.*')
+			->join('attendee_statuses','users.registered','=','attendee_statuses.id')
 			->where('type',2)
 			->where(function($query) use ($status){
 				if($status ==  2){
 					$query->where('users.registered',2);
 				}elseif($status == 3){
 					$query->where('users.registered',1);
+				}elseif($status == 4){
+					$query->where('users.registered',3);
 				}else{
 
 				}
@@ -73,19 +67,53 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 	public static function batchInsert($records){
 		$records->each(function($row) {
 			if(!is_null($row->email)){
-				$attributes = array(
-					'username' => $row->email,
-					'email' => $row->email,
-					'department' => $row->department,
-					'designation' => $row->designation,
-					'title' => $row->title,
-					'first_name' => $row->first_name,
-					'last_name' => $row->last_name,
-					'type' => 2,
-					'password' => Hash::make('pptasia2015'));
-				User::updateOrCreate($attributes, $attributes);
+				$user = User::where('email',$row->email)->first();
+				if(is_null($user)){
+					$attributes = array(
+						'username' => $row->email,
+						'email' => $row->email,
+						'department' => $row->department,
+						'designation' => $row->designation,
+						'title' => $row->title,
+						'first_name' => $row->first_name,
+						'last_name' => $row->last_name,
+						'type' => 2,
+						'code' => self::code(),
+						'password' => Hash::make('manila2015'),
+						'test' => $row->test,
+						'created_at' => DB::raw('NOW()'),
+						'updated_at' => DB::raw('NOW()'));
+					User::insert($attributes);
+				}
+				
 			}
 			
     	});
+	}
+
+	public static function code(){
+		$code = strtolower(Str::random(10));
+
+		$_code = self::where('code',$code)->first();
+		if(count($_code) == 0){
+			return $code;
+		}else{
+			self::code();
+		}
+		
+	}
+
+	public static function getExport($dates){
+		return self::select('department', 'designation', 'title', 'users.first_name', 'users.last_name', 'users.email', 
+			DB::raw("CONCAT('www.shellpptasia.com/regret/',users.code) as link"))
+			->where('test',0)
+			->where(function($query) use ($dates){
+				$query->whereIn(DB::raw('DATE(created_at)'),$dates);
+			})
+			->get();
+	}
+
+	public static function getBatch(){
+		return DB::select('SELECT DATE(created_at) date_only FROM users GROUP BY date_only');
 	}
 }

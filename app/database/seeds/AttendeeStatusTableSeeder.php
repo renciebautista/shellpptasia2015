@@ -11,7 +11,8 @@ class AttendeeStatusTableSeeder extends Seeder {
 
 		DB::statement("INSERT INTO attendee_statuses (id, status) VALUES
 			(1, 'PENDING'),
-			(2, 'REGISTERED');");
+			(2, 'REGISTERED'),
+			(3, 'REGRETS');");
 	}
 
 }

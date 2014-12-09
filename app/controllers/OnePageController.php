@@ -73,7 +73,7 @@ class OnePageController extends \BaseController {
 		if (Auth::attempt(array('email' => Input::get('email'), 'password' => Input::get('password')), false))
 		{
 			if(User::admin()){
-				return Redirect::action('AttendeeController@index');
+				return Redirect::action('DashboardController@index');
 			}else{
 				return Redirect::action('RegisterController@create');
 			}
@@ -87,4 +87,17 @@ class OnePageController extends \BaseController {
 		
 	}
 
+	public function regret($id)
+	{
+		$user = User::where('code',$id)
+			->where('registered', 1)
+			->first();
+		if(is_null($user)){
+			return View::make('onepage.notfound');
+		}else{
+			$user->registered = 3;
+			$user->save();
+			return View::make('onepage.regretconfirm');
+		}
+	}
 }

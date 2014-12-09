@@ -22,7 +22,7 @@
 
 <div class="row">
 	<div class="col-lg-12">
-		{{ Form::open(array('method' => 'get','class' => 'form-inline')) }}
+		{{ Form::open(array('method' => 'get','class' => 'form-inline' , 'id' => 'get-form')) }}
 		  	<div class="filter">
 		  		<label class="radio-inline">
 			  		<input type="radio" name="status" value="1" {{ Helper::oldRadio('status', '1', true) }}> All
@@ -32,6 +32,9 @@
 				</label>
 				<label class="radio-inline">
 			  		<input type="radio" name="status" value="3" {{ Helper::oldRadio('status', '3') }} > Pending
+				</label>
+				<label class="radio-inline">
+			  		<input type="radio" name="status" value="4" {{ Helper::oldRadio('status', '4') }} > Regrets
 				</label>
 			</div>
 		 	<div class="form-group">
@@ -44,7 +47,11 @@
 		{{ Form::close() }}
 	</div>
 </div>
-
+@if(count($attendees) == 0)
+<h4 class="pull-right">0 record found.</h4>
+@else
+<h4 class="pull-right">{{ count($attendees) }} records found.</h4>
+@endif
 <div class="row">
 	<div class="col-lg-12">
 		<div class="table-responsive">
@@ -56,26 +63,33 @@
 						<th>Full Name</th>
 						<th>Email</th>
 						<th>Status</th>
+						<th colspan="3">Action</th>
 					</tr>
 				</thead>
 				<tbody>
 					@if(count($attendees) == 0)
 					<tr>
-						<td colspan="5">No record found!</td>
+						<td colspan="7">No record found!</td>
 					</tr>
 					@else
 					@foreach($attendees as $attendee)
-					
-					@if($attendee->registered == 1)
-					<tr class="active">
-					@else
-					<tr class="success">
-					@endif
+					<tr>
 						<td>{{ $attendee->department }} </td>
 						<td>{{ $attendee->designation }} </td>
 						<td>{{ $attendee->title }} {{ $attendee->first_name }} {{ $attendee->last_name }}</td>
 						<td>{{ $attendee->email }}</td>
 						<td>{{ $attendee->status }}</td>
+						<th>
+							@if($attendee->registered == 2)
+							{{ HTML::linkRoute('attendee.show','Registration Details', $attendee->user_id, array('class' => 'btn btn-info btn-xs')) }}
+							@endif
+						</th>
+						<td>{{ HTML::linkRoute('attendee.edit','Edit', $attendee->user_id, array('class' => 'btn btn-primary btn-xs')) }}</td>
+						<td>
+							{{ Form::open(array('method' => 'DELETE', 'route' => array('attendee.destroy', $attendee->user_id))) }}                       
+							{{ Form::submit('Delete', array('class'=> 'btn btn-danger btn-xs','onclick' => "if(!confirm('Are you sure to delete this record?')){return false;};")) }}
+							{{ Form::close() }}
+						</td>
 					</tr>
 					@endforeach
 					@endif

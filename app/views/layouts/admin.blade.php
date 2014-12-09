@@ -19,8 +19,8 @@
 			}
 		.page-header{
 			border-bottom: 1px solid #eeeeee;
-		    margin: 0 0 20px;
-		    padding-bottom: 9px;
+			margin: 0 0 20px;
+			padding-bottom: 9px;
 		}
 		.main{
 			padding-top: 30px;
@@ -44,7 +44,16 @@
 				  <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Transaction <span class="caret"></span></a>
 				  <ul class="dropdown-menu" aria-labelledby="themes">
 					<li>
+						{{ HTML::linkAction('DashboardController@index', 'Dashboard') }}
+					</li>
+					<li>
 						{{ HTML::linkAction('AttendeeController@index', 'Attendee') }}
+					</li>	
+					<li>
+						{{ HTML::linkAction('ExportController@index', 'Export List') }}
+					</li>	
+					<li>
+						{{ HTML::linkAction('ExportController@gms', 'Export For GMS') }}
 					</li>	
 				  </ul>
 				</li>
@@ -66,7 +75,25 @@
 		</div>
 	{{ HTML::script('assets/js/jquery-1.11.1.min.js') }}
 	{{ HTML::script('assets/plugins/twitter-bootstrap/js/bootstrap.min.js') }}
+		<script type="text/javascript">
+		$(document).ready(function() { 
+		   	$('input[name=status]').change(function(){
+				$('#get-form').submit();
+		   	});
 
+		   	$('#selecctall').click(function(event) {  //on click
+		        if(this.checked) { // check select status
+		            $('.checkbox1').each(function() { //loop through each checkbox
+		                this.checked = true;  //select all checkboxes with class "checkbox1"              
+		            });
+		        }else{
+		            $('.checkbox1').each(function() { //loop through each checkbox
+		                this.checked = false; //deselect all checkboxes with class "checkbox1"                      
+		            });        
+		        }
+		    });
+		});
+		</script>
 
 	</body>
 </html>

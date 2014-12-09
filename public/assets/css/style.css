@@ -17,3 +17,16 @@ $('#test').css('textTransform', 'capitalize');
 .error{
     color: #e74c3c;
 }
+
+table.otherdetails tr > td, tr > th{
+	padding: 2px;
+}
+table.otherdetails td:first-child {
+	width: 300px;
+	font-weight:bold;
+}
+
+#show h4 {
+	padding-bottom: 5px;
+	border-bottom: 1px solid #eeeeee;
+}

@@ -15,6 +15,7 @@ class UserTableSeeder extends Seeder {
 		'username' => 'admin',
 		'email' => 'admin@shellpptasia.com',
 		'type' => 1,
+		'test' => 1,
 		'password' => Hash::make('admin031988'),
 		'created_at' => DB::raw('NOW()'),
 		'updated_at' => DB::raw('NOW()'),
@@ -32,7 +33,9 @@ class UserTableSeeder extends Seeder {
 		'first_name' => 'RENCIE',
 		'last_name' => 'BAUTISTA',
 		'type' => 2,
-		'password' => Hash::make('pptasia2015'),
+		'test' => 1,
+		'code' => User::code(),
+		'password' => Hash::make('manila2015'),
 		'created_at' => DB::raw('NOW()'),
 		'updated_at' => DB::raw('NOW()'),
 		);

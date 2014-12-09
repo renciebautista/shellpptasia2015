@@ -24,7 +24,7 @@
 
 
 
-
+Route::get('regret/{id}', 'OnePageController@regret');
 Route::get('login', 'OnePageController@login');
 Route::get('logout', 'OnePageController@logout');
 Route::post('login', 'OnePageController@dologin');
@@ -41,7 +41,7 @@ Route::post('login', 'OnePageController@dologin');
 // 	});
 // });
 
-Route::get('import/delegates', 'ImportController@delegates');
+// Route::get('import/delegates', 'ImportController@delegates');
 
 Route::group(array('before' => 'auth'), function()
 {	
@@ -60,10 +60,16 @@ Route::group(array('before' => 'auth'), function()
 	});
 
 	Route::group(array('before' => 'admin'), function(){
-		Route::resource('admin', 'AdminController');
+		Route::resource('dashboard', 'DashboardController');
 		Route::get('attendee/upload', 'AttendeeController@upload');
 		Route::post('attendee/upload', 'AttendeeController@doUpload');
+		Route::get('attendee/export', 'ExportController@index');
+		Route::post('attendee/export', 'ExportController@exportlist');
+		Route::get('attendee/gms', 'ExportController@gms');
 		Route::resource('attendee', 'AttendeeController');
+
+
+
 	});
 	
 });

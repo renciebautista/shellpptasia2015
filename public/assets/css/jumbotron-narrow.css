@@ -74,9 +74,12 @@ textarea.error,input.error{
 	margin-top: 0px;
 	margin-bottom: 0px;
 }
-#programme p {
+#speakers p {
 	padding-top: 10px;
 	padding-bottom: 15px;
+}
+#speakers label {
+	margin-bottom: 2px;
 }
 /* Customize container */
 @media (min-width: 768px) {

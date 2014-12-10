@@ -39,19 +39,116 @@
 </div>
 <div class="row">
 	<h2 class="section-heading text-center">Programme </h2><br>
-	<div id="programme" class="col-lg-12">
-		This one-day event will include four interactive sessions:<br>
-		<ul>
-			<li><strong>Resilience: Current Thinking and Trends</strong> – creates a deeper understanding of resilience and urbanisation in the face of the stress nexus, with special focus on the challenges and opportunities for Asian cities;</li>
-			<li><strong>Case Studies on Resilience for Cities</strong> – discusses how innovative and eco-conscious urban planning can transform cities into smart hubs for sustainable progress; </li>
-			<li><strong>Case Studies on Resilience for Cities</strong> – discusses how innovative and eco-conscious urban planning can transform cities into smart hubs for sustainable progress; </li>
-			<li><strong>Inspiring Stories of Innovation and Resilience</strong> - shares stories of innovative disaster mitigation and management as well as rehabilitation in response to climate risks</li>
-		</ul>
-		<br>
-			<div class="text-center">
-			Presentations by:<br>
-			</div>
-			<hr>
+	<div id="programme" class="table-responsive">
+			<table class="table">
+				<tbody>
+					<tr>
+						<td>8:00 – 9:00</td>
+						<td><strong>Registration and Welcome</strong></td>
+					</tr>
+					<tr>
+						<td>9:00 – 9:30</td>
+						<td>
+							<strong>Plenary Opening of Powering Progress Together</strong><br>
+							<ul>
+								<li>Forum Introduction by Moderator (<strong>Maryam Nemazee</strong> – PPT Rotterdam moderator and Al Jazeera English Broadcaster and Journalist)</li>
+								<li>Welcome from Royal Dutch Shell Executive Committee member</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td>9:30 – 10:30</td>
+						<td>
+							<strong>PANEL 1: Resilience – Current Thinking and Trends</strong><br>
+							<p><strong>Goal:</strong>  Creating a deeper understanding of resilience in the Asian context, with special focus on the challenges and opportunities for cities</p>
+							<p><strong>Narrative:</strong>  As climate uncertainty increases and the world’s population expands, pressure on energy, water and food resources will continue to escalate.  Society will need to change, to reorganize, and learn from them through the ability of "resilience".</p>
+							<p>Resilience has surfaced widely as a discussion point in various sectors of society. Calls to act promptly, innovatively, and collaboratively are being done to arrive at relevant and timely solutions to abate impact.</p>
+							<p>The first panel seeks to answer the following questions:  What is the current thinking on resilience?  How does climate change affect resilience strategies? What are resilience trends in designing and planning long term sustainable improvements to make livable cities?</p>
+						</td>
+					</tr>
+					<tr>
+						<td>10:30 – 10:55</td>
+						<td>
+							<strong>Coffee Break</strong><br>
+						</td>
+					</tr>
+					<tr>
+						<td>10:55 – 12:20</td>
+						<td>
+							<strong>PANEL 2: Case Studies on Resilience for Cities</strong><br>
+							<p><strong>Goal:</strong> To explore how cities can be effective hubs for experimentation, action and measurable progress</p>
+							<p><strong>Narrative:</strong> By 2050, the United Nations project that around three quarters of the world’s projected population of 9 billion people will live in cities.  As cities swell, so do the pressure on resources of energy, water and food become even greater. With complications of climate change and natural disasters, how can cities remain liveable and transform into sustainable places?</p>
+							<p>This panel presents how different cities are utilising innovative eco-conscious urban planning, technology and development processes through collaboration, to build smart cities and operate efficient transport systems.</p>
+						</td>
+					</tr>
+					<tr>
+						<td>12:20 – 1:30</td>
+						<td>
+							<strong>Lunch</strong><br>
+						</td>
+					</tr>
+					<tr>
+						<td>1:30 – 1:50</td>
+						<td>
+							<strong>Interview and Special Performance</strong><br>
+							<p><strong>"Bella Gaia"</strong> – a musical performance demonstrating the interconnection of humans and nature, art and science; an exploration of the relationship between human civilization and our ecosystem through time and space</p>
+							<strong>Speaker – Performer:</strong>
+							<ul>
+								<li><strong>Kenji Williams</strong> Award-winning filmmaker, electronic music producer and classical violinist</li>
+							</ul>	
+						</td>
+					</tr>
+
+					<tr>
+						<td>1:50 – 3:00</td>
+						<td>
+							<strong>PANEL 3: Resilience and Its Implications on Business and Society</strong><br>
+							<p><strong>Goal:</strong> To know what incentives are needed to work more closely together on societal resilience; and how businesses and civil society can contribute to drive further action.</p>
+							<p><strong>Narrative:</strong> As global population grows, so does pressure on demand for food, water and energy.  Access to these resources is made complicated and challenging with the impact of climate change and natural disasters.</p>
+							<p>For example, the World Bank estimates that we will need to grow almost twice as much food by 2050 as we do today. If current water consumption trends continue, the world could face a 40% shortfall between global freshwater demand and supply by 2030, according to the World Economic Forum.  With conventional global energy resource dwindling, there is a need to look for alternative and clean energy to keep pace with demand.</p>
+							<p>This panel explores how resource scarcity is helping civil society and businesses work in collaboration to design innovative strategies to be resilient.</p>
+						</td>
+					</tr>
+					<tr>
+						<td>3:00 – 3:20</td>
+						<td>
+							<strong>Coffee Break</strong><br>
+						</td>
+					</tr>
+					<tr>
+						<td>3:20 – 4:10</td>
+						<td>
+							<strong>PANEL 4: Inspiring Stories of Innovation and Resilience</strong><br>
+							<p><strong>Goal:</strong> To share stories of resilience through innovation, collaboration and action</p>
+							<p><strong>Proposed Narrative:</strong> As population and cities grow at unprecedented speed, building resilience against climate, disasters and other risks are just some of the challenges that cities are grappling with today. To remain livable and sustainable, cities must be able to meet these challenges with innovative solutions.</p>
+							<p>In this panel, experts share their innovations and post disaster development strategies, highlighting opportunities where government, business and society can respond to climate-related risks.</p>
+						</td>
+					</tr>
+					<tr>
+						<td>4:10 – 4:15</td>
+						<td>
+							<strong>Closing Inspirational Keynote</strong><br>
+						</td>
+					</tr>
+					<tr>
+						<td>4:15 – 4:20</td>
+						<td>
+							<strong>Word of Gratitude</strong><br>
+							<p><strong>Edgar Chua</strong>, Country Chairman, Shell companies in the Philippines</p>
+						</td>
+					</tr>
+					<tr>
+						<td>4:20 – 5:30</td>
+						<td>
+							<strong>Guided Tours through the Shell Eco-marathon Asia Paddocks and the Shell Fan Zone</strong><br>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+  	</div> 
+  	<p><strong>Shell Powering Progress Together Asia 2015 will feature a wide variety of prominent speakers, amongst others:</strong></p>
+  	<hr>
+	<div id="speakers" class="col-lg-12">
 			<div class="text-center">
 				<div>
 					<img src="assets/images/speakers/kitasei.jpg" class="img-responsive img-thumbnail" alt="">
@@ -100,7 +197,7 @@
 			<p>Mr. Beckman manages situational awareness for all domestic Red Cross preparedness, response, and recovery operations. He is responsible for building national capacity and training the Red Cross workforce in situational awareness for all hazards. He is also responsible for directly supporting operations in both tactical and planning capacities. His mission is to answer the questions of "what information do you need to know, what decisions do you need to make with the information, when do you need the information, and how do you need to access that information?" He has responded to, and coordinated, crisis operations at the local, state, national, and international levels. He recently deployed to the Philippines immediately following Typhoon Haiyan in November 2013 to coordinate all logistics operations (people and cargo) out of the multi-national coordination center on Cebu Island. Mr. Beckman graduated with honors from Stanford University, where he majored in human biology with a focus in global biodefense.</p>
 
 			<div class="text-center">
-			Performance by:<br>
+			<label>Performance by:</label><br>
 			</div>
 			<hr>
 
@@ -110,15 +207,15 @@
 				</div>
 				<br>
 				<label>Mr. Kenji Williams</label><br>
-				<label>Bella Gaia Founder, Filmmaker, Electronic Music Producer,</label><br>
-				<label>Classical Violinist</label>
+				<label>Bella Gaia Founder, Filmmaker, Electronic Music Producer,Classical Violinist</label>
 			</div>
 
 			
 			<p>Kenji Williams is an award winning filmmaker, music producer, theatrical show director, and classically trained violinist. As a world bridger of music, visual arts, science and unique storytelling, Williams explores the nexus of art and science through collaborations as diverse as NASA scientists, consciousness researcher Deepak Chopra, and top world-music musicians.  Mr. Williams has over 30 years of music experience in performance, composition and production, and 20 years of film production experience.  He has expressed his work from big music festivals around the world, the Smithsonian, Guggenheim Museum, Winspear Opera House, UNESCO, U.S. Dep State, and film soundtracks.  Combining unique skills in film and music, Williams has earned international film awards from the Canadian Society of Cinematographers to the Sundance Film Festival, and has garnering media exposure from the BBC, NPR, PBS, ABC, and FOX.</p>
 
 			<div class="text-center">
-			Moderated by:<br>
+			<label>Moderated by:</label>
+			<br>
 			</div>
 			<hr>
 			<div class="text-center">
@@ -126,7 +223,9 @@
 					<img src="assets/images/speakers/nemazee.jpg" class="img-responsive img-thumbnail" alt="">
 				</div>
 				<br>
-				<label>Maryam Nemazee</label>
+				<label>Maryam Nemazee</label><br>
+				<label>Broadcaster and Journalist</label><br>
+				<label>Al Jazeera English</label>
 			</div>
 			
 			<p>Maryam Nemazee is an experienced television news anchor and journalist. She has spent the last 10 years as a news presenter and reporter in Europe, the Middle East, the US and Asia working for Bloomberg, Al Jazeera English and Sky. Maryam’s unique global news experience combines an in-depth knowledge of business news with international politics. Throughout her career, Maryam has interviewed some of the world’s top political and business leaders, including former chairman of the Federal Reserve Paul Volcker, OPEC Secretary General AbdallaSalem El-Badri, and IMF Managing Director Christine Lagarde. Most recently, Maryam was a London-based anchor with Bloomberg, presenting on all the main programmes, conducting exclusive interviews and real-time analysis of breaking news affecting global markets. Maryam covered major events from the field, including the World Economic Forum in Davos, as well as taking charge of Bloomberg’s extensive coverage of the European debt crisis from Brussels.</p>

@@ -38,8 +38,9 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 	}
 
 	public static function regret(){
-		$user = self::find(Auth::id());
-		return ($user->registered == 3) ? true : false;
+		return false;
+		// $user = self::find(Auth::id());
+		// return ($user->registered == 3) ? true : false;
 	}
 
 	public static function getAttendee($status,$filter){

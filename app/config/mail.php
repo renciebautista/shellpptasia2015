@@ -54,7 +54,7 @@ return array(
 	|
 	*/
 
-	'from' => array('address' => 'UI-Shell-PPT-Asia@shell.com', 'name' => 'UI-Shell-PPT-Asia@shell.com'),
+	'from' => array('address' => 'admin@shellpptasia.com', 'name' => 'admin@shellpptasia.com'),
 
 	/*
 	|--------------------------------------------------------------------------

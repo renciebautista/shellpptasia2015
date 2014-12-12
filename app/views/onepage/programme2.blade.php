@@ -51,7 +51,7 @@
 						<td>
 							<strong>Plenary Opening of Powering Progress Together</strong><br>
 							<ul>
-								<li>Forum Introduction by Moderator (<strong>Maryam Nemazee</strong> – PPT Rotterdam moderator and Al Jazeera English Broadcaster and Journalist)</li>
+								<li>Forum Introduction by Moderator (<strong>Maryam Nemazee</strong> – Shell Powering Progress Together Rotterdam moderator and Al Jazeera English Broadcaster and Journalist)</li>
 								<li>Welcome from Royal Dutch Shell Executive Committee member</li>
 							</ul>
 						</td>
@@ -61,9 +61,9 @@
 						<td>
 							<strong>PANEL 1: Resilience – Current Thinking and Trends</strong><br>
 							<p><strong>Goal:</strong>  Creating a deeper understanding of resilience in the Asian context, with special focus on the challenges and opportunities for cities</p>
-							<p><strong>Narrative:</strong>  As climate uncertainty increases and the world’s population expands, pressure on energy, water and food resources will continue to escalate.  Society will need to change, to reorganize, and learn from them through the ability of "resilience".</p>
+							<p><strong>Narrative:</strong>  As climate uncertainty increases and the world’s population expands, pressure on energy, water and food resources will continue to escalate.  Society will need to change, to reorganise, and learn from them through the ability of "resilience".</p>
 							<p>Resilience has surfaced widely as a discussion point in various sectors of society. Calls to act promptly, innovatively, and collaboratively are being done to arrive at relevant and timely solutions to abate impact.</p>
-							<p>The first panel seeks to answer the following questions:  What is the current thinking on resilience?  How does climate change affect resilience strategies? What are resilience trends in designing and planning long term sustainable improvements to make livable cities?</p>
+							<p>The first panel seeks to answer the following questions:  What is the current thinking on resilience?  How does climate change affect resilience strategies? What are resilience trends in designing and planning long term sustainable improvements to make liveable cities?</p>
 						</td>
 					</tr>
 					<tr>
@@ -94,7 +94,7 @@
 							<p><strong>"Bella Gaia"</strong> – a musical performance demonstrating the interconnection of humans and nature, art and science; an exploration of the relationship between human civilization and our ecosystem through time and space</p>
 							<strong>Speaker – Performer:</strong>
 							<ul>
-								<li><strong>Kenji Williams</strong> Award-winning filmmaker, electronic music producer and classical violinist</li>
+								<li><strong>Kenji Williams</strong> International award-winning filmmaker, electronic music producer and classical violinist</li>
 							</ul>	
 						</td>
 					</tr>
@@ -120,7 +120,7 @@
 						<td>
 							<strong>PANEL 4: Inspiring Stories of Innovation and Resilience</strong><br>
 							<p><strong>Goal:</strong> To share stories of resilience through innovation, collaboration and action</p>
-							<p><strong>Proposed Narrative:</strong> As population and cities grow at unprecedented speed, building resilience against climate, disasters and other risks are just some of the challenges that cities are grappling with today. To remain livable and sustainable, cities must be able to meet these challenges with innovative solutions.</p>
+							<p><strong>Narrative:</strong> As population and cities grow at unprecedented speed, building resilience against climate, disasters and other risks are just some of the challenges that cities are grappling with today. To remain liveable and sustainable, cities must be able to meet these challenges with innovative solutions.</p>
 							<p>In this panel, experts share their innovations and post disaster development strategies, highlighting opportunities where government, business and society can respond to climate-related risks.</p>
 						</td>
 					</tr>
@@ -169,7 +169,7 @@
 				<label>Director</label><br>
 				<label>EMBARQ</label><br>
 			</div>
-			<p>Holger Dalkmann has 15 years of experience working in the field of transport, sustainability and climate change. He joined World Resource Institute in 2011 as the director for its EMBARQ program, which catalyzes environmentally and financially sustainable transport solutions to improve quality of life in cities. He provides strategic leadership and management for EMBARQ’s global staff and partners, as well as direction for its fundraising and communication activities. </p>
+			<p>Holger Dalkmann has 15 years of experience working in the field of transport, sustainability and climate change. He joined World Resource Institute in 2011 as the director for its EMBARQ program, which catalyzes environmentally and financially sustainable transport solutions to improve quality of life in cities. He provides strategic leadership and management for EMBARQ’s global staff and partners, as well as direction for its fundraising and communication activities.</p>
 
 			<div class="text-center">
 				<div>
@@ -189,7 +189,7 @@
 					<img src="assets/images/speakers/beckman.jpg" class="img-responsive img-thumbnail" alt="">
 				</div>
 				<br>
-				<label>Mr. Luke Beckman</label><br>
+				<label>Luke Beckman</label><br>
 				<label>Manager for Situational Awareness</label><br>
 				<label>American Red Cross</label><br>
 			</div>
@@ -206,7 +206,7 @@
 					<img src="assets/images/speakers/kwilliams.jpg" class="img-responsive img-thumbnail" alt="">
 				</div>
 				<br>
-				<label>Mr. Kenji Williams</label><br>
+				<label>Kenji Williams</label><br>
 				<label>Bella Gaia Founder, Filmmaker, Electronic Music Producer,Classical Violinist</label>
 			</div>
 

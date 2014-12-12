@@ -12,7 +12,7 @@ class RegisterController extends \BaseController {
 	public function create()
 	{
 		if(!User::regret()){
-			$prefixes = Prefix::orderBy('prefix')->lists('prefix', 'id');
+			$prefixes = Prefix::lists('prefix', 'id');
 			$countries = Country::orderBy('name')->lists('name', 'id');
 			$yesno = array('1' => 'YES', '2' => 'NO');
 			$available_nights = AvailableNight::all();

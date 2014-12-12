@@ -33,18 +33,17 @@
 						<td>9:00 – 9:30</td>
 						<td>
 							<strong>Plenary Opening of Powering Progress Together</strong><br>
-							<p>Welcome from Royal Dutch Shell Executive Committee member</p>
+							<ul>
+								<li>Forum Introduction by Moderator (<strong>Maryam Nemazee</strong> – Shell Powering Progress Together Rotterdam moderator and Al Jazeera English Broadcaster and Journalist)</li>
+								<li>Welcome from Royal Dutch Shell Executive Committee member</li>
+							</ul>	
 						</td>
 					</tr>
 					<tr>
 						<td>9:30 – 10:30</td>
 						<td>
 							<strong>PANEL 1: Resilience – Current Thinking and Trends</strong><br>
-							<strong>Speakers:</strong>
-							<ul>
-								<li><strong>Ms. Saya Snow Kitasei</strong>, Head of Resilience, Xynteo</li>
-								<li>Representative from Shell for Strategies for resilience or smart cities</li>
-							</ul>	
+							
 						</td>
 					</tr>
 					<tr>

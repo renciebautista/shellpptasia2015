@@ -19,7 +19,6 @@
 	</div>
 </div>
 <div class="row">
-
 	<div class="col-lg-12 text-center" style="margin-bottom:20px;">
 		{{ Form::open(array('action' => 'OnePageController@dologin','class' => 'form-inline', 'role' => 'form')) }}
 		<form class="form-inline" role="form">

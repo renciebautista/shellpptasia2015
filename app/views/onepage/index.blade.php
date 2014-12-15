@@ -56,10 +56,8 @@
 				<img src="assets/images/links/brianwalker.jpg" class="img-responsive" alt="" >
 			</a>
 			<div class="media-body">
-				<h4 class="media-heading">Watch the Shell Powering Progress Together Asia 2014</h4>
-				<a target="_blank" class="media-left" href="https://www.youtube.com/watch?v=7jKg_gh_fBs">
-			<img src="assets/images/links/youtube.png" class="img-responsive" alt="" >
-			</a>
+				<h4 class="media-heading">Watch the Shell Powering Progress Together Asia 2014 Highlights Video</h4>
+				<a target="_blank" class="media-left" href="https://www.youtube.com/watch?v=7jKg_gh_fBs">View HERE</a>
 				
 			</div>
 		</div>

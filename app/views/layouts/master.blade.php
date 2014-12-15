@@ -56,7 +56,7 @@
 		{{ HTML::script('assets/plugins/moment/moment.js') }}
 		{{ HTML::script('assets/plugins/bootstrap-datetimepicker-3.1.3/js/bootstrap-datetimepicker.min.js') }}
 		{{ HTML::script('assets/plugins/masked-input-plugin/jquery.maskedinput.min.js') }}
-
+		{{ HTML::script('assets/plugins/jquery-placeholder-2.0.8/jquery.placeholder.js') }}
         {{ HTML::script('assets/js/shell.js') }}
 	</body>
 </html>

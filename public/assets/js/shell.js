@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	$('input, textarea').placeholder();
 	$('.hotel,.arrive,.departure').hide();
 	
 	function resetHotel(){

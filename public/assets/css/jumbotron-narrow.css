@@ -81,6 +81,9 @@ textarea.error,input.error{
 #speakers label {
 	margin-bottom: 2px;
 }
+.media-body h4 {
+	font-size: 17px;
+}
 /* Customize container */
 @media (min-width: 768px) {
 	.container {

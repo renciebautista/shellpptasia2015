@@ -146,7 +146,7 @@
 				</tbody>
 			</table>
   	</div> 
-  	<p><strong>Shell Powering Progress Together Asia 2015 will feature a wide variety of prominent speakers, amongst others:</strong></p>
+  	<p><em><strong>Shell Powering Progress Together Asia 2015 will feature a wide variety of prominent speakers, amongst others:</strong></em></p>
   	<hr>
 	<div id="speakers" class="col-lg-12">
 			<div class="text-center">
@@ -154,22 +154,22 @@
 					<img src="assets/images/speakers/kitasei.jpg" class="img-responsive img-thumbnail" alt="">
 				</div>
 				<br>
-				<label>Ms. Saya Snow Kitasei</label><br>
+				<label>Saya Snow Kitasei</label><br>
 				<label>Head of Resilience</label><br>
 				<label>Xyntéo</label><br>
 			</div>
-			<p>Saya Kitasei graduated from Stanford University in 2009 with an M.A. in Russian, East European, and Eurasian Studies and a B.S. in Earth Systems.  While at Stanford, she received an Undergraduate Research Fellowship, an Ernest Hollings Fellowship, and a Department of Education FLAS scholarship.  After graduating, she interned with the Center for American Progress energy team and the Climate Institute in Washington, D.C. Saya began her MAP fellowship with the Worldwatch Institute in time to help launch the Institute's Natural Gas and Sustainable Energy Initiative.  She joined Xyntéo in 2012 as an analyst on topics such as policy innovation in the water-energy-food nexus and the frontiers of climate science.</p>
+			<p>Saya Kitasei graduated from Stanford University with an M.A. in Russian, East European, and Eurasian Studies and a B.S. in Earth Systems.  While at Stanford, she received an Undergraduate Research Fellowship, an Ernest Hollings Fellowship, and a Department of Education FLAS scholarship.  After graduating, she interned with the Center for American Progress energy team and the Climate Institute in Washington, D.C. Saya began her MAP fellowship with the Worldwatch Institute in time to help launch the Institute's Natural Gas and Sustainable Energy Initiative.  She joined Xyntéo in 2012 as an analyst on topics such as policy innovation in the water-energy-food nexus and the frontiers of climate science.</p>
 
 			<div class="text-center">
 				<div>
 					<img src="assets/images/speakers/dalkmann.jpg" class="img-responsive img-thumbnail" alt="">
 				</div>
 				<br>
-				<label>Mr. Holger Dalkmann</label><br>
+				<label>Holger Dalkmann</label><br>
 				<label>Director</label><br>
 				<label>EMBARQ</label><br>
 			</div>
-			<p>Holger Dalkmann has 15 years of experience working in the field of transport, sustainability and climate change. He joined World Resource Institute in 2011 as the director for its EMBARQ program, which catalyzes environmentally and financially sustainable transport solutions to improve quality of life in cities. He provides strategic leadership and management for EMBARQ’s global staff and partners, as well as direction for its fundraising and communication activities.</p>
+			<p>Holger Dalkmann has 15 years of experience working in the field of transport, sustainability and climate change. He joined World Resource Institute in 2011 as the director for its EMBARQ programme, which catalyzes environmentally and financially sustainable transport solutions to improve quality of life in cities. He provides strategic leadership and management for EMBARQ’s global staff and partners, as well as direction for its fundraising and communication activities.</p>
 
 			<div class="text-center">
 				<div>
@@ -182,7 +182,7 @@
 			</div>
 
 			
-			<p>Architect Rajeev Kathpalia is a graduate of the Chandigarh College of Architecture and of Washington University at St. Louis with a master’s degree in architecture and urban design.  He has worked in Delhi, Kuwait and St. Louis, and currently practices from Ahmedabad. For his work, he has received several national awards and honours including First Prize National Design Idea in 1988, Architect of the Year Award in 1993, and World Architecture Award in 2008.  Architect Kathpalia is currently a partner at Vastu Shilpa Consultants, a professional consultancy practice in architecture, urban planning and design; and a trustee and director of the Vastu Shilpa Foundation, a non-profit research organization in environmental and habitat design.</p>
+			<p>Architect Rajeev Kathpalia is a graduate of the Chandigarh College of Architecture and of Washington University at St. Louis with a master’s degree in architecture and urban design.  He has worked in Delhi, Kuwait and St. Louis, and currently practices from Ahmedabad. For his work, he has received several national awards and honours including First Prize National Design Idea in 1988, Architect of the Year Award in 1993, and World Architecture Award in 2008.  Architect Kathpalia is currently a partner at Vastu Shilpa Consultants, a professional consultancy practice in architecture, urban planning and design; and a trustee and director of the Vastu Shilpa Foundation, a non-profit research organisation in environmental and habitat design.</p>
 
 			<div class="text-center">
 				<div>

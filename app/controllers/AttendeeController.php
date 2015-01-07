@@ -51,6 +51,7 @@ class AttendeeController extends \BaseController {
 		if($validation->passes())
 		{
 			$user = new User();
+			$user->code = User::code();
 			$user->username = Input::get('email');
 			$user->password = Hash::make('manila2015');
 			$user->email = Input::get('email');

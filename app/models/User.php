@@ -120,6 +120,6 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 	}
 
 	public static function getBatch(){
-		return DB::select('SELECT DATE(created_at) date_only FROM users GROUP BY date_only');
+		return DB::select('SELECT DATE(updated_at) date_only FROM users GROUP BY date_only');
 	}
 }

@@ -114,7 +114,7 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 			DB::raw("CONCAT('www.shellpptasia.com/regret/',users.code) as link"))
 			->where('type',2)
 			->where(function($query) use ($dates){
-				$query->whereIn(DB::raw('DATE(created_at)'),$dates);
+				$query->whereIn(DB::raw('DATE(updated_at)'),$dates);
 			})
 			->get();
 	}

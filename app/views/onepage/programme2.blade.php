@@ -151,6 +151,17 @@
 	<div id="speakers" class="col-lg-12">
 			<div class="text-center">
 				<div>
+					<img src="assets/images/speakers/ashmad.jpg" class="img-responsive img-thumbnail" alt="">
+				</div>
+				<br>
+				<label>Ambassador Asif Ahmad</label><br>
+				<label>Ambassador Extraordinary and Plenipotentiary</label><br>
+				<label>Embassy of the United Kingdom of Great Britain and Northern Ireland</label><br>
+			</div>
+			<p>Asif Ahmad was appointed as Ambassador to the Philippines in July, 2013. He has visited Manila a number of times in the last 10 years in his role as Director Asia for UK Trade and Investment and later as the head of the team in London that covers Britain's foreign policy interests in ASEAN countries, Australia, New Zealand and the Pacific Islands. Just after serving as Ambassador in Thailand and Laos, 2010-2012, Asif learnt some Filipino in London to prepare for his move to the Philippines. Asif joined the Foreign & Commonwealth Office in 1999, after an 18 year banking career with NatWest which covered international corporate finance, head office functions as well as periods in private banking, Coutts, and running a network of retail banking branches in South London.  Just before becoming a diplomat, he worked with Business Link in London as an adviser to small and medium sized companies.</p>
+
+			<div class="text-center">
+				<div>
 					<img src="assets/images/speakers/kitasei.jpg" class="img-responsive img-thumbnail" alt="">
 				</div>
 				<br>
@@ -195,6 +206,18 @@
 			</div>
 			
 			<p>Mr. Beckman manages situational awareness for all domestic Red Cross preparedness, response, and recovery operations. He is responsible for building national capacity and training the Red Cross workforce in situational awareness for all hazards. He is also responsible for directly supporting operations in both tactical and planning capacities. His mission is to answer the questions of "what information do you need to know, what decisions do you need to make with the information, when do you need the information, and how do you need to access that information?" He has responded to, and coordinated, crisis operations at the local, state, national, and international levels. He recently deployed to the Philippines immediately following Typhoon Haiyan in November 2013 to coordinate all logistics operations (people and cargo) out of the multi-national coordination center on Cebu Island. Mr. Beckman graduated with honors from Stanford University, where he majored in human biology with a focus in global biodefense.</p>
+
+			<div class="text-center">
+				<div>
+					<img src="assets/images/speakers/idiaz.jpg" class="img-responsive img-thumbnail" alt="">
+				</div>
+				<br>
+				<label>Illac Diaz</label><br>
+				<label>Social Entrepreneur</label><br>
+				<label>Liter of Light Foundation and MyShelter Foundation</label><br>
+			</div>
+			
+			<p>Illac Diaz is a social entrepreneur working in the ASEAN region empowering communities through the use of sustainable construction and appropriate technologies. Through the MyShelter Foundation, several pioneering programs in the country in rammed earth, bamboo, and PET plastic bottle construction. Illac is in a unique position to inspire others with ideas, vision and passion to create enterprises that uplift sectors of society that would otherwise be forgotten. He is pioneering a whole new field of entrepreneurship, one that seeks to bring the strengths, efficiencies and solutions of business to bear on problems of society.</p>
 
 			<div class="text-center">
 			<label>Performance by:</label><br>

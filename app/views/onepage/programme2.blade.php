@@ -162,6 +162,17 @@
 
 			<div class="text-center">
 				<div>
+					<img src="assets/images/speakers/gellis.jpg" class="img-responsive img-thumbnail" alt="">
+				</div>
+				<br>
+				<label>Glynn Ellis</label><br>
+				<label>Strategic Project Advisor, Shell Corporate Strategy and Planning</label><br>
+				<label>Royal Dutch Shell</label><br>
+			</div>
+			<p>Glynn has 20+ years international oil industry experience as a successful geologist in both operated and non-operated exploration and development projects.  He has held previous roles as Exploration Manager, Unconventional Hydrocarbons Tunisa, Exploration Manager New Ventures, Unconventional Hydrocarbons Europe, Commercial Advisor Global New Business Development, New Ventures Exploration Manager for Asia-Pacific, Regional Exploration GoM and led exploration and appraisal projects in the Atlantic Margin and the North Sea.  Prior to joining Shell, Glynn worked as a consultant petroleum geologist in Australasia-PNG and Serbia, Croatia, Slovenia.  His education includes B.Sc (Hounours) Geology, University Western Australia, M.Sc. Applied Petroleum Geology, Curtin University Australia, and PhD studies at Universite de Lausanne, Switzerland.</p>
+
+			<div class="text-center">
+				<div>
 					<img src="assets/images/speakers/kitasei.jpg" class="img-responsive img-thumbnail" alt="">
 				</div>
 				<br>

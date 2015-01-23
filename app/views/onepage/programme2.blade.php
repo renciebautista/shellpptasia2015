@@ -180,7 +180,7 @@
 				<label>Head of Resilience</label><br>
 				<label>Xyntéo</label><br>
 			</div>
-			<p>Saya Kitasei graduated from Stanford University with an M.A. in Russian, East European, and Eurasian Studies and a B.S. in Earth Systems.  While at Stanford, she received an Undergraduate Research Fellowship, an Ernest Hollings Fellowship, and a Department of Education FLAS scholarship.  After graduating, she interned with the Center for American Progress energy team and the Climate Institute in Washington, D.C. Saya began her MAP fellowship with the Worldwatch Institute in time to help launch the Institute's Natural Gas and Sustainable Energy Initiative.  She joined Xyntéo in 2012 as an analyst on topics such as policy innovation in the water-energy-food nexus and the frontiers of climate science.</p>
+			<p>Saya Kitasei is head of resilience at Xyntéo. Prior to joining Xyntéo as an analyst in 2012, Saya led the Natural Gas and Sustainable Energy Initiative at the Washington DC-based sustainability think tank Worldwatch Institute. She has also worked on climate and energy science and policy at the Center for American Progress, the Climate Institute, and INFORM, Inc. She is the director of the forthcoming documentary The Myken Project. Saya holds a BA in earth systems and an MA in Russian, East European and Eurasian studies from Stanford University.​</p>
 
 			<div class="text-center">
 				<div>
@@ -204,7 +204,20 @@
 			</div>
 
 			
-			<p>Architect Rajeev Kathpalia is a graduate of the Chandigarh College of Architecture and of Washington University at St. Louis with a master’s degree in architecture and urban design.  He has worked in Delhi, Kuwait and St. Louis, and currently practices from Ahmedabad. For his work, he has received several national awards and honours including First Prize National Design Idea in 1988, Architect of the Year Award in 1993, and World Architecture Award in 2008.  Architect Kathpalia is currently a partner at Vastu Shilpa Consultants, a professional consultancy practice in architecture, urban planning and design; and a trustee and director of the Vastu Shilpa Foundation, a non-profit research organisation in environmental and habitat design.</p>
+			<p>Rajeev Kathpalia, an Architect and Urban designer by profession  is a partner in Vastu Shilpa Consultants, a professional consultancy practice in architecture, urban planning and design. He is involved with many internationally reputed institutional projects and has won several design competitions. He is currently innvolved in the design of Nalanda University, Indian Institute of Management Udaipur, Raksha Shakthi University- Lavad and FLAME University Pune. He is also the Director of Vastu Shilpa Foundation, a non profit research organisation in environmental and habitat design. His concerns about the different urban issues with a stress on sustainable development have been presented at conferences and universities in India and abroad. He has been a jury member in many prestigious architecture competitions.</p>
+
+			<div class="text-center">
+				<div>
+					<img src="assets/images/speakers/sbanerjee.jpg" class="img-responsive img-thumbnail" alt="">
+				</div>
+				<br>
+				<label>Suparno Banerjee</label><br>
+				<label>Vice President, Public Sector Programs</label><br>
+				<label>Hewlett-Packard Company</label><br>
+			</div>
+
+			
+			<p>Suparno Banerjee, as a member of the Office of the CEO, is responsible for identifying and incubating new growth avenues for HP’s Public Sector business. Working closely with public sector customers and HP’s business groups, he is the steward of HP’s global Public Sector thought leadership and capabilities across all facets of the company. He is also the face of HP’s public sector, participating in numerous thought leadership events with senior government officials, public sector customers and partners. Banerjee leads HP’s efforts in Smart Cities through thought leadership, development of a solutions portfolio, and active engagement with a number of cities worldwide. He has led Smart City projects in China and other countries of Asia Pacific, US and EMEA</p>
 
 			<div class="text-center">
 				<div>
@@ -216,7 +229,7 @@
 				<label>American Red Cross</label><br>
 			</div>
 			
-			<p>Mr. Beckman manages situational awareness for all domestic Red Cross preparedness, response, and recovery operations. He is responsible for building national capacity and training the Red Cross workforce in situational awareness for all hazards. He is also responsible for directly supporting operations in both tactical and planning capacities. His mission is to answer the questions of "what information do you need to know, what decisions do you need to make with the information, when do you need the information, and how do you need to access that information?" He has responded to, and coordinated, crisis operations at the local, state, national, and international levels. He recently deployed to the Philippines immediately following Typhoon Haiyan in November 2013 to coordinate all logistics operations (people and cargo) out of the multi-national coordination center on Cebu Island. Mr. Beckman graduated with honors from Stanford University, where he majored in human biology with a focus in global biodefense.</p>
+			<p>Luke Beckman directs Disaster Operations for the American Red Cross serving as the national manager for situational awareness and the acting director for the National Dispatch Center. In his current role, he is responsible for ensuring that all levels of the Red Cross response and leadership workforce have access to the right information at the right time to make the right decisions. He is responsible for training, overseeing, and leading over 3,000 remote and field-based Red Cross rapid assessment and planning personnel. He first began coordinating disaster response operations during Hurricane Katrina in 2005 and since has responded to, and led, operations at the local, state, national, federal, and international levels. More recently, he served as the operations and logistics lead for the Multi-National Coordination Center in the Philippines following Typhoon Haiyan. He graduated with honors in international security from Stanford University.</p>
 
 			<div class="text-center">
 				<div>

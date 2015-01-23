@@ -12,7 +12,8 @@ class AvailableNightTableSeeder extends Seeder {
 		DB::statement("INSERT INTO available_nights (id, available_night) VALUES
 			(1, '2015-02-26'),
 			(2, '2015-02-27'),
-			(3, '2015-02-28');");
+			(3, '2015-02-28'),
+			(4, '2015-02-25');");
 	}
 
 }

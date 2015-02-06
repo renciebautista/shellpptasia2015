@@ -44,7 +44,7 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 	}
 
 	public static function getAttendee($status,$filter){
-		return self::select('users.id as user_id','users.email', 'users.department', 'users.designation',
+		return self::select('users.id as user_id','users.email', 'users.department', 'users.designation', 'users.updated_at',
 			'users.title', 'users.first_name', 'users.last_name', 'users.registered', 'attendee_statuses.*')
 			->join('attendee_statuses','users.registered','=','attendee_statuses.id')
 			->where('type',2)

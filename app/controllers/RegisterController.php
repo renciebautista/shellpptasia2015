@@ -11,22 +11,31 @@ class RegisterController extends \BaseController {
 	 */
 	public function create()
 	{
-		if(!User::regret()){
-			$prefixes = Prefix::lists('prefix', 'id');
-			$countries = Country::orderBy('name')->lists('name', 'id');
-			$yesno = array('1' => 'YES', '2' => 'NO');
-			$available_nights = AvailableNight::orderBy('available_night')->get();
-			$hotels = Hotel::orderBy('name')->lists('name', 'id');
-			if(User::registered()){
-				$attendee = Attendee::getIdByUser(Auth::id());
-				$nights = AttendeeNight::selected($attendee->id);
-				return View::make('onepage.update', compact('prefixes', 'countries', 'yesno', 'available_nights', 'hotels', 'attendee', 'nights'));
-			}else{
-				return View::make('onepage.create', compact('prefixes', 'countries', 'yesno', 'available_nights', 'hotels'));
-			}
+		$setting = Setting::find(1);
+		$today_dt = new DateTime(date("Y-m-d"));
+		$expire_dt = new DateTime($setting->cutoff);
+
+		if(($setting->enable_cutoff ==  1) && ($expire_dt < $today_dt)){
+			return View::make('onepage.closed');
 		}else{
-			return View::make('onepage.not');
+			if(!User::regret()){
+				$prefixes = Prefix::lists('prefix', 'id');
+				$countries = Country::orderBy('name')->lists('name', 'id');
+				$yesno = array('1' => 'YES', '2' => 'NO');
+				$available_nights = AvailableNight::orderBy('available_night')->get();
+				$hotels = Hotel::orderBy('name')->lists('name', 'id');
+				if(User::registered()){
+					$attendee = Attendee::getIdByUser(Auth::id());
+					$nights = AttendeeNight::selected($attendee->id);
+					return View::make('onepage.update', compact('prefixes', 'countries', 'yesno', 'available_nights', 'hotels', 'attendee', 'nights'));
+				}else{
+					return View::make('onepage.create', compact('prefixes', 'countries', 'yesno', 'available_nights', 'hotels'));
+				}
+			}else{
+				return View::make('onepage.not');
+			}
 		}
+		
 		
 	}
 

@@ -67,9 +67,7 @@ Route::group(array('before' => 'auth'), function()
 		Route::post('attendee/export', 'ExportController@exportlist');
 		Route::get('attendee/gms', 'ExportController@gms');
 		Route::resource('attendee', 'AttendeeController');
-
-
-
+		Route::resource('settings', 'SettingsController');
 	});
 	
 });

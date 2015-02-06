@@ -51,13 +51,13 @@
 						<td>
 							<strong>Plenary Opening of Powering Progress Together</strong><br>
 							<ul>
-								<li>Forum Introduction by Moderator (<strong>Maryam Nemazee</strong> – Shell Powering Progress Together Rotterdam moderator and Al Jazeera English Broadcaster and Journalist)</li>
-								<li>Welcome from Royal Dutch Shell Executive Committee member</li>
+								<li>Forum Introduction by Moderator (<strong>Maryam Nemazee</strong> – PPT Rotterdam moderator and Al Jazeera English Broadcaster and Journalist)</li>
+								<li>Welcome Remarks by <strong>Mr Hugh Mitchell</strong>, Chief HR and Corporate Officer, Royal Dutch Shell </li>
 							</ul>
 						</td>
 					</tr>
 					<tr>
-						<td>9:30 – 10:30</td>
+						<td>9:30 – 10:45</td>
 						<td>
 							<strong>PANEL 1: Resilience – Current Thinking and Trends</strong><br>
 							<p><strong>Goal:</strong>  Creating a deeper understanding of resilience in the Asian context, with special focus on the challenges and opportunities for cities</p>
@@ -67,13 +67,13 @@
 						</td>
 					</tr>
 					<tr>
-						<td>10:30 – 10:55</td>
+						<td>10:45 – 11:15</td>
 						<td>
 							<strong>Coffee Break</strong><br>
 						</td>
 					</tr>
 					<tr>
-						<td>10:55 – 12:20</td>
+						<td>10:15 – 12:20</td>
 						<td>
 							<strong>PANEL 2: Case Studies on Resilience for Cities</strong><br>
 							<p><strong>Goal:</strong> To explore how cities can be effective hubs for experimentation, action and measurable progress</p>
@@ -94,51 +94,51 @@
 							<p><strong>"Bella Gaia"</strong> – a musical performance demonstrating the interconnection of humans and nature, art and science; an exploration of the relationship between human civilization and our ecosystem through time and space</p>
 							<strong>Speaker – Performer:</strong>
 							<ul>
-								<li><strong>Kenji Williams</strong> International award-winning filmmaker, electronic music producer and classical violinist</li>
+								<li><strong>Kenji Williams</strong> Award-winning filmmaker, electronic music producer and classical violinist</li>
 							</ul>	
 						</td>
 					</tr>
 
 					<tr>
-						<td>1:50 – 3:00</td>
+						<td>1:50 – 2:50</td>
 						<td>
-							<strong>PANEL 3: Resilience and Its Implications on Business and Society</strong><br>
+							<strong>PANEL 3: Resilience and Its Implications on Business</strong><br>
 							<p><strong>Goal:</strong> To know what incentives are needed to work more closely together on societal resilience; and how businesses and civil society can contribute to drive further action.</p>
-							<p><strong>Narrative:</strong> As global population grows, so does pressure on demand for food, water and energy.  Access to these resources is made complicated and challenging with the impact of climate change and natural disasters.</p>
-							<p>For example, the World Bank estimates that we will need to grow almost twice as much food by 2050 as we do today. If current water consumption trends continue, the world could face a 40% shortfall between global freshwater demand and supply by 2030, according to the World Economic Forum.  With conventional global energy resource dwindling, there is a need to look for alternative and clean energy to keep pace with demand.</p>
-							<p>This panel explores how resource scarcity is helping civil society and businesses work in collaboration to design innovative strategies to be resilient.</p>
+							<p><strong>Narrative:</strong> As global population grows, so does pressure on demand for food, water and energy. Access to these resources is made complicated and challenging with the impact of climate change and natural disasters.</p>
+							<p>For example, the World Bank estimates that we will need to grow almost twice as much food by 2050 as we do today. If current water consumption trends continue, the world could face a 40% shortfall between global freshwater demand and supply by 2030, according to the World Economic Forum. With conventional global energy resource dwindling, there is a need to look for alternative and clean energy to keep pace with demand.</p>
+							<p>This panel explores how resource scarcity is helping businesses work in collaboration to design innovative strategies to be resilient. </p>
 						</td>
 					</tr>
 					<tr>
-						<td>3:00 – 3:20</td>
+						<td>2:50 – 3:10</td>
 						<td>
 							<strong>Coffee Break</strong><br>
 						</td>
 					</tr>
 					<tr>
-						<td>3:20 – 4:10</td>
+						<td>3:10 – 4:00</td>
 						<td>
 							<strong>PANEL 4: Inspiring Stories of Innovation and Resilience</strong><br>
 							<p><strong>Goal:</strong> To share stories of resilience through innovation, collaboration and action</p>
-							<p><strong>Narrative:</strong> As population and cities grow at unprecedented speed, building resilience against climate, disasters and other risks are just some of the challenges that cities are grappling with today. To remain liveable and sustainable, cities must be able to meet these challenges with innovative solutions.</p>
+							<p><strong>Proposed Narrative:</strong> As population and cities grow at unprecedented speed, building resilience against climate, disasters and other risks are just some of the challenges that cities are grappling with today. To remain liveable and sustainable, cities must be able to meet these challenges with innovative solutions.</p>
 							<p>In this panel, experts share their innovations and post disaster development strategies, highlighting opportunities where government, business and society can respond to climate-related risks.</p>
 						</td>
 					</tr>
 					<tr>
-						<td>4:10 – 4:15</td>
+						<td>4:00 – 4:05</td>
 						<td>
 							<strong>Closing Inspirational Keynote</strong><br>
 						</td>
 					</tr>
 					<tr>
-						<td>4:15 – 4:20</td>
+						<td>4:05 – 4:10</td>
 						<td>
 							<strong>Word of Gratitude</strong><br>
 							<p><strong>Edgar Chua</strong>, Country Chairman, Shell companies in the Philippines</p>
 						</td>
 					</tr>
 					<tr>
-						<td>4:20 – 5:30</td>
+						<td>4:10 – 5:30</td>
 						<td>
 							<strong>Guided Tours through the Shell Eco-marathon Asia Paddocks and the Shell Fan Zone</strong><br>
 						</td>
@@ -149,6 +149,20 @@
   	<p><em><strong>Shell Powering Progress Together Asia 2015 will feature a wide variety of prominent speakers, amongst others:</strong></em></p>
   	<hr>
 	<div id="speakers" class="col-lg-12">
+
+			<div class="text-center">
+				<div>
+					<img src="assets/images/speakers/hmitchell.jpg" class="img-responsive img-thumbnail" alt="">
+				</div>
+				<br>
+				<label>Hugh Mitchell</label><br>
+				<label>Chief Human Resources & Corporate Officer</label><br>
+				<label>Royal Dutch Shell PLC</label><br>
+			</div>
+
+			
+			<p>As Chief Human Resources and Corporate Officer for Royal Dutch Shell, Hugh Mitchell has responsibility for Human Resources, Real Estate, Communications, Health, Security and Aircraft. He is also Regional Director for Africa (excluding Nigeria). He has held his core responsibilities since 2005. He joined Shell after graduating in 1979. He has held a variety of HR and business roles in the UK, the Netherlands and Brunei. Hugh is a member of the Board for the Centre for Advanced Human Resources at Cornell University in the USA, a Foundation Board member of IMD business school in Lausanne, Switzerland, a Fellow of the National Academy of Human Resources in the USA, a Trustee of the Shell Foundation Board. He was appointed Independent Director of the Edinburgh Business School Board in June 2014. He is a non-executive director of RSA Insurance Group plc.</p>
+
 			<div class="text-center">
 				<div>
 					<img src="assets/images/speakers/ashmad.jpg" class="img-responsive img-thumbnail" alt="">
@@ -166,10 +180,10 @@
 				</div>
 				<br>
 				<label>Glynn Ellis</label><br>
-				<label>Strategic Project Advisor, Shell Corporate Strategy and Planning</label><br>
+				<label>Strategic Energy Advisor, Shell Corporate Strategy and Planning</label><br>
 				<label>Royal Dutch Shell</label><br>
 			</div>
-			<p>Glynn has 20+ years international oil industry experience as a successful geologist in both operated and non-operated exploration and development projects.  He has held previous roles as Exploration Manager, Unconventional Hydrocarbons Tunisa, Exploration Manager New Ventures, Unconventional Hydrocarbons Europe, Commercial Advisor Global New Business Development, New Ventures Exploration Manager for Asia-Pacific, Regional Exploration GoM and led exploration and appraisal projects in the Atlantic Margin and the North Sea.  Prior to joining Shell, Glynn worked as a consultant petroleum geologist in Australasia-PNG and Serbia, Croatia, Slovenia.  His education includes B.Sc (Hounours) Geology, University Western Australia, M.Sc. Applied Petroleum Geology, Curtin University Australia, and PhD studies at Universite de Lausanne, Switzerland.</p>
+			<p>Glynn Ellis is Strategic Energy Advisor, based in The Hague, Netherlands. Glynn is part of Shell’s CITIES Team reviewing the impact of global urbanization on energy consumption. Glynn’s previous roles include 20+ years of international oil industry experience as a successful geologist in both operated and non-operated exploration and development projects. He has held previous roles as Exploration Manager, Unconventional Hydrocarbons–Tunisia; Exploration Manager, New Ventures, Unconventional Hydrocarbons–Europe; Commercial Advisor, Global New Business Development; New Ventures Exploration Manager for Asia-Pacific; and Regional Exploration General Manager leading exploration and appraisal projects in the Atlantic Margin and the North Sea. Prior to joining Shell, Glynn worked as a consultant petroleum geologist in Australasia-PNG and Serbia, Croatia, Slovenia. His education includes B.Sc (Honors) Geology, University Western Australia; M.Sc. Applied Petroleum Geology, Curtin University Australia; and PhD studies at Universite de Lausanne, Switzerland.</p>
 
 			<div class="text-center">
 				<div>
@@ -181,6 +195,19 @@
 				<label>Xyntéo</label><br>
 			</div>
 			<p>Saya Kitasei is head of resilience at Xyntéo. Prior to joining Xyntéo as an analyst in 2012, Saya led the Natural Gas and Sustainable Energy Initiative at the Washington DC-based sustainability think tank Worldwatch Institute. She has also worked on climate and energy science and policy at the Center for American Progress, the Climate Institute, and INFORM, Inc. She is the director of the forthcoming documentary The Myken Project. Saya holds a BA in earth systems and an MA in Russian, East European and Eurasian studies from Stanford University.​</p>
+
+
+			<div class="text-center">
+				<div>
+					<img src="assets/images/speakers/toyzaga.jpg" class="img-responsive img-thumbnail" alt="">
+				</div>
+				<br>
+				<label>Toni Yulo-Loyzaga</label><br>
+				<label>Executive Director</label><br>
+				<label>Manila Observatory</label><br>
+			</div>
+			<p>As Executive Director of the Manila Observatory, Ms. Yulo Loyzaga oversees its collaboration on climate and disaster risk reduction with the International Development Research Center, the National Aeronautics and Space Administration, Japan Aerospace Exploration Agency, United Nations International Strategy for Disaster Reduction, the Pacific Disaster Center and other organizations. She represents the Manila Observatory on the Philippines Department of Science and Technology’s Committee on Space Technology Applications and works to advance scientific research in climate and disaster resilience through public private partnerships. In 2013, she was given special recognition by the Armed Forces of the Philippines (AFP) for her contribution to the military emergency disaster response operations in the wake of Typhoon Haiyan.</p>
+
 
 			<div class="text-center">
 				<div>
@@ -208,6 +235,19 @@
 
 			<div class="text-center">
 				<div>
+					<img src="assets/images/speakers/echua.jpg" class="img-responsive img-thumbnail" alt="">
+				</div>
+				<br>
+				<label>Edgar O. Chua</label><br>
+				<label>Country Chairman</label><br>
+				<label>Shell Companies in the Philippines</label><br>
+			</div>
+
+			
+			<p>Edgar O. Chua is the Country Chairman of the Shell companies in the Philippines. He has corporate responsibility for the various Shell companies in the exploration, manufacturing and marketing sector of the petroleum business as well as its Shared Services. Concurrently, ed serves as the Chairman of the Philippine Business for the Environment and the Energy Council of the Philippines; and is also the President of Pilipinas Shell Foundation, Inc. Ed joined Shell in 1979 and has had many years of experience in the business fields of chemicals, auditing, supply planning and trading, marketing and sales, lubricants, corporate affairs and general management. He held senior positions outside the Philippines including transport analyst in Group Planning in the UK and as General Manager of the Shell Company of Cambodia. Ed earned his Bachelor of Science degree in Chemical Engineering from De La Salle University in 1978 and attended various international seminars and courses including the senior management course in INSEAD in Fontainebleau, France.</p>
+
+			<div class="text-center">
+				<div>
 					<img src="assets/images/speakers/sbanerjee.jpg" class="img-responsive img-thumbnail" alt="">
 				</div>
 				<br>
@@ -218,6 +258,19 @@
 
 			
 			<p>Suparno Banerjee, as a member of the Office of the CEO, is responsible for identifying and incubating new growth avenues for HP’s Public Sector business. Working closely with public sector customers and HP’s business groups, he is the steward of HP’s global Public Sector thought leadership and capabilities across all facets of the company. He is also the face of HP’s public sector, participating in numerous thought leadership events with senior government officials, public sector customers and partners. Banerjee leads HP’s efforts in Smart Cities through thought leadership, development of a solutions portfolio, and active engagement with a number of cities worldwide. He has led Smart City projects in China and other countries of Asia Pacific, US and EMEA</p>
+
+			<div class="text-center">
+				<div>
+					<img src="assets/images/speakers/shawkins.jpg" class="img-responsive img-thumbnail" alt="">
+				</div>
+				<br>
+				<label>Stuart Hawkins</label><br>
+				<label>Director of Sustainability</label><br>
+				<label>Coca-Cola Asean</label><br>
+			</div>
+
+			
+			<p>Stuart began his career with The Coca-Cola Company in 1998 with the company’s Asia Pacific Public Affairs and Communications team based in Hong Kong. He held roles of increasing responsibility and was involved in a wide range of projects and partnerships across Asia working with teams throughout the region. From 2006 to 2009 he served as Director of Public Affairs and Communications for Coca-Cola Thailand and as a Director on the Board of The Coca-Cola Foundation Thailand.  Since 2009, he has led Coca-Cola’s sustainability strategy and efforts across Southeast Asia as Director of Sustainability, Coca-Cola ASEAN. He also serves as a trustee on the Board of The Coca-Cola Foundation Philippines.</p>
 
 			<div class="text-center">
 				<div>

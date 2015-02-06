@@ -55,7 +55,7 @@
 <div class="row">
 	<div class="col-lg-12">
 		<div class="table-responsive">
-			<table class="table table-hover">
+			<table id="myTable" class="table table-hover tablesorter" style="font-size:13px;">
 				<thead>
 					<tr>
 						<th>Company / Department</th>
@@ -63,7 +63,8 @@
 						<th>Full Name</th>
 						<th>Email</th>
 						<th>Status</th>
-						<th colspan="3">Action</th>
+						<th style="width:100px;">Last Update</th>
+						<th colspan="3" class="action">Action</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -79,6 +80,7 @@
 						<td>{{ $attendee->title }} {{ $attendee->first_name }} {{ $attendee->last_name }}</td>
 						<td>{{ $attendee->email }}</td>
 						<td>{{ $attendee->status }}</td>
+						<td>{{ date_format($attendee->updated_at, 'd-m-Y') }}</td>
 						<th>
 							@if($attendee->registered == 2)
 							{{ HTML::linkRoute('attendee.show','Registration Details', $attendee->user_id, array('class' => 'btn btn-info btn-xs')) }}

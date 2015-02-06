@@ -7,6 +7,9 @@
 		{{ HTML::style('assets/plugins/twitter-bootstrap/css/bootstrap.css') }}
 		{{ HTML::style('assets/plugins/twitter-bootstrap/css/bootswatch.min.css') }}
 		{{ HTML::style('assets/plugins/font-awesome-4.2.0/css/font-awesome.min.css') }}
+
+		{{ HTML::style('assets/plugins/tablesorter/css/theme.default.css') }}
+		{{ HTML::style('assets/plugins/bootstrap-datetimepicker-3.1.3/css/bootstrap-datetimepicker.min.css') }}
 		{{ HTML::style('assets/css/style.css') }}
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!--[if lt IE 9]>
@@ -55,6 +58,9 @@
 					<li>
 						{{ HTML::linkAction('ExportController@gms', 'Export For GMS') }}
 					</li>	
+					<li>
+						{{ HTML::linkAction('SettingsController@index', 'Settings') }}
+					</li>	
 				  </ul>
 				</li>
 				
@@ -75,12 +81,34 @@
 		</div>
 	{{ HTML::script('assets/js/jquery-1.11.1.min.js') }}
 	{{ HTML::script('assets/plugins/twitter-bootstrap/js/bootstrap.min.js') }}
+	{{ HTML::script('assets/plugins/tablesorter/js/jquery.tablesorter.min.js') }}
+	{{ HTML::script('assets/plugins/jquery-inputformat/jquery-inputformat.min.js') }}
+	{{ HTML::script('assets/plugins/moment/moment.js') }}
+	{{ HTML::script('assets/plugins/bootstrap-datetimepicker-3.1.3/js/bootstrap-datetimepicker.min.js') }}
+	{{ HTML::script('assets/plugins/digitalBush/jquery.maskedinput_1.4.0/jquery.maskedinput.min.js') }}
 		<script type="text/javascript">
 		$(document).ready(function() { 
+			$("#myTable").tablesorter({
+				headers: {
+			      // disable sorting of the first & second column - before we would have to had made two entries
+			      // note that "first-name" is a class on the span INSIDE the first column th cell
+			      '.action' : {
+			        // disable it by setting the property sorter to false
+			        sorter: false
+			      }
+			    }
+			}); 
+
+			$('#cutoff').datetimepicker({
+				pickTime: false
+			});
+
+			$('#cutoff').mask("99/99/9999",{placeholder:"mm/dd/yyyy"});
+
 		   	$('input[name=status]').change(function(){
 				$('#get-form').submit();
 		   	});
-
+		   	$("#myTable").tablesorter(); 
 		   	$('#selecctall').click(function(event) {  //on click
 		        if(this.checked) { // check select status
 		            $('.checkbox1').each(function() { //loop through each checkbox
@@ -92,6 +120,8 @@
 		            });        
 		        }
 		    });
+
+
 		});
 		</script>
 

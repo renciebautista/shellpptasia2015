@@ -21,15 +21,17 @@ class Attendee extends \Eloquent {
 	}
 
 	public static function getAttendee(){
-		return DB::select(DB::raw("select code as idno, last_name as lastname, 
-			first_name as firstname, prefered_name as nickname, 
+		return DB::select(DB::raw("select attendees.code as idno, attendees.last_name as lastname, 
+			attendees.first_name as firstname, prefered_name as nickname, 
 		    job_title as titled, company as company, 
-		    ' ' as aread, ' ' as schedule, ' ' as seqno, ' ' as tabled,
+		    '1' as aread, '1' as schedule, '1' as seqno, '1' as tabled,
 		    countries.full_name as countryd, 
-			' ' as industryd, address as address1,' ' as address2,' ' as address3,
-		    mobile_phone as telno, ' ' as faxno,
-		    email as email, ' ' as website, ' ' as bday, ' ' as age, ' ' as walkin 
+			'1' as industryd, address as address1,'1' as address2,'1' as address3,
+		    mobile_phone as telno, '1' as faxno,
+		    attendees.email as email, '1' as website, '1' as bday, '1' as age, '1' as walkin 
 		from attendees 
-		inner join countries on attendees.country_id = countries.id"));
+		left join countries on attendees.country_id = countries.id
+        left join users on attendees.user_id = users.id
+        where users.registered ='2'"));
 	}
 }

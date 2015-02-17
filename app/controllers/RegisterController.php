@@ -11,6 +11,8 @@ class RegisterController extends \BaseController {
 	 */
 	public function create()
 	{
+		
+		
 		$setting = Setting::find(1);
 		$today_dt = new DateTime(date("Y-m-d"));
 		$expire_dt = new DateTime($setting->cutoff);

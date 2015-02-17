@@ -2,12 +2,6 @@
 
 class AttendeeController extends \BaseController {
 
-	/**
-	 * Display a listing of the resource.
-	 * GET /attendee
-	 *
-	 * @return Response
-	 */
 	public function index()
 	{
 		Input::flash();
@@ -15,23 +9,11 @@ class AttendeeController extends \BaseController {
 		return View::make('attendee.index', compact('attendees'));
 	}
 
-	/**
-	 * Show the form for creating a new resource.
-	 * GET /attendee/create
-	 *
-	 * @return Response
-	 */
 	public function create()
 	{
 		return View::make('attendee.create');
 	}
 
-	/**
-	 * Store a newly created resource in storage.
-	 * POST /attendee
-	 *
-	 * @return Response
-	 */
 	public function store()
 	{
 		Input::merge(array_map('trim', Input::all()));
@@ -75,13 +57,6 @@ class AttendeeController extends \BaseController {
 			->with('message', 'There were validation errors.');
 	}
 
-	/**
-	 * Display the specified resource.
-	 * GET /attendee/{id}
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
 	public function show($id)
 	{	
 		$user = User::where('id', $id)
@@ -108,13 +83,6 @@ class AttendeeController extends \BaseController {
 		
 	}
 
-	/**
-	 * Show the form for editing the specified resource.
-	 * GET /attendee/{id}/edit
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
 	public function edit($id)
 	{
 		$user = User::find($id);
@@ -127,13 +95,6 @@ class AttendeeController extends \BaseController {
 		}
 	}
 
-	/**
-	 * Update the specified resource in storage.
-	 * PUT /attendee/{id}
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
 	public function update($id)
 	{
 		Input::merge(array_map('trim', Input::all()));
@@ -183,13 +144,6 @@ class AttendeeController extends \BaseController {
 			->with('message', 'There were validation errors.');
 	}
 
-	/**
-	 * Remove the specified resource from storage.
-	 * DELETE /attendee/{id}
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
 	public function destroy($id)
 	{
 		$user = User::find($id);

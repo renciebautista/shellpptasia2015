@@ -99,9 +99,28 @@ class OnePageController extends \BaseController {
 		if(is_null($user)){
 			return View::make('onepage.notfound');
 		}else{
+			$reasons = Reason::all();
+			$code = $id;
+			return View::make('onepage.regretconfirm', compact('reasons','code'));
+		}
+	}
+
+	public function doregret($id){
+		$user = User::where('code',$id)
+			->where('registered', 1)
+			->first();
+		if(is_null($user)){
+			return View::make('onepage.notfound');
+		}else{
+			$reason = new RegretReason;
+			$reason->user_id = $user->id;
+			$reason->reason_id = Input::get('reason');
+			$reason->remarks = Input::get('other');
+			$reason->save();
+
 			$user->registered = 3;
 			$user->save();
-			return View::make('onepage.regretconfirm');
+			return View::make('onepage.regretconfirmed');
 		}
 	}
 }

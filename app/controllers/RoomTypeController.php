@@ -44,13 +44,24 @@ class RoomTypeController extends \BaseController {
 				$rate = RoomType::select(DB::raw("id, CONCAT('PHP ',format(room_rate,2)) as room_rate"))
 				->where('id',$attendee->room_type_id)->first();
 
+				// $rooms = RoomType::select('id', 'room_type')
+				// 	->where('hotel_id',$attendee->hotel_id)
+				// 	->orderBy('room_type')
+				// 	->get();
+				// if(count($rooms)>0){
+				// 	$rooms[0] = array('id' => 0, 'room_type' => 'Please Select');
+				// }
+
 				$rooms = RoomType::select('id', 'room_type')
 					->where('hotel_id',$attendee->hotel_id)
 					->orderBy('room_type')
 					->get();
-				if(count($rooms)>0){
-					$rooms[0] = array('id' => 0, 'room_type' => 'Please Select');
+				$data = array();
+				$data[] = array('id' => 0, 'room_type' => 'Please Select');
+				foreach ($rooms as $room) {
+					$data[] = array('id' => $room->id, 'room_type' => $room->room_type);
 				}
+			
 				$data['rooms'] = $rooms;
 				$data['selected'] = $attendee->room_type_id;
 				$data['rate'] = $rate->room_rate;

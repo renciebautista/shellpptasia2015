@@ -9,7 +9,7 @@ class Attendee extends \Eloquent {
 	}
 
 	public static function code(){
-		$code = strtoupper(Str::random(0));
+		$code = strtoupper(Str::random(8));
 
 		$_code = self::where('code',$code)->first();
 		if(count($_code) == 0){

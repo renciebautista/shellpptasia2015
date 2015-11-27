@@ -47,3 +47,10 @@
 	color: #f00;
 	font-weight: bold;
 }
+.reason {
+	list-style: none;
+}
+
+.reason li {
+	margin-left: -20px;
+}

@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>Shell PPT Asia 2015 Admin Page</title>
+		<title>Shell PPT Asia 2016 Admin Page</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		{{ HTML::style('assets/plugins/twitter-bootstrap/css/bootstrap.css') }}
 		{{ HTML::style('assets/plugins/twitter-bootstrap/css/bootswatch.min.css') }}

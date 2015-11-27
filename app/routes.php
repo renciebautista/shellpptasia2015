@@ -13,8 +13,8 @@
 
 Route::get('/test', function()
 {
-
-	return View::make('onepage.regretconfirm');
+	echo strtoupper(Str::random(8));
+	// return View::make('onepage.regretconfirm');
 });
 
 // Route::get('/', 'HomeController@index');
@@ -25,6 +25,7 @@ Route::get('/test', function()
 
 
 Route::get('regret/{id}', 'OnePageController@regret');
+Route::post('regret/{id}', 'OnePageController@doregret');
 Route::get('login', 'OnePageController@login');
 Route::get('logout', 'OnePageController@logout');
 Route::post('login', 'OnePageController@dologin');

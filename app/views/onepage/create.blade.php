@@ -216,26 +216,20 @@
 				<div class="panel-body">
 					<div class="form-group">
 						<label for="withhotel">Parking at venue required?</label><br>
-						<!--@foreach ($yesno as $index => $row)
+						@foreach ($yesno as $index => $row)
 						<label class="radio-inline">
 
-							{{ Form::radio('withhotel',$index ,$index == 2 ? true:false,  array('class' => 'show', 'id' => 'withhotel')) }}
+							{{ Form::radio('withparking',$index ,$index == 2 ? true:false,  array('class' => 'w_park', 'id' => 'withparking')) }}
 							{{ $row }}
 						</label>
-						@endforeach-->
-						<label for="chkYes">
-    <input type="radio" id="chkYes" name="chkPassPort" onclick="ShowHideDiv()" checked="checked" />
-    Yes
-</label>
-<label for="chkNo">
-    <input type="radio" id="chkNo" name="chkPassPort" onclick="ShowHideDiv()"  >
-    No
-</label>
+						@endforeach
+
 					</div>
 
-					<div class="form-group plate" id="dvPassport" >
+					<div class="form-group plate" >
 						<label for="plate">Plate number of car to be used:</label>
 						{{ Form::text('plate','',array('class' => 'form-control', 'placeholder' => 'Plate number')) }}
+						<p style="font-style:italic;color:#a94442;">*Please note that this information will be used for parking reservation at the venue. Parking fee is complimentary.</p>
 					</div>
 				</div>
 			</div>

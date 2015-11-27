@@ -77,9 +77,16 @@ class RegisterController extends \BaseController {
 
 		if($validation->passes())
 		{
-			$attendee = new Attendee;
-			DB::transaction(function() use ($attendee)
+
+			$attendee = DB::transaction(function() 
 			{
+				$update = true;
+				$attendee = Attendee::where('user_id',  Auth::id())->first();
+				if(empty($attendee)){
+					$attendee = new Attendee;
+					$update = false;
+				}
+
 				$attendee->user_id = Auth::id();
 				$attendee->code = Attendee::code();
 				$attendee->prefix_id = Input::get('prefix');
@@ -134,14 +141,21 @@ class RegisterController extends \BaseController {
 					$attendee->departure_time = null;
 					$attendee->departure_port = null;
 				}
-
+				
 				$attendee->withparking = Input::get('withparking');
 				$attendee->plate_no = Input::get('plate');
 
 				$attendee->e_name = Input::get('e_name');
 				$attendee->e_number = Input::get('e_number');
 				$attendee->e_relationship = Input::get('e_relationship');
-				$attendee->save();
+
+				if($update){
+					$attendee->update();
+				}else{
+					$attendee->save();
+				}
+
+				
 
 				$night = Input::get('night');
 				if((!empty($night)) && ($attendee->withhotel == 1)){
@@ -174,6 +188,8 @@ class RegisterController extends \BaseController {
 				    $message->to($attendee->email)
 				    	->subject('Registration Confirmation (Shell Powering Progress Together Asia 2016)');
 				});
+
+				return $attendee;
 			});
 
 			$prefix = Prefix::find($attendee->prefix_id);
@@ -284,6 +300,13 @@ class RegisterController extends \BaseController {
 				}
 				
 				$attendee->withparking = Input::get('withparking');
+				// dd(Input::get('withparking'))
+				if($attendee->withparking == 1){
+					$attendee->plate_no = Input::get('plate');
+				}else{
+					$attendee->plate_no = '';
+				}
+				
 				$attendee->e_name = Input::get('e_name');
 				$attendee->e_number = Input::get('e_number');
 				$attendee->e_relationship = Input::get('e_relationship');

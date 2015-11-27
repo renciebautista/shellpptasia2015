@@ -288,6 +288,14 @@ Shell Powering Progress Together Asia 2016 Team 
       @endif
     </td>
   </tr>
+      @if($attendee->withparking == 1)
+  </tr>
+    <td>Plate No.:</td>
+    <td>
+      {{ $attendee->plate_no }}
+    </td>
+  <tr>
+     @endif
 </table>
 <br>
 <strong>EMERGENCY CONTACT INFORMATION</strong>

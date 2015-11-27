@@ -4,35 +4,11 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="Shell PPT Asia 2015">
+		<meta name="description" content="Shell PPT Asia 2016">
 		<meta name="author" content="">
 
-		<title>Shell PPT Asia 2015</title>
- <script type="text/javascript">
- window.onload = function() {
-    document.getElementById('ifYes').style.display = 'none';
-    document.getElementById('ifNo').style.display = 'none';
-}
-function yesnoCheck() {
-    if (document.getElementById('yesCheck').checked) {
-        document.getElementById('ifYes').style.display = 'block';
-        document.getElementById('ifNo').style.display = 'none';
-        document.getElementById('redhat1').style.display = 'none';
-        document.getElementById('aix1').style.display = 'none';
-    } 
-    else if(document.getElementById('noCheck').checked) {
-        document.getElementById('ifNo').style.display = 'block';
-        document.getElementById('ifYes').style.display = 'none';
-        document.getElementById('redhat1').style.display = 'none';
-        document.getElementById('aix1').style.display = 'none';
-   }
-}
-function ShowHideDiv() {
-        var chkYes = document.getElementById("chkYes");
-        var dvPassport = document.getElementById("dvPassport");
-        dvPassport.style.display = chkYes.checked ? "block":"none" ;
-    }
-</script>
+		<title>Shell PPT Asia 2016</title>
+
 		<!-- Bootstrap core CSS -->
 		{{ HTML::style('assets/css/bootstrap.min.css') }}
 
@@ -71,7 +47,7 @@ function ShowHideDiv() {
 			@section('footer')
 			@show
 			<footer class="footer">
-				<p>&copy; Company 2014 - 2015</p>
+				<p>&copy; Company 2014 - 2016</p>
 			</footer>
 		</div> <!-- /container -->
 		{{ HTML::script('assets/js/jquery-1.11.1.min.js') }}

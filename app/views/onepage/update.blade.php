@@ -2,6 +2,7 @@
 
 @section('navigation')
 <ul class="nav nav-pills pull-right">
+	<li><a href="/">Home</a></li>
 	<li><a href="/">Event Overview</a></li>
 	<li><a href="/programme">Programme</a></li>
 	<li><a href="/hotel">Hotel</a></li>
@@ -57,6 +58,8 @@
 		
 		{{ Form::open(array('action' => array('RegisterController@update'), 'method' => 'PUT','id' => 'register')) }}
 		{{ Form::hidden('at_id', $attendee->id) }}
+		{{ Form::hidden('w_p', $attendee->withparking, ['id' => 'w_p']) }}
+
 			<div class="panel panel-primary">
 				<div class="panel-heading">
 					<h3 class="panel-title">Attendee Information</h3>
@@ -111,9 +114,12 @@
 						{{ Form::select('country', array('default' => 'Please Select') + $countries, $attendee->country_id, array('class' => 'form-control')) }}
 					</div>
 					<div class="form-group">
-						<label for="special">Do you have any special requirements?</label>
-						{{ Form::text('special',$attendee->special,array('class' => 'form-control', 'placeholder' => 'Do you have any special requirements?')) }}
+						<label for="special">Do you have any special dietary requirements?</label>
+						{{ Form::text('special',$attendee->special,array('class' => 'form-control', 'placeholder' => 'Do you have any special dietary requirements?')) }}
 					</div>
+
+
+					
 				</div>
 			</div>
 
@@ -238,12 +244,18 @@
 						<label for="withparking">Parking at venue required?</label><br>
 						@foreach ($yesno as $index => $row)
 						<label class="radio-inline">
-							{{ Form::radio('withparking',$index ,($index == $attendee->withparking) ? true : false) }}
+							{{ Form::radio('withparking',$index ,($index == $attendee->withparking) ? true : false,  array('class' => 'w_park', 'id' => 'withparking')) }}
 							{{ $row }}
 						</label>
 						@endforeach
 					</div>
+					<div class="form-group plate" id="dvPassport" >
+						<label for="plate">Plate number of car to be used:</label>
+						{{ Form::text('plate',$attendee->plate_no,array('class' => 'form-control', 'placeholder' => 'Plate number')) }}
+					</div>
 				</div>
+
+				
 			</div>
 
 			<div class="panel panel-primary">

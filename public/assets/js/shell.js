@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	$('input, textarea').placeholder();
-	$('.hotel,.arrive,.departure').hide();
+	$('.hotel,.arrive,.departure,.plate,.r-other').hide();
 	
 	function resetHotel(){
 		$('.hotel input:checkbox').removeAttr('checked');
@@ -10,6 +10,11 @@ $(document).ready(function(){
 		$('#rate').val('');
 		$('#billing').val('');
 		$('.hotel').hide();
+	}
+
+	function resetParking(){
+		$('#plate').val('');
+		$('.plate').hide();
 	}
 
 	$('select#withhotel').on("change",function(){
@@ -80,6 +85,25 @@ $(document).ready(function(){
 				$('#rate').val(data.room_rate);
 		   }
 		});	
+	});
+
+
+
+	$('.w_park').on("change",function(){
+		if(this.value == 1){
+			$('.plate').show();
+		}else{
+			resetParking();
+		}
+	});
+
+	$('.r-reason').on("change",function(){
+		if(this.value == 4){
+			$('.r-other').show();
+		}else{
+			$('.r-other').val('');
+			$('.r-other').hide();
+		}
 	});
 
 	$("#register").validate({
@@ -266,6 +290,15 @@ $(document).ready(function(){
 	}
 	if($('select#with_departure').val() == 1){
 		$('.departure').show();
+	}
+
+	function updateparking(){
+		$('.plate').show();
+	}
+
+	if($('#w_p').val() == 1){
+		
+		updateparking();
 	}
 
 

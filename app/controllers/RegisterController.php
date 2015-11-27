@@ -136,6 +136,7 @@ class RegisterController extends \BaseController {
 				}
 
 				$attendee->withparking = Input::get('withparking');
+				$attendee->plate_no = Input::get('plate');
 
 				$attendee->e_name = Input::get('e_name');
 				$attendee->e_number = Input::get('e_number');
@@ -171,7 +172,7 @@ class RegisterController extends \BaseController {
 				Mail::send('emails.registration.confirm', $data, function($message) use ($attendee)
 				{
 				    $message->to($attendee->email)
-				    	->subject('Registration Confirmation (Shell Powering Progress Together Asia 2015)');
+				    	->subject('Registration Confirmation (Shell Powering Progress Together Asia 2016)');
 				});
 			});
 

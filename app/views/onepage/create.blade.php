@@ -215,17 +215,25 @@
 				</div>
 				<div class="panel-body">
 					<div class="form-group">
-						<label for="withparking">Parking at venue required?</label><br>
-						@foreach ($yesno as $index => $row)
+						<label for="withhotel">Parking at venue required?</label><br>
+						<!--@foreach ($yesno as $index => $row)
 						<label class="radio-inline">
 
-							{{ Form::radio('withparking',$index ,$index == 2 ? true:false) }}
+							{{ Form::radio('withhotel',$index ,$index == 2 ? true:false,  array('class' => 'show', 'id' => 'withhotel')) }}
 							{{ $row }}
 						</label>
-						@endforeach
+						@endforeach-->
+						<label for="chkYes">
+    <input type="radio" id="chkYes" name="chkPassPort" onclick="ShowHideDiv()" checked="checked" />
+    Yes
+</label>
+<label for="chkNo">
+    <input type="radio" id="chkNo" name="chkPassPort" onclick="ShowHideDiv()"  >
+    No
+</label>
 					</div>
 
-					<div class="form-group plate">
+					<div class="form-group plate" id="dvPassport" >
 						<label for="plate">Plate number of car to be used:</label>
 						{{ Form::text('plate','',array('class' => 'form-control', 'placeholder' => 'Plate number')) }}
 					</div>

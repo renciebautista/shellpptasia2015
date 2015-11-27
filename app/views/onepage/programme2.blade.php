@@ -148,7 +148,7 @@
   			<div class="speaker">
 	  			<div class="row">
 				  	<div class="col-md-4">
-				  		<img src="assets/images/speakers/gellis.jpg" class="img-responsive" alt="">
+				  		<img src="assets/images/speakers/gerr12.jpg" class="img-responsive" alt="">
 				  	</div>
 				  	<div class="col-md-8 info">
 				  		<p class="name">Jeremy Bentham</p>
@@ -172,7 +172,7 @@ of Shell Hydrogen before becoming head of Shell Scenarios.</p>
   			<div class="speaker">
 	  			<div class="row">
 				  	<div class="col-md-4">
-				  		<img src="assets/images/speakers/gellis.jpg" class="img-responsive" alt="">
+				  		<img src="assets/images/speakers/Tony La Vina.jpg" class="img-responsive" alt="">
 				  	</div>
 				  	<div class="col-md-8 info">
 				  		<p class="name">Atty Antonio La Viña</p>
@@ -189,7 +189,7 @@ of Shell Hydrogen before becoming head of Shell Scenarios.</p>
   			<div class="speaker">
 	  			<div class="row">
 				  	<div class="col-md-4">
-				  		<img src="assets/images/speakers/gellis.jpg" class="img-responsive" alt="">
+				  		<img src="assets/images/speakers/Rafael Lopa.jpg" class="img-responsive" alt="">
 				  	</div>
 				  	<div class="col-md-8 info">
 				  		<p class="name">Rafael Lopa</p>
@@ -207,7 +207,7 @@ of Shell Hydrogen before becoming head of Shell Scenarios.</p>
   			<div class="speaker">
 	  			<div class="row">
 				  	<div class="col-md-4">
-				  		<img src="assets/images/speakers/gellis.jpg" class="img-responsive" alt="">
+				  		<img src="assets/images/speakers/Guillermo Luz.jpg" class="img-responsive" alt="">
 				  	</div>
 				  	<div class="col-md-8 info">
 				  		<p class="name">Guillermo Luz</p>
@@ -225,7 +225,7 @@ of Shell Hydrogen before becoming head of Shell Scenarios.</p>
   			<div class="speaker">
 	  			<div class="row">
 				  	<div class="col-md-4">
-				  		<img src="assets/images/speakers/gellis.jpg" class="img-responsive" alt="">
+				  		<img src="assets/images/speakers/Edgar Chua.jpg" class="img-responsive" alt="">
 				  	</div>
 				  	<div class="col-md-8 info">
 				  		<p class="name">Edgar Chua</p>

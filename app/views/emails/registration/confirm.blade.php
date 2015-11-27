@@ -1,4 +1,4 @@
-<html>
+  <html>
   <head>
     
     <title id="print_title">
@@ -77,7 +77,7 @@ To review this registration click here: <a href="www.shellpptasia.com">www.shell
 Dear {{ ucwords(strtolower($prefix->prefix))}} {{ ucwords(strtolower($attendee->first_name))}} {{ ucwords(strtolower($attendee->last_name))}},
 <BR>
 <BR>
-Thank you for registering your attendance to <strong>Shell Powering Progress Together Asia 2015</strong> in <strong>Manila, Philippines</strong>.
+Thank you for registering your attendance to <strong>Shell Powering Progress Together Asia 2016</strong> in <strong>Manila, Philippines</strong>.
 <BR>
 <BR>
 Below are the details you have completed to date. We recommend that you read and ensure you have entered your details and requirements correctly. Should you need to revisit the site to edit or add missing information, you may revisit the site by clicking on the link above. 
@@ -89,13 +89,13 @@ Approximately 2 weeks prior to the event, you will receive Joining Instructions 
 Please print and bring this confirmation email to present at the registration desk at the event. Badges will be issued upon registering and, for security reasons, must be worn for the duration of the event.
 <BR>
 <BR>
-If you have any questions, please contact us at +632 501 9588 and look for Ms. Tiffany Mason <a href="mailto:stiffany.mason@protegepr.com" target="_top">(tiffany.mason@protegepr.com)</a> or Ms. Zoe Magallanes <a href="mailto:oe.magallanes@protegepr.com" target="_top">(zoe.magallanes@protegepr.com)</a>.
+If you have any questions, please contact us at +632 501 9588 and look for Ms. Zoe Magallanes <a href="mailto:oe.magallanes@protegepr.com" target="_top">(zoe.magallanes@protegepr.com)</a>, mobile: +63939 9226683.
 <BR>
 <BR>
 Kind regards,
 <BR>
 <BR>
-Shell Powering Progress Asia 2015 Team
+Shell Powering Progress Together Asia 2016 Team 
 <BR>
 <BR>
 <hr>
@@ -106,7 +106,7 @@ Shell Powering Progress Asia 2015 Team
   </tr>
   <tr>
     <td>Date:</td>
-    <td>26 February 2015</td>
+    <td>3 March 2016</td>
   </tr>
   <tr>
     <td>Location:</td>

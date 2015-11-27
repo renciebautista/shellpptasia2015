@@ -35,7 +35,7 @@ class UserTableSeeder extends Seeder {
 		'type' => 2,
 		'test' => 1,
 		'code' => User::code(),
-		'password' => Hash::make('manila2015'),
+		'password' => Hash::make('manila2016'),
 		'created_at' => DB::raw('NOW()'),
 		'updated_at' => DB::raw('NOW()'),
 		);

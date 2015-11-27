@@ -1,6 +1,7 @@
 @extends('layouts.master')
 @section('navigation')
   <ul class="nav nav-pills pull-right">
+  	<li><a href="/">Home</a></li>
     <li><a href="/">Event Overview</a></li>
     <li><a href="/programme">Programme</a></li>
     <li class="active"><a href="/hotel">Hotel</a></li>

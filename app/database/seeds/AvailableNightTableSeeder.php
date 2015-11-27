@@ -10,10 +10,10 @@ class AvailableNightTableSeeder extends Seeder {
 		DB::table('available_nights')->truncate();
 
 		DB::statement("INSERT INTO available_nights (id, available_night) VALUES
-			(1, '2015-02-26'),
-			(2, '2015-02-27'),
-			(3, '2015-02-28'),
-			(4, '2015-02-25');");
+			(1, '2016-03-02'),
+			(2, '2016-03-03'),
+			(3, '2016-03-04'),
+			(4, '2016-03-05');");
 	}
 
 }

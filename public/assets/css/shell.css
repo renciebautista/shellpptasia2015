@@ -1,0 +1,49 @@
+.h-header{
+    border-top: 1px solid #eee;
+    padding-top: 2px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 2px;
+}
+.h-header p {
+	font-weight: bold;
+	padding: 5px;
+	background-color: #f7d117;
+	margin-bottom: 0px;
+
+}
+.warning{
+	color: #F00;
+	font-weight: bold;
+}
+
+.red{
+	color: #F00;
+	font-weight: bold;
+}
+
+#home-media h2 {
+	font-size: 20px;
+	color: #F00;
+	font-weight: bold;
+}
+#home-media a {
+	color: #F00;
+	font-weight: bold;
+}
+
+.speaker-list{
+	margin-bottom: 50px;
+}
+.speaker{
+	background-color: #eee;
+	padding: 5px;
+}
+.speaker .info {
+	margin-left: -30px;
+}
+.speaker .info .name{
+	
+	margin-top: 60px;
+	color: #f00;
+	font-weight: bold;
+}

@@ -2,6 +2,7 @@
 
 @section('navigation')
 <ul class="nav nav-pills pull-right">
+	<li><a href="/">Home</a></li>
 	<li><a href="/">Event Overview</a></li>
 	<li><a href="/programme">Programme</a></li>
 	<li><a href="/hotel">Hotel</a></li>
@@ -95,10 +96,12 @@
 						<label for="country">Country</label>
 						{{ Form::select('country', array('default' => 'Please Select') + $countries, 'default', array('class' => 'form-control')) }}
 					</div>
+
 					<div class="form-group">
-						<label for="special">Do you have any special requirements?</label>
-						{{ Form::text('special','',array('class' => 'form-control', 'placeholder' => 'Do you have any special requirements?')) }}
+						<label for="special">Do you have any special dietary requirements?</label>
+						{{ Form::text('special','',array('class' => 'form-control', 'placeholder' => 'Do you have any special dietary requirements?')) }}
 					</div>
+					
 				</div>
 			</div>
 
@@ -118,7 +121,7 @@
 						@foreach ($available_nights as $row)
 						<label class="checkbox-inline hotel">
 							{{ Form::checkbox('night[]',$row->id, null, array('id' => 'night')) }}
-							{{ $row->available_night }}
+							{{ date('j F Y', strtotime($row->available_night)) }}
 						</label>
 						@endforeach
 						
@@ -220,6 +223,11 @@
 							{{ $row }}
 						</label>
 						@endforeach
+					</div>
+
+					<div class="form-group plate">
+						<label for="plate">Plate number of car to be used:</label>
+						{{ Form::text('plate','',array('class' => 'form-control', 'placeholder' => 'Plate number')) }}
 					</div>
 				</div>
 			</div>

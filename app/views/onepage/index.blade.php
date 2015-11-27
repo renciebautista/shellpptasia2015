@@ -2,7 +2,8 @@
 
 @section('navigation')
   <ul class="nav nav-pills pull-right">
-	<li  class="active"><a href="/">Event Overview</a></li>
+  	<li  class="active"><a href="/">Home</a></li>
+	<li><a href="/overview">Event Overview</a></li>
 	<li ><a href="/programme">Programme</a></li>
 	<li ><a href="/hotel">Hotel</a></li>
 	@if(!User::regret())
@@ -38,48 +39,52 @@
 	</div>
 </div>
 <div class="row">
-	<h2 class="section-heading text-center">Event Overview</h2>
+	
 	<div class="col-lg-12">
-		<p>Building on last year’s themes – the energy-water-food stress nexus and the role resilience can play in addressing future resource stresses – this edition of <strong>Shell Powering Progress Together Asia</strong> will focus on <strong>Resilience in an Urbanising World</strong> and the key role cities will play to be liveable and sustainable hubs of growth. This is a significant topic for Asia since it is the most populous continent, and home to over half of the world’s megacities.</p>
+		<h3 class="section-heading red">3 March 2016, Thursday</h3>	
+		<h3 class="section-heading red">Manila Hotel, Manila, Philippines</h3>	
+		<hr>
+		<p><strong>Shell Powering Progress Together is a business forum that seeks to tackle the world’s challenges on the energy-water-food stress nexus, with the end in view of creating greater societal resilience through multi-sector collaboration and action. The conference is being held in Europe, America and Asia, with Manila as host of the annual Asian conference from 2014 to 2016.</strong></p>	
+		<hr>
+		
+		<div id="home-media" class="row">
 
-		<p>This year’s programme will include four interactive sessions in which a <strong>diverse group of leading experts – amongst others His Excellency Asif Ahmad</strong> (British Ambassador to the Philippines), <strong>Ms Saya Kitasei</strong> (Head of Resilience at Xyntéo), <strong>Glynn Ellis</strong> (Strategic Energy Advisor, Shell Corporate Strategy and Planning), <strong>Architect Rajeev Kathpalia</strong>, (urban planning expert on smart city development from Vastu Shilpa Foundation), <strong>Holger Dalkmann</strong> (Director at Embarq, a World Resources Institute programme on sustainable transport), <strong>Stuart Hawkins</strong> (Coca-Cola Director for Sustainability - ASEAN), <strong>Illac Diaz</strong> (Social Entrepreneur, Liter of Light) <strong>and Luke Beckman</strong> (American Red Cross’ Situational Manager and expert on disaster management) – will embark on the search for greater resilience through interactive presentations, interviews and panel discussions.</p>
 
-		<p>International broadcast journalist <strong>Maryam Nemazee</strong> (Al Jazeera English) will moderate the forum, which will also be live streamed via Rappler.</p>
+	        <div class="col-lg-4 ">
+	          	<h2 class="text-center">EVENT OVERVIEW</h2>
+	          	
+	          	<div class="text-center">
+	          		<img src="assets/images/home/overview.jpg" class="img-responsive img-thumbnail" alt="">
+	          	</div>
+	          	
+	          	<p>Find out more about the forum in Manila</p>
+	         	<p><a class="" href="/overview" role="button">Discover here</a></p>
+	        </div>
 
-		<p>The event once again gathers some 300 of thought leaders from business, government and civil society to engage in a dialogue, address resiliency through multi-sector collaboration, and explore on-the-ground actions.</p>
+	         <div class="col-lg-4 ">
+	          	<h2 class="text-center">PROGRAMME</h2>
+	          	
+	          	<div class="text-center">
+	          		<img src="assets/images/home/programme.jpg" class="img-responsive img-thumbnail" alt="">
+	          	</div>
+	          	
+	          	<p>View the programme for the 2016 forum </p>
+	         	<p><a class="" href="/programme" role="button">Learn more</a></p>
+	        </div>
 
-		<p>Shell Powering Progress Together Asia 2015 once more coincides with <strong>Shell Eco-marathon Asia</strong>, a unique event bringing together hundreds of student teams from countries across Asia and the Middle East to compete in self-built cars to travel a set distance on the least amount of fuel – in the process pushing the boundaries of fuel efficiency.  Delegates of Powering Progress Together Asia will also have the opportunity to visit the <strong>Shell Eco-marathon Asia paddocks and Fan Zone area</strong>.</p>
-		<br>
+	        <div class="col-lg-4 ">
+	          	<h2 class="text-center">REGISTRATION</h2>
+	          	
+	          	<div class="text-center">
+	          		<img src="assets/images/home/registration.jpg" class="img-responsive img-thumbnail" alt="">
+	          	</div>
+	          	
+	          	<p>Access the online registration tool</p>
+	         	<p><a class="" href="/register" role="button">View here</a></p>
+	        </div>
+	       
+      	</div>
 
-		<div class="media">
-			<a  target="_blank" class="media-left" href="#">
-				<img src="assets/images/links/brianwalker.jpg" class="img-responsive" alt="" >
-			</a>
-			<div class="media-body">
-				<h4 class="media-heading">Watch the Shell Powering Progress Together Asia 2014 Highlights Video</h4>
-				<a target="_blank" class="media-left" href="https://www.youtube.com/watch?v=7jKg_gh_fBs">View HERE</a>
-				
-			</div>
-		</div>
-		<div class="media">
-			<a target="_blank" class="media-left" href="http://www.shell.com/global/aboutshell/events/powering-progress-together/what-is-ppt.html">
-				<img src="assets/images/links/pptasia.jpg" class="img-responsive" alt="" >
-			</a>
-			<div class="media-body">
-				<h4 class="media-heading">What is Shell Powering Progress Together?</h4>
-				<a target="_blank" class="media-left" href="http://www.shell.com/global/aboutshell/events/powering-progress-together/what-is-ppt.html">Discover HERE </a>
-			</div>
-		</div>
-		<div class="media">
-			<a  target="_blank" class="media-left" href="http://www.shell.com/global/environment-society/ecomarathon/about.html">
-				<img src="assets/images/links/marathon.jpg" class="img-responsive" alt="" >
-			</a>
-			<div class="media-body">
-				<h4 class="media-heading">Know more about Shell Eco-marathon</h4>
-				<a target="_blank" class="media-left" href="http://www.shell.com/global/environment-society/ecomarathon/about.html">Know more </a>
-				
-			</div>
-		</div>
 		<br>
 	</div>
 </div>

@@ -11,11 +11,11 @@
 |
 */
 
-// Route::get('/', function()
-// {
+Route::get('/test', function()
+{
 
-// 	// return View::make('hello');
-// });
+	return View::make('onepage.regretconfirm');
+});
 
 // Route::get('/', 'HomeController@index');
 // Route::get('login', 'HomeController@create');
@@ -47,6 +47,7 @@ Route::group(array('before' => 'auth'), function()
 {	
 	Route::group(array('before' => 'attendee'), function(){
 		Route::get('/', 'OnePageController@index');
+		Route::get('overview', 'OnePageController@overview');
 		Route::get('programme', 'OnePageController@programme');
 		Route::get('hotel', 'OnePageController@hotel');
 

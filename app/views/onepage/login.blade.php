@@ -2,6 +2,20 @@
 
 
 @section('content')
+
+<div class="row">
+	<div class="col-lg-12">
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<p>Welcome to the registration page for Shell Powering Progress Together Asia 2016. <br>
+				Please login to access the online registration tool.</p>
+			</div>
+		</div>
+			
+	</div>
+</div>
+
+
 <div class="row">
 	<div class="col-lg-12">
 		<div class="row">

@@ -19,6 +19,7 @@
 @stop
 
 @section('content')
+<p>An indicative agenda for PPT 2016 is available below for your convenience and reference.  Please note that any changes to this will be communicated nearer the time of the event and published here.</p>
 <div class="row">
 	<div class="col-lg-12">
 	   	<h2 class="section-heading text-center">Programme</h2>

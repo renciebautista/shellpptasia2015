@@ -13,6 +13,10 @@ class OnePageController extends \BaseController {
 		return View::make('onepage.index');
 	}
 
+	public function overview(){
+		return View::make('onepage.overview');
+	}
+
 	/**
 	 * Display a listing of the resource.
 	 * GET /onepage

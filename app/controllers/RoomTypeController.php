@@ -11,13 +11,17 @@ class RoomTypeController extends \BaseController {
 	public function index()
 	{
 		if(Request::ajax()){
-			$data = RoomType::select('id', 'room_type')
+
+			$rooms = RoomType::select('id', 'room_type')
 				->where('hotel_id',Input::get('hotel_id'))
 				->orderBy('room_type')
 				->get();
-			if(count($data)>0){
-				$data[0] = array('id' => 0, 'room_type' => 'Please Select');
+			$data = array();
+			$data[] = array('id' => 0, 'room_type' => 'Please Select');
+			foreach ($rooms as $room) {
+				$data[] = array('id' => $room->id, 'room_type' => $room->room_type);
 			}
+			
 			return Response::json($data,200);
 		}
 	}

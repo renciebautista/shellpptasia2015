@@ -85,7 +85,7 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 						'last_name' => $row->last_name,
 						'type' => 2,
 						'code' => self::code(),
-						'password' => Hash::make('manila2015'),
+						'password' => Hash::make('manila2016'),
 						'test' => $row->test,
 						'created_at' => DB::raw('NOW()'),
 						'updated_at' => DB::raw('NOW()'));

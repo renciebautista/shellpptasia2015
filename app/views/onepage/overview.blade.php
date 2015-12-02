@@ -39,9 +39,9 @@
 	</div>
 </div>
 <div class="row">
-	<h2 class="section-heading text-center">Event Overview</h2>
+	<h2 class="headd"><center>EVENT OVERVIEW</center></h2>
 	<div class="col-lg-12">
-		<p>
+		<p class="txt">
 			<strong>Shell Powering Progress Together is a business forum that seeks to tackle the world’s challenges on the energy-water-food stress nexus, with the end in view of creating greater societal resilience through multi-sector collaboration and action. The conference is being held in Europe, America and Asia, with Manila as host of the annual Asian conference from 2014 to 2016. 
 			</strong>
 		</p>		
@@ -52,11 +52,11 @@
 			</p>
 		</div>
 		<br>
-		<p>In the 2014 Shell Powering Progress Together forum, we discussed the stress nexus and explored how we can all work together to survive, adapt and grow in a volatile world. In 2015, the forum focused on environmental and urban resilience and presented innovative solutions, particularly in the face of rapid urbanisation, resource stresses and climate impacts.</p>
-		<p>As the culmination of the three-year forum hosted in Manila, the theme for Powering Progress Together 2016 is <strong>“Collaboration for a Sustainable Future”</strong>.  It aims to build on previous years’ discussions and to present, as well as celebrate, concrete examples of collaborative action as we transition to a more resilient and sustainable future, where all sectors of society work together to address vital resource challenges while taking care of the environment and promoting quality of life.</p>
-		<p>The 2016 programme will feature a diverse group of leading experts, among others <strong>Jeremy Bentham</strong> (Shell Vice President for Global Business Environment), <strong>Atty. Antonio La Viña</strong> (Dean of the Ateneo School of Government), <strong>Leandro Leviste</strong> (CEO of Solar Philippines), <strong>Rafael Lopa</strong> (Executive Director, Philippine Business for Social Progress) and <strong>Hon. Del de Guzman</strong> (Mayor of Marikina City).</p>
-		<p>As in the past Powering Progress Together - Manila conference and other Powering Progress Together forums across the world, you can expect the event to be richly packed with engaging panel discussions and networking opportunities. The Manila conference will also be livestreamed via the social news network <a href="http://www.rappler.com/">www.rappler.com</a> for greater reach.</p>
-		<p>Powering Progress Together Asia 2016 once more coincides with <strong>Shell Eco-marathon Asia</strong>, a unique event bringing together hundreds of student teams from countries across Asia and the Middle East to design, build, test and compete in self-built cars to travel a set distance on the least amount of fuel – in the process pushing the boundaries of fuel efficiency.</p>
+		<p class="txt">In the 2014 Shell Powering Progress Together forum, we discussed the stress nexus and explored how we can all work together to survive, adapt and grow in a volatile world. In 2015, the forum focused on environmental and urban resilience and presented innovative solutions, particularly in the face of rapid urbanisation, resource stresses and climate impacts.</p>
+		<p class="txt">As the culmination of the three-year forum hosted by Shell in Manila, the theme for Powering Progress Together 2016 conference is <strong>“Collaboration for a Sustainable Future”</strong>.  It aims to build on previous years’ discussions and to present, as well as celebrate, concrete examples of collaborative action as we transition to a more resilient and sustainable future, where all sectors of society work together to address vital resource challenges while taking care of the environment and promoting quality of life.</p>
+		<p class="txt">The 2016 programme will feature a diverse group of leading experts, among others <strong>Jeremy Bentham</strong> (Shell Vice President for Global Business Environment), <strong>Atty. Antonio La Viña</strong> (Dean of the Ateneo School of Government), <strong>Leandro Leviste</strong> (CEO of Solar Philippines), <strong>Rafael Lopa</strong> (Executive Director, Philippine Business for Social Progress) and <strong>Hon. Del de Guzman</strong> (Mayor of Marikina City) and Guillermo Luz, Private Sector Co-Chairman, National Competitiveness Council of the Philippines.</p>
+		<p class="txt">As in the past Powering Progress Together - Manila conference and other Powering Progress Together fora across the world, you can expect the event to be richly packed with engaging panel discussions and networking opportunities. The Manila conference will also be livestreamed via the social news network <a href="http://www.rappler.com/">www.rappler.com</a> for greater interactivity and reach.</p>
+		<p class="txt">Powering Progress Together Asia 2016 once more coincides with <strong><a href="http://www.shell.com/global/environment-society/ecomarathon/events/asia.html">Shell Eco-marathon Asia</a></strong>, a unique event bringing together hundreds of student teams from countries across Asia and the Middle East to design, build, test and compete in self-built cars to travel a set distance on the least amount of fuel – in the process pushing the boundaries of fuel efficiency.</p>
 		
 		<!-- <div class="media">
 			<a  target="_blank" class="media-left" href="#">

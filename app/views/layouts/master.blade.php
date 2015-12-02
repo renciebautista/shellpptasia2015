@@ -47,7 +47,7 @@
 			@section('footer')
 			@show
 			<footer class="footer">
-				<p>&copy; Company 2014 - 2016</p>
+				<!--<p>&copy; Company 2014 - 2016</p>-->
 			</footer>
 		</div> <!-- /container -->
 		{{ HTML::script('assets/js/jquery-1.11.1.min.js') }}

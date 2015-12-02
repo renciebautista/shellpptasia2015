@@ -23,6 +23,7 @@
 @stop
 
 @section('content')
+<div class= "txt">
 <div class="row">
 	<div class="col-lg-12">
 		<div class="row">
@@ -42,7 +43,7 @@
 	<div class="col-lg-12">
 		<div class="row">
 			<div class="col-lg-12 text-center">
-				<h2 class="section-heading">Update Registration Form</h2>
+				<h2 class="headd">UPDATE REGISTRATION FORM</h2>
 				@if ($errors->any())
 				    <ul id="notification">
 				        {{ implode('', $errors->all('<li class="error">:message</li>')) }}
@@ -250,7 +251,7 @@
 						@endforeach
 					</div>
 					<div class="form-group plate" id="dvPassport" >
-						<label for="plate">Plate number of car to be used:</label>
+						<label for="plate">Plate number of vehicle to be used:</label>
 						{{ Form::text('plate',$attendee->plate_no,array('class' => 'form-control', 'placeholder' => 'Plate number')) }}
 					</div>
 				</div>
@@ -284,5 +285,6 @@
 			
 		{{ Form::close() }}
 	</div>
+</div>
 </div>
 @stop

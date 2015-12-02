@@ -22,14 +22,16 @@
 @stop
 
 @section('content')
+<div class= "txt">
 <div class="row">
 	<div class="col-lg-12">
 			<div class="row">
 				<div class="col-lg-12 text-center">
-					<h2 class="section-heading">Hotel Information</h2>
+					<h2 class="headd"><center>HOTEL INFORMATION</center></h2>
 				</div>
 				<div class="col-lg-12">
-					<p>During Powering Progress Together and Shell Eco-marathon, Manila will be visited by a lot of people. Therefore, it can be hard to get a hotel room. Since we are in contact with most of the hotels in Manila, we can help you book a hotel room. Please take note a hotel room is at your own expense.</p>
+					<!--<p>During Powering Progress Together and Shell Eco-marathon, Manila will be visited by a lot of people. Therefore, it can be hard to get a hotel room. Since we are in contact with most of the hotels in Manila, we can help you book a hotel room. Please take note a hotel room is at your own expense.</p>-->
+				<p>The City of Manila will host many local and international visitors during the Shell Powering Progress Together Asia and Shell Eco-marathon Asia events. As such, it may be difficult to book a hotel room. We can assist you in booking your hotel room at Manila Hotel or Hotel H2O. Please note, however, that for conference delegates, the hotel room will be at your own expense.</p>
 				</div>
 			</div>
 			<div class="row">
@@ -45,5 +47,6 @@
 				@endforeach
 		</div>
 	</div>
+</div>
 </div>
 @stop

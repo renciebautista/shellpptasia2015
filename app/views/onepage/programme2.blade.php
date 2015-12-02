@@ -23,6 +23,7 @@
 @stop
 
 @section('content')
+<div class= "txt">
 <p class="warning">An indicative agenda for PPT 2016 is available below for your convenience and reference.  Please note that any changes to this will be communicated nearer the time of the event and published here.</p>
 <div class="row">
 	<div class="col-lg-12">
@@ -41,7 +42,7 @@
 </div>
 <div class="row">
 	
-	<h2 class="section-heading text-center">Programme </h2><br>
+	<h2 class="headd"><center>PROGRAMME </center></h2><br>
 	<div id="programme" class="table-responsive">
 			<table class="table">
 				<tbody>
@@ -118,18 +119,18 @@
 						</td>
 					</tr>
 					<tr>
-						<td>1:10 – 1:15</td>
+						<td>1:10 – 1:20</td>
 						<td>
 							<strong>Word of Gratitude</strong><br>
 							<p>by Shell companies in the Philippines Country Chairman Edgar Chua</p>
 						</td>
 					</tr>
-					<tr>
+					<!--<tr>
 						<td>1:15 – 1:20</td>
 						<td>
 							<strong>Pledging Activity and Closing</strong><br>
 						</td>
-					</tr>
+					</tr>-->
 					<tr>
 						<td>1:20 – 2:30</td>
 						<td>
@@ -142,8 +143,29 @@
   	</div> 
   	<p><em><strong>Shell Powering Progress Together Asia 2016 will feature a wide variety of prominent speakers, amongst others:</strong></em></p>
   	<hr>
-  	<div>
-
+  	<div >
+<div class="speaker-list">
+  			<div class="speaker">
+	  			<div class="row">
+				  	<div class="col-md-4">
+				  		<img src="assets/images/speakers/Simon Henry.jpg" class="img-responsive" alt="">
+				  	</div>
+				  	<div class="col-md-8 info">
+				  		<p class="name">Simon Henry</p>
+				  		<p>Chief Financial Officer</p>
+				  		<p>Royal Dutch Shell plc</p>
+				  	</div>
+				</div>
+	  		</div>
+	  		<br>
+	  		<div class="txt">
+	  		<p >Simon became Chief Financial Officer and an Executive Director in May 2009</p>
+	  		<p>Simon joined Shell having graduated in Mathematics from Cambridge University in 1982, initially working as an engineer at the UK’s Stanlow refinery.</p>
+	  		<p>After qualifying as a member of the Chartered Institute of Management Accountants (CIMA) in 1989, he held various finance posts, including Finance Manager of Marketing in Egypt, Controller for the Upstream business in Egypt, Oil Products Finance Adviser for Asia Pacific, Finance Director for the Mekong Cluster and, up to the end of 2000, General Manager Finance for the South East Asian Retail business.</p>
+  		<p>He was appointed Head of Group Investor Relations in 2001 and most recently served as Executive Vice President Finance for Exploration & Production from 2004 until his current appointment.</p>
+<p>Simon is a member of the Main Committee of the 100 Group of UK FTSE CFOs, Chair of the European Round Table CFO Taskforce, and a member of the Advisory Board of the Centre for European Reform. He is also a CIMA fellow, and has been a non-executive member of the Lloyds Banking Group Board since June 2014.</p>
+  		</div>
+  		</div>
   		<div class="speaker-list">
   			<div class="speaker">
 	  			<div class="row">
@@ -152,12 +174,13 @@
 				  	</div>
 				  	<div class="col-md-8 info">
 				  		<p class="name">Jeremy Bentham</p>
-				  		<p>Vice President Global Business Environment</p>
+				  		<p>Vice President, Global Business Environment</p>
 				  		<p>Royal Dutch Shell plc</p>
 				  	</div>
 				</div>
 	  		</div>
 	  		<br>
+	  		<div class="txt">
 	  		<p>Jeremy Bentham leads Shell’s Global Business Environment team, a core corporate strategy activity best
 known outside the company for developing the Shell Scenarios. He graduated from Oxford University,
 and joined Shell in 1980 following post-graduate experience at the California Institute of Technology. He
@@ -166,6 +189,7 @@ was a Sloan Fellow. Following experience in research, technology, and industry a
 management positions at several refineries. After managing corporate strategy analysis for Shell, Jeremy
 joined the leadership of Shell’s global technology company, and subsequently served as chief executive
 of Shell Hydrogen before becoming head of Shell Scenarios.</p>
+</div>
   		</div>
 
   		<div class="speaker-list">
@@ -199,9 +223,11 @@ of Shell Hydrogen before becoming head of Shell Scenarios.</p>
 				</div>
 	  		</div>
 	  		<br>
-	  		<p>Rafael “Rapa” Lopa leads PBSP’s efforts in organizing and managing platforms for collective engagements (PlaCEs) that leverage private business sector’s involvement with other stakeholders in addressing systemic social problems in the areas of Health, Education, Environment, Livelihood Development and Disaster Risk Management. Rapa also champions PBSP’s call for companies to develop more inclusive business models that that incorporates the marginalized sectors of society within the company‘s value chain as suppliers, consumers, distributors and/or employees in such a way that it creates shared value.</p>
-	  		<p>Prior to his current responsibilities in PBSP, Rapa has invested thirty years in the development sector after graduating from the Ateneo de Manila University with a Bachelor of Arts Degree in Inter-disciplinary Studies. Rapa also served and currently serves as a director in other companies and foundations in the Philippines.</p>
+	  		<div class="txt">
+	  		<p>Rafael “Rapa” Lopa leads PBSP’s efforts in organizing and managing platforms for collective engagements (PlaCEs) that leverage private sector’s involvement with other stakeholders in addressing systemic social problems in the areas of Health, Education, Environment, Livelihood Development and Disaster Risk Management. Rapa also champions PBSP’s call for companies to develop more inclusive business models that that incorporates the marginalized sectors of society within the company‘s value chain as suppliers, consumers, distributors and/or employees in such a way that it creates shared value.</p>
+	  		<p>Prior to his current responsibilities in PBSP, Rapa has invested thirty years in the development sector after graduating from the Ateneo de Manila University with a Bachelor of Arts Degree in Inter-Disciplinary Studies. Rapa also served and currently serves as a director in other companies and foundations in the Philippines.</p>
   		</div>
+  	</div>
 
   		<div class="speaker-list">
   			<div class="speaker">
@@ -217,10 +243,11 @@ of Shell Hydrogen before becoming head of Shell Scenarios.</p>
 				</div>
 	  		</div>
 	  		<br>
-	  		<p>Guillermo “Bill” Luz is the private sector co-chairman of the National Competitiveness Council, a public-private body that develops strategy for the long-term competitiveness of the Philippines through policy reforms, project implementation, institution building and activities in real-estate development, banking and financial services, telecommunications, water infrastructure development and management, automotive dealership and distribution, business process outsourcing, electronics manufacturing solutions, and new investments in performance monitoring. He is associate director of Ayala Corporation, the holding company of one of the oldest and largest business groups in the Philippines, with business power, renewable energy and infrastructure.</p>
+	  		<div class="txt">
+	  		<p>Guillermo “Bill” Luz is the private sector Co-Chairman of the National Competitiveness Council, a public-private body that develops strategy for the long-term competitiveness of the Philippines through policy reforms, project implementation, institution-building and activities in real-estate development, banking and financial services, telecommunications, water infrastructure development and management, automotive dealership and distribution, business process outsourcing, electronics manufacturing solutions, and new investments in performance monitoring. He is associate director of Ayala Corporation, the holding company of one of the oldest and largest business groups in the Philippines, with business power, renewable energy and infrastructure.</p>
 	  		<p>He is the Lead Coordinator for Private Sector of APEC National Organizing Council (APEC-NOC). APEC NOC is the government agency in charge of preparations for the Philippines Chairmanship of APEC in 2015. He also serves as the Chief Operating Officer of APEC 2015 CEO Summit Host Committee.</p>
   		</div>
-
+</div>
   		<div class="speaker-list">
   			<div class="speaker">
 	  			<div class="row">
@@ -229,16 +256,38 @@ of Shell Hydrogen before becoming head of Shell Scenarios.</p>
 				  	</div>
 				  	<div class="col-md-8 info">
 				  		<p class="name">Edgar Chua</p>
-				  		<p>Vice President Global Business Environment</p>
+				  		<p>Country Chairman</p>
 				  		<p>Shell companies in the Philippines</p>
 				  	</div>
 				</div>
 	  		</div>
 	  		<br>
+	  		<div class="txt">
 	  		<p>Ed is the Country Chairman of the Shell companies in the Philippines. He has corporate responsibility for the various Shell companies in the exploration, manufacturing and marketing sector of the petroleum business and oversees the Chemicals businesses and Business Services.</p>
 	  		<p>Concurrently, Ed serves as the Chairman of the Philippine Business for the Environment and the Energy Council of the Philippines; and is also the President of Pilipinas Shell Foundation, Inc.  Ed joined Shell in 1979 and has had many years of experience in the business fields of chemicals, auditing, supply planning and trading, marketing and sales, lubricants, corporate affairs and general management. He held senior positions outside the Philippines including transport analyst in Group Planning in the UK, GM of the Shell Company of Cambodia. Ed earned his Bachelor of Science degree in Chemical Engineering from De La Salle University and attended various international seminars and courses including the senior management course in INSEAD in Fontainebleau, France.</p>
   		</div>
-  		
   	</div>
+  		<div class="speaker-list">
+  			<div class="speaker">
+	  			<div class="row">
+				  	<div class="col-md-4">
+				  		<img src="assets/images/speakers/Quintin Pastrana.jpg" class="img-responsive" alt="" >
+				  	</div>
+				  	<div class="col-md-8 info">
+				  		<p class="name">Quintin Jose V. Pastrana</p>
+				  		<p>Anchor</p>
+				  		<p>Bloomberg Philippines</p>
+				  	</div>
+				</div>
+	  		</div>
+	  		<br>
+	  		<div class="txt">
+	  		<p>Quintin graduated with degrees in Business Administration, International Relations, and Literature from the Universities of Georgetown, Cambridge, and Oxford.</p>
+	  		<p>He has used his education to advance shared value and sustainable development in the minerals and energy sector as the Vice President of Gold Fields Philippines, Inc. and the Policy, Government and Public Affairs Manager of Chevron Geothermal and Power, following his public service as a career technocrat in the Philippine Senate, National Security Council, and House of Representatives. He has recently assumed the post of anchor and producer at Bloomberg TV Philippines, the country’s first business news channel.</p>
+  			<p>Quintin has won a Freedom through Literacy Award as founder and Managing Director of the Library Renewal Partnership (www.librarypartners.com). He is a Convenor for the Movement for Good Governance, the leading citizen-led reform movement, and has been named among the region's top young leaders by the Asia Society and the US-ASEAN Business Council, as well as a StartingBloc Global Fellow for Social Enterprise. Quintin promotes grassroots sports development as Secretary General of the Philippine Rowing Association, and Manager of the multi-medaled National Rowing Team and the Philippine Lacrosse Association.</p>
+  		</div>
+  	</div>
+  	</div>
+</div>
 </div>
 @stop

@@ -195,7 +195,7 @@ class RegisterController extends \BaseController {
 			$prefix = Prefix::find($attendee->prefix_id);
 			return Redirect::action('OnePageController@index')
 				->with('class', 'alert-info')
-				->with('message', 'Welcome, '.$prefix->prefix .' '.ucwords(strtolower($attendee->first_name)).' '.ucwords(strtolower($attendee->last_name)).' your registration is complete, please check your email for your confirmation code.');
+				->with('message', 'Welcome to Shell Powering Progress Together Asia 2016, '.$prefix->prefix .' '.ucwords(strtolower($attendee->first_name)).' '.ucwords(strtolower($attendee->last_name)).'. Your registration is complete. Please check your email for your confirmation code.');
 			
 		}
 

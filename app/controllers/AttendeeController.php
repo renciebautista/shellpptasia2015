@@ -1,4 +1,4 @@
-<?php
+u<?php
 
 class AttendeeController extends \BaseController {
 
@@ -35,7 +35,7 @@ class AttendeeController extends \BaseController {
 			$user = new User();
 			$user->code = User::code();
 			$user->username = Input::get('email');
-			$user->password = Hash::make('manila2015');
+			$user->password = Hash::make('manila2016');
 			$user->email = Input::get('email');
 			$user->type = 2;
 			$user->department = strtoupper(Input::get('department'));
@@ -120,7 +120,7 @@ class AttendeeController extends \BaseController {
 					->with('message', 'Record does not exist.');
 			}else{
 				$user->username = Input::get('email');
-				$user->password = Hash::make('manila2015');
+				// $user->password = Hash::make('manila2016');
 				$user->email = Input::get('email');
 				$user->type = 2;
 				$user->department = strtoupper(Input::get('department'));

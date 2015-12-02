@@ -44,7 +44,7 @@
 		<h3 class="section-heading red">3 March 2016, Thursday</h3>	
 		<h3 class="section-heading red">Manila Hotel, Manila, Philippines</h3>	
 		<hr>
-		<p><strong>Shell Powering Progress Together is a business forum that seeks to tackle the world’s challenges on the energy-water-food stress nexus, with the end in view of creating greater societal resilience through multi-sector collaboration and action. The conference is being held in Europe, America and Asia, with Manila as host of the annual Asian conference from 2014 to 2016.</strong></p>	
+		<p class="txt"><strong>Shell Powering Progress Together is a business forum that seeks to tackle the world’s challenges on the energy-water-food stress nexus, with the end in view of creating greater societal resilience through multi-sector collaboration and action. The conference is being held in Europe, America and Asia, with Manila as host of the annual Asian conference from 2014 to 2016.</strong></p>	
 		<hr>
 		
 		<div id="home-media" class="row">
@@ -57,7 +57,7 @@
 	          		<img src="assets/images/home/overview.jpg" class="img-responsive img-thumbnail" alt="">
 	          	</div>
 	          	
-	          	<p>Find out more about the forum in Manila</p>
+	          	<p class="txt">Find out more about the forum in Manila</p>
 	         	<p><a class="" href="/overview" role="button">Discover here</a></p>
 	        </div>
 
@@ -68,7 +68,7 @@
 	          		<img src="assets/images/home/programme.jpg" class="img-responsive img-thumbnail" alt="">
 	          	</div>
 	          	
-	          	<p>View the programme for the 2016 forum </p>
+	          	<p class="txt">View the programme for the 2016 forum </p>
 	         	<p><a class="" href="/programme" role="button">Learn more</a></p>
 	        </div>
 
@@ -79,7 +79,7 @@
 	          		<img src="assets/images/home/registration.jpg" class="img-responsive img-thumbnail" alt="">
 	          	</div>
 	          	
-	          	<p>Access the online registration tool</p>
+	          	<p class="txt">Access the online registration tool</p>
 	         	<p><a class="" href="/register" role="button">View here</a></p>
 	        </div>
 	       

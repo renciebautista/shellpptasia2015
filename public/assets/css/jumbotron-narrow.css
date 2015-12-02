@@ -70,6 +70,18 @@ textarea.error,input.error{
 	border-top: 1px solid #e5e5e5;
 }
 
+.headd {
+	
+	font-size: 19px;
+
+}
+
+.txt {
+	
+	font-size: 13px;
+	
+}
+
 #programme label {
 	margin-top: 0px;
 	margin-bottom: 0px;
@@ -77,6 +89,7 @@ textarea.error,input.error{
 #speakers p {
 	padding-top: 10px;
 	padding-bottom: 15px;
+
 }
 #speakers label {
 	margin-bottom: 2px;
@@ -140,7 +153,7 @@ textarea.error,input.error{
 	padding-top:10px ; margin-bottom:10px ;border-top: 1px solid #e5e5e5;
 }
 
-#programme table tr td:first-child { width: 10em; text-align: center; }
+#programme table tr td:first-child { width: 10em; text-align: center; font-size: 13px;}
 
 .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
 	background-color: #f7d117;

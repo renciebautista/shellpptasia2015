@@ -245,7 +245,26 @@
 		<p>He is the Lead Coordinator for Private Sector of APEC National Organizing Council (APEC-NOC). APEC NOC is the government agency in charge of preparations for the Philippines Chairmanship of APEC in 2015. He also serves as the Chief Operating Officer of APEC 2015 CEO Summit Host Committee.</p>
 	</div>
 </div>
-
+<div class="speaker-list">
+	<div class="speaker">
+		<div class="row">
+		  	<div class="col-md-4">
+		  		<img src="assets/images/speakers/mayorddguzman.jpg" class="img-responsive" alt="">
+		  	</div>
+		  	<div class="col-md-8 info">
+		  		<p class="name">Del De Guzman</p>
+		  		<p>City Mayor</p>
+		  		<p>Marikina City</p>
+		  	</div>
+		</div>
+	</div>
+	<br>
+	<div class="txt">
+		<p>Del R. De Guzman is Marikina City's 20th Local Chief Executive.  An advocate of pro-people policies and reforms, his vision for Marikina will continue to revolve around this theme, ensuring that every Marikenos reaps the gains of progress and achieves a high quality of life.</p>
+		<p>Mayor Del had his first taste of public service and community involvement as a youth leader on the mid 1980s, actively participating in the 1987 and 1989 National Youth Conference. His political career officially started in 1988 as Marikina municipal councilor, then vice mayor in 1992-2001, and three-term Second District congressional representative.  He was the lone representative in 2001 to 2007.</p>
+		<p>Mayor Del received his Bachelor of Arts degree, major in Political Science, from the University of the East.  He was a law student at the same university when he decided to pursue his political calling. He has received various recognitions, including the Icon of Youth Power Award from the National Movement of Young Legislators in 2010 and Outstanding Congressman of the Year from the Metropolitan Disseminators of Information Association,  Inc. in 2005.</p>
+	</div>
+</div>
 <div class="speaker-list">
 	<div class="speaker">
 		<div class="row">

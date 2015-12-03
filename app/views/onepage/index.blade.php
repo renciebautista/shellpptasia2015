@@ -54,7 +54,7 @@
 	          <!--	<h2 class="text-center">EVENT OVERVIEW</h2>-->
 	          	
 	          	<div class="text-center">
-	          	<a href="/overview">	<img src="assets/images/home/overview.jpg"  class="picsize" alt="" ></a>
+	          	<a href="/overview">	<img src="assets/images/home/overview3.jpg"  class="picsize" alt="" ></a>
 	          	</div>
 	          	
 	          <!--	<p class="txt">Find out more about the forum in Manila</p>
@@ -65,7 +65,7 @@
 	          	<!--<h2 class="text-center">PROGRAMME</h2>-->
 	          	
 	          	<div class="text-center">
-	          		<a href="/programme"><img src="assets/images/home/programme.jpg" class="picsize" alt=""></a>
+	          		<a href="/programme"><img src="assets/images/home/programme3.jpg" class="picsize" alt=""></a>
 	          	</div>
 	          	
 	          	<!--<p class="txt">View the programme for the 2016 forum </p>
@@ -76,7 +76,7 @@
 	          	<!--<h2 class="text-center">REGISTRATION</h2>-->
 	          	
 	          	<div class="text-center">
-	          		<a href="/register"><img src="assets/images/home/registration.jpg" class="picsize" alt=""></a>
+	          		<a href="/register"><img src="assets/images/home/registration3.jpg" class="picsize" alt=""></a>
 	          	</div>
 	          	
 	          	<!--<p class="txt">Access the online registration tool</p>

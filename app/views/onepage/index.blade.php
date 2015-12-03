@@ -76,7 +76,7 @@
 	          	<!--<h2 class="text-center">REGISTRATION</h2>-->
 	          	
 	          	<div class="text-center">
-	          		<img src="assets/images/home/registration.jpg" class="picsize" alt="">
+	          		<a href="/register"><img src="assets/images/home/registration.jpg" class="picsize" alt=""></a>
 	          	</div>
 	          	
 	          	<!--<p class="txt">Access the online registration tool</p>

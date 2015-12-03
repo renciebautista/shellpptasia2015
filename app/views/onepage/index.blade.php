@@ -1,4 +1,4 @@
-@extends('layouts.master')
+ @extends('layouts.master')
 
 @section('navigation')
   <ul class="nav nav-pills pull-right">
@@ -51,36 +51,36 @@
 
 
 	        <div class="col-lg-4 ">
-	          	<h2 class="text-center">EVENT OVERVIEW</h2>
+	          <!--	<h2 class="text-center">EVENT OVERVIEW</h2>-->
 	          	
 	          	<div class="text-center">
-	          		<img src="assets/images/home/overview.jpg" class="img-responsive img-thumbnail" alt="">
+	          	<a href="/overview">	<img src="assets/images/home/overview.jpg"  class="picsize" alt="" ></a>
 	          	</div>
 	          	
-	          	<p class="txt">Find out more about the forum in Manila</p>
-	         	<p><a class="" href="/overview" role="button">Discover here</a></p>
+	          <!--	<p class="txt">Find out more about the forum in Manila</p>
+	         	<p><a class="" href="/overview" role="button">Discover here</a></p>-->
 	        </div>
 
 	         <div class="col-lg-4 ">
-	          	<h2 class="text-center">PROGRAMME</h2>
+	          	<!--<h2 class="text-center">PROGRAMME</h2>-->
 	          	
 	          	<div class="text-center">
-	          		<img src="assets/images/home/programme.jpg" class="img-responsive img-thumbnail" alt="">
+	          		<a href="/programme"><img src="assets/images/home/programme.jpg" class="picsize" alt=""></a>
 	          	</div>
 	          	
-	          	<p class="txt">View the programme for the 2016 forum </p>
-	         	<p><a class="" href="/programme" role="button">Learn more</a></p>
+	          	<!--<p class="txt">View the programme for the 2016 forum </p>
+	         	<p><a class="" href="/programme" role="button">Learn more</a></p>-->
 	        </div>
 
 	        <div class="col-lg-4 ">
-	          	<h2 class="text-center">REGISTRATION</h2>
+	          	<!--<h2 class="text-center">REGISTRATION</h2>-->
 	          	
 	          	<div class="text-center">
-	          		<img src="assets/images/home/registration.jpg" class="img-responsive img-thumbnail" alt="">
+	          		<img src="assets/images/home/registration.jpg" class="picsize" alt="">
 	          	</div>
 	          	
-	          	<p class="txt">Access the online registration tool</p>
-	         	<p><a class="" href="/register" role="button">View here</a></p>
+	          	<!--<p class="txt">Access the online registration tool</p>
+	         	<p><a class="" href="/register" role="button">View here</a></p>-->
 	        </div>
 	       
       	</div>

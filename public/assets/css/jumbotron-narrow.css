@@ -70,17 +70,7 @@ textarea.error,input.error{
 	border-top: 1px solid #e5e5e5;
 }
 
-.headd {
-	
-	font-size: 19px;
 
-}
-
-.txt {
-	
-	font-size: 13px;
-	
-}
 
 #programme label {
 	margin-top: 0px;
@@ -123,6 +113,12 @@ textarea.error,input.error{
 }
 .marketing p + h4 {
 	margin-top: 28px;
+}
+
+.picsize {
+    width: 250px;
+    height: 200px;
+    padding: 10px;
 }
 
 /* Responsive: Portrait tablets and up */

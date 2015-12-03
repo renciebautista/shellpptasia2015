@@ -210,7 +210,7 @@
 	<div class="speaker">
 		<div class="row">
 		  	<div class="col-md-4">
-		  		<img src="assets/images/speakers/rafaellopa.jpg" class="img-responsive" alt="">
+		  		<img src="assets/images/speakers/rafaellopa2.jpg" class="img-responsive" alt="">
 		  	</div>
 		  	<div class="col-md-8 info">
 		  		<p class="name">Rafael Lopa</p>

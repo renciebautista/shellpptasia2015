@@ -182,6 +182,14 @@
 			  @endif
 			</td>
 		  </tr>
+		 @if($attendee->withparking == 1)
+		  <tr>
+			<td>Plate number of vehicle to be used</td>
+			<td>
+			  {{ $attendee->plate_no }}
+			</td>
+		  </tr>
+		  @endif
 		</table>
 
 		<h4>EMERGENCY CONTACT INFORMATION</h4>

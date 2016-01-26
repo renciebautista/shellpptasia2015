@@ -45,7 +45,7 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 
 	public static function getAttendee($status,$filter){
 		return self::select('users.id as user_id','users.email', 'users.department', 'users.designation', 'users.updated_at',
-			'users.title', 'users.first_name', 'users.last_name', 'users.registered', 'attendee_statuses.*')
+			'users.title', 'users.first_name', 'users.last_name', 'users.registered', 'attendee_statuses.*', 'users.created_at')
 			->join('attendee_statuses','users.registered','=','attendee_statuses.id')
 			->where('type',2)
 			->where(function($query) use ($status){
@@ -66,7 +66,7 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 					->orwhere('users.last_name', 'LIKE' ,"%$filter%")
 					->orwhere('users.email', 'LIKE' ,"%$filter%")
 					->orwhere('users.title', 'LIKE' ,"%$filter%");
-			})
+			})->orderBy('created_at','desc')
 			->get();
 	}
 

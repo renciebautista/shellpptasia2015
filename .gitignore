@@ -11,3 +11,5 @@ composer.lock
 Thumbs.db
 notes.txt
 app/controllers/storage
+.env
+*.pem

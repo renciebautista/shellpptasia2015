@@ -63,7 +63,7 @@
 						<th>Full Name</th>
 						<th>Email</th>
 						<th>Status</th>
-						<th style="width:100px;">Last Update</th>
+						<th style="width:100px;">Created At</th>
 						<th colspan="3" class="action">Action</th>
 					</tr>
 				</thead>
@@ -80,7 +80,7 @@
 						<td>{{ $attendee->title }} {{ $attendee->first_name }} {{ $attendee->last_name }}</td>
 						<td>{{ $attendee->email }}</td>
 						<td>{{ $attendee->status }}</td>
-						<td>{{ date_format($attendee->updated_at, 'd-m-Y') }}</td>
+						<td>{{ date_format($attendee->created_at, 'd-m-Y') }}</td>
 						<th>
 							@if($attendee->registered == 2)
 							{{ HTML::linkRoute('attendee.show','Registration Details', $attendee->user_id, array('class' => 'btn btn-info btn-xs')) }}

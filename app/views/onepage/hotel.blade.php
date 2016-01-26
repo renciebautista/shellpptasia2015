@@ -1,9 +1,12 @@
 @extends('layouts.master')
+
 @section('navigation')
-  <ul class="nav nav-pills pull-right">
-  	<li><a href="/">Home</a></li>
-    <li><a href="/">Event Overview</a></li>
+  <ul class="nav navbar-nav">
+    <li><a href="/">Home</a></li>
+
+    <li><a href="/overview">Event Overview</a></li>
     <li><a href="/programme">Programme</a></li>
+    <li><a href="/speakers">Speakers</a></li>
     <li class="active"><a href="/hotel">Hotel</a></li>
     @if(!User::regret())
     <li><a href="/register">Event Registration</a></li>
@@ -12,41 +15,36 @@
   </ul>
 @stop
 
-@section('footer')
-<div class="navbar-collapse footer-menu">
-	<nav>
-		@section('navigation')
-		@show
-	</nav>
-</div>
-@stop
-
 @section('content')
-<div class= "txt">
+<p>
+  The City of Manila will host many local and international visitors during the Shell Powering Progress Together Asia and
+  Shell Eco-marathon Asia events. As such, it may be difficult to book a hotel room. We can assist you in booking your
+  hotel room at Manila Hotel or Hotel H2O. Please note, however, that for conference delegates, the hotel room will be
+  at your own expense.
+</p>
+<br/>
+
 <div class="row">
-	<div class="col-lg-12">
-			<div class="row">
-				<div class="col-lg-12 text-center">
-					<h2 class="headd"><center>HOTEL INFORMATION</center></h2>
-				</div>
-				<div class="col-lg-12">
-					<!--<p>During Powering Progress Together and Shell Eco-marathon, Manila will be visited by a lot of people. Therefore, it can be hard to get a hotel room. Since we are in contact with most of the hotels in Manila, we can help you book a hotel room. Please take note a hotel room is at your own expense.</p>-->
-				<p>The City of Manila will host many local and international visitors during the Shell Powering Progress Together Asia and Shell Eco-marathon Asia events. As such, it may be difficult to book a hotel room. We can assist you in booking your hotel room at Manila Hotel or Hotel H2O. Please note, however, that for conference delegates, the hotel room will be at your own expense.</p>
-				</div>
-			</div>
-			<div class="row">
-				@foreach ($hotels as $hotel)
-				<div class="col-sm-6 text-center">
-					<div class="hotels" style="padding-bottom:10px;">
-						<img src="assets/images/hotel/{{ $hotel->picture }}" class="img-responsive img-thumbnail" alt="">
-						<h4><a href="{{ $hotel->website }}">{{ $hotel->name}}</a></h4>
-						<p class="text-muted">{{ $hotel->address}}</p>
-						<a href="{{ $hotel->map }}">View Map</a>
-					</div>
-				</div>
-				@endforeach
-		</div>
-	</div>
+  <div class="col-sm-3">
+    <img src="assets/images/uv/hotel/2.jpg" class="img-thumbnail" width="200" height="200">
+  </div>
+  <div class="col-sm-9">
+    <h2>Manila Hotel</h2>
+    <p>Bonifacio Drive, One Rizal Park
+0913, Manila Philippines</p>
+    <i><u><a href="http://www.manila-hotel.com.ph">http://www.manila-hotel.com.ph</a></u></i>
+  </div>
 </div>
+<br/>
+<div class="row">
+  <div class="col-sm-3">
+    <img src="assets/images/uv/hotel/3.png" class="img-thumbnail" width="200" height="200">
+  </div>
+  <div class="col-sm-9">
+    <h2>Hotel H20</h2></h2>
+    <p>Luneta, 1000, Manila, Philippines (Behind the Quirino Grandstand)</p>
+    <i><u><a href="http://www.hotelh2o.com">http://www.hotelh2o.com</a></u></i>
+  </div>
 </div>
+
 @stop

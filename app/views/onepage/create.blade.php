@@ -1,16 +1,18 @@
 @extends('layouts.master')
 
 @section('navigation')
-<ul class="nav nav-pills pull-right">
-	<li><a href="/">Home</a></li>
-	<li><a href="/">Event Overview</a></li>
-	<li><a href="/programme">Programme</a></li>
-	<li><a href="/hotel">Hotel</a></li>
-	@if(!User::regret())
-	<li class="active"><a href="/register">Event Registration</a></li>
-	@endif
-	<li><a href="/logout">Logout</a></li>
-</ul>
+  <ul class="nav navbar-nav">
+    <li><a href="/">Home</a></li>
+
+    <li><a href="/overview">Event Overview</a></li>
+    <li><a href="/programme">Programme</a></li>
+    <li><a href="/speakers">Speakers</a></li>
+    <li><a href="/hotel">Hotel</a></li>
+    @if(!User::regret())
+    <li class="active"><a href="/register">Event Registration</a></li>
+    @endif
+    <li><a href="/logout">Logout</a></li>
+  </ul>
 @stop
 
 @section('footer')
@@ -43,7 +45,7 @@
 	<div class="col-lg-12">
 		
 		{{ Form::open(array('action' => 'RegisterController@store', 'id' => 'register')) }}
-			<div class="panel panel-primary">
+			<div class="panel panel-default">
 				<div class="panel-heading">
 					<h3 class="panel-title">Attendee Information</h3>
 				</div>
@@ -105,7 +107,7 @@
 				</div>
 			</div>
 
-			<div class="panel panel-primary">
+			<div class="panel panel-default">
 				<div class="panel-heading">
 					<h3 class="panel-title">Hotel Information</h3>
 				</div>
@@ -147,7 +149,7 @@
 				</div>
 			</div>
 
-			<div class="panel panel-primary">
+			<div class="panel panel-default">
 				<div class="panel-heading">
 					<h3 class="panel-title">Travel Information</h3>
 				</div>
@@ -209,7 +211,7 @@
 				</div>
 			</div>
 
-			<div class="panel panel-primary">
+			<div class="panel panel-default">
 				<div class="panel-heading">
 					<h3 class="panel-title">Parking Information</h3>
 				</div>
@@ -234,7 +236,7 @@
 				</div>
 			</div>
 
-			<div class="panel panel-primary">
+			<div class="panel panel-default">
 				<div class="panel-heading">
 					<h3 class="panel-title">Emergency Contact Information</h3>
 				</div>

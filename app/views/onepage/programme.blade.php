@@ -1,140 +1,113 @@
-
 @extends('layouts.master')
 
 @section('navigation')
-  <ul class="nav nav-pills pull-right">
-	<li><a href="/">Event Overview</a></li>
-	<li  class="active"><a href="/programme">Programme</a></li>
-	<li><a href="/hotel">Hotel</a></li>
-	<li><a href="/register">Event Registration</a></li>
-  </ul>
-@stop
+<ul class="nav navbar-nav">
+  <li><a href="/">Home</a></li>
 
-@section('footer')
-<div class="navbar-collapse footer-menu">
-	<nav>
-		@section('navigation')
-		@show
-	</nav>
-</div>
+  <li><a href="/overview">Event Overview</a></li>
+  <li class="active"><a href="/programme">Programme</a></li>
+  <li><a href="/speakers">Speakers</a></li>
+  <li><a href="/hotel">Hotel</a></li>
+  @if(!User::regret())
+  <li><a href="/register">Event Registration</a></li>
+  @endif
+  <li><a href="/logout">Logout</a></li>
+</ul>
 @stop
 
 @section('content')
-<p>An indicative agenda for Powering Progress Together 2016 is available below for your convenience and reference.  Please note that any changes to this will be communicated nearer the time of the event and published here.</p>
-<div class="row">
-	<div class="col-lg-12">
-	   	<h2 class="section-heading text-center">Programme</h2>
-		<div id="programme" class="table-responsive">
-			<table class="table">
-				<tbody>
-					<tr>
-						<td>8:00 – 9:00</td>
-						<td><strong>Registration and Welcome</strong></td>
-					</tr>
-					<tr>
-						<td>9:00 – 9:30</td>
-						<td>
-							<strong>Plenary Opening of Powering Progress Together</strong><br>
-							<ul>
-								<li>Forum Introduction by Moderator (<strong>Maryam Nemazee</strong> – Shell Powering Progress Together Rotterdam moderator and Al Jazeera English Broadcaster and Journalist)</li>
-								<li>Welcome from Royal Dutch Shell Executive Committee member</li>
-							</ul>	
-						</td>
-					</tr>
-					<tr>
-						<td>9:30 – 10:30</td>
-						<td>
-							<strong>PANEL 1: Resilience – Current Thinking and Trends</strong><br>
-							
-						</td>
-					</tr>
-					<tr>
-						<td>10:30 – 10:55</td>
-						<td>
-							<strong>Coffee Break</strong><br>
-						</td>
-					</tr>
-					<tr>
-						<td>10:55 – 12:20</td>
-						<td>
-							<strong>PANEL 2: Case Studies on Resilience for Cities</strong><br>
-							<strong>Speakers:</strong>
-							<ul>
-								<li><strong>Arch. Rajeev Kathpalia</strong>, Partner, Vastu Shilpa Foundation</li>
-								<li><strong>Holger Dalkmann</strong>, Director, EMBARQ, World Resources Institute</li>
-								<li>Speaker on smart cities utilizing ITC</li>
-							</ul>
-						</td>
-					</tr>
-					<tr>
-						<td>12:20 – 1:30</td>
-						<td>
-							<strong>Lunch</strong><br>
-						</td>
-					</tr>
-					<tr>
-						<td>1:30 – 1:50</td>
-						<td>
-							<strong>Interview and Special Performance</strong><br>
-							<p><strong>"Bella Gaia"</strong> – a musical performance demonstrating the interconnection of humans and nature, art and science; an exploration of the relationship between human civilization and our ecosystem through time and space</p>
-							<strong>Speaker – Performer:</strong>
-							<ul>
-								<li><strong>Kenji Williams</strong> Award-winning filmmaker, electronic music producer and classical violinist</li>
-							</ul>	
-						</td>
-					</tr>
+<h4 class="uppercase text-center text-bold">programme</h4>
 
-					<tr>
-						<td>1:50 – 3:00</td>
-						<td>
-							<strong>PANEL 3: Resilience and Its Implications on Business</strong><br>
-							<strong>Speakers: </strong>
-							<ul>
-								<li>Perspective of a food/FMCG company</li>
-								<li>Perspective of a water-user corporation</li>
-								<li>Perspective of an energy company: <strong>Edgar Chua</strong>, Shell companies in the Philippines Country Chairman</li>
-							</ul>	
-						</td>
-					</tr>
-					<tr>
-						<td>3:00 – 3:20</td>
-						<td>
-							<strong>Coffee Break</strong><br>
-						</td>
-					</tr>
-					<tr>
-						<td>3:20 – 4:10</td>
-						<td>
-							<strong>PANEL 4: Inspiring Stories of Innovation and Resilience</strong><br>
-							<strong>Speakers: </strong>
-							<ul>
-								<li>Illac Diaz, Social Entrepreneur, Liter of Light</li>
-								<li>Luke Beckman, Manager for Situational Awareness, American Red Cross</li>
-							</ul>	
-						</td>
-					</tr>
-					<tr>
-						<td>4:10 – 4:15</td>
-						<td>
-							<strong>Closing Inspirational Keynote</strong><br>
-						</td>
-					</tr>
-					<tr>
-						<td>4:15 – 4:20</td>
-						<td>
-							<strong>Word of Gratitude</strong><br>
-							<p><strong>Edgar Chua</strong>, Country Chairman, Shell companies in the Philippines, or</p>
-						</td>
-					</tr>
-					<tr>
-						<td>4:20 – 5:30</td>
-						<td>
-							<strong>Guided Tours through the Shell Eco-marathon Asia Paddocks and the Shell Fan Zone</strong><br>
-						</td>
-					</tr>
-				</tbody>
-			</table>
-  		</div>       
-	</div>
-</div>
+<div class="table-responsive">
+  <table class="programme">
+    <tbody>
+      <tr>
+        <td>8:00 – 9:00</td>
+        <td><strong>Registration</strong></td>
+      </tr>
+      <tr>
+        <td>9:00 – 9:10</td>
+        <td>
+          <strong>Forum Opening Number by Joey Ayala at ang Bagong Lumad</strong>
+        </td>
+      </tr>
+      <tr>
+        <td>9:10 – 9:30</td>
+        <td>
+          <strong>Plenary Opening of Powering Progress Together</strong><br>
+          <ul>
+            <li>Forum Introduction by Moderator</li>
+            <li>Welcome from Shell Chief Financial Officer Simon Henry</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>9:30 – 10:30</td>
+        <td>
+          <strong>Opening Panel Session: “Energy Transitions and the Climate Challenge”</strong><br>
+          <p>Goal: To create awareness of the continuous negative impact of climate change on the world’s resources and society’s resilience.  This includes the need for collaborative action among various sectors to drive immediate solutions to lower carbon emissions.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>10:30 – 11:10</td>
+        <td>
+          <strong>Case Study Presentations: “Low-Carbon Technologies”</strong><br>
+          <p>Goal: To present innovative programs or projects that provide decarbonization solutions, given that cities are responsible for 75% of global CO2 emissions, with transport and buildings being among the largest contributors.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>11:10 – 11:30</td>
+        <td>
+          <strong>Coffee Break</strong><br>
+        </td>
+      </tr>
+      <tr>
+        <td>11:30 – 11:35</td>
+        <td>
+          <strong>Intermezzo: Shadow Play Dance by El Gamma Penumbra</strong><br>
+        </td>
+      </tr>
+      <tr>
+        <td>11:35 – 12:25</td>
+        <td>
+          <strong>Collaboration in Action Panel: “Solutions for Resilience”</strong><br>
+          <p>Goal: To share positive, practical and inspiring collaborative partnership projects in the Philippines that promote environmental and urban resilience.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>12:25 – 12:50</td>
+        <td>
+          <strong>Special Topic: “The Dynamics of Innovation, Art and the Environment”</strong><br>
+          <p>Goal:  To inspire the audience to take a stake in the future by making innovative and ambitious goals towards a low-carbon and climate-resilient future.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>12:50 – 1:00</td>
+        <td>
+          <strong>Intermezzo: Sand Art performance by Monica Regalario</strong><br>
+        </td>
+      </tr>
+      <tr>
+        <td>1:00 – 1:10</td>
+        <td>
+          <strong>Closing Inspirational Keynote</strong><br>
+        </td>
+      </tr>
+      <tr>
+        <td>1:10 – 1:20</td>
+        <td>
+          <strong>Word of Gratitude</strong><br>
+          <p>by Shell companies in the Philippines Country Chairman Edgar Chua</p>
+        </td>
+      </tr>
+      <tr>
+        <td>1:20 – 2:30</td>
+        <td>
+          <strong>Lunch at the Maynila Ballroom</strong><br>
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
+ </div>
 @stop

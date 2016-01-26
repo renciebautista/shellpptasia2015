@@ -25,7 +25,18 @@ class OnePageController extends \BaseController {
 	 */
 	public function programme()
 	{
-		return View::make('onepage.programme2');
+		return View::make('onepage.programme');
+	}
+  
+  /**
+	 * Display a listing of the resource.
+	 * GET /onepage
+	 *
+	 * @return Response
+	 */
+	public function speakers()
+	{
+		return View::make('onepage.speakers');
 	}
 
 

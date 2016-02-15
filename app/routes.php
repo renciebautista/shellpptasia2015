@@ -44,14 +44,20 @@ Route::post('login', 'OnePageController@dologin');
 
 // Route::get('import/delegates', 'ImportController@delegates');
 
+Route::get('/', 'OnePageController@index');
+Route::get('overview', 'OnePageController@overview');
+Route::get('programme', 'OnePageController@programme');
+Route::get('hotel', 'OnePageController@hotel');
+Route::get('speakers', 'OnePageController@speakers');
+
 Route::group(array('before' => 'auth'), function()
 {	
 	Route::group(array('before' => 'attendee'), function(){
-		Route::get('/', 'OnePageController@index');
-		Route::get('overview', 'OnePageController@overview');
-		Route::get('programme', 'OnePageController@programme');
-		Route::get('hotel', 'OnePageController@hotel');
-    Route::get('speakers', 'OnePageController@speakers');
+		// Route::get('/', 'OnePageController@index');
+		// Route::get('overview', 'OnePageController@overview');
+		// Route::get('programme', 'OnePageController@programme');
+		// Route::get('hotel', 'OnePageController@hotel');
+  		//Route::get('speakers', 'OnePageController@speakers');
 
 		Route::get('register', 'RegisterController@create');
 		Route::post('register', 'RegisterController@store');

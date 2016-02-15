@@ -11,7 +11,9 @@
     @if(!User::regret())
     <li class="active"><a href="/register">Event Registration</a></li>
     @endif
+    @if (Auth::check())
     <li><a href="/logout">Logout</a></li>
+    @endif
   </ul>
 @stop
 

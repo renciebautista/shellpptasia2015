@@ -1,5 +1,18 @@
 @extends('layouts.master')
 
+@section('navigation')
+<ul class="nav nav-pills pull-right">
+	<li><a href="/">Home</a></li>
+	<li><a href="/">Event Overview</a></li>
+	<li><a href="/programme">Programme</a></li>
+	<li><a href="/hotel">Hotel</a></li>
+	@if(!User::regret())
+	<li class="active"><a href="/register">Event Registration</a></li>
+	@endif
+	@if (Auth::check())
+    <li><a href="/logout">Logout</a></li>
+    @endif</ul>
+@stop
 
 @section('content')
 <div class="row">

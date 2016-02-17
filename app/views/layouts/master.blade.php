@@ -31,7 +31,7 @@
         <figure class="topBanner">
           <img src="assets/images/uv/banner.png">
         </figure>
-        
+
         <nav class="navbar navbar-inverse navbar-top">
           <div class="container">
             <div class="navbar-header">
@@ -43,15 +43,25 @@
               </button>
             </div>
             <div id="navbar" class="collapse navbar-collapse">
+              <!--<ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+
+                <li><a href="event.html">Event Overview</a></li>
+                <li><a href="programme.html">Programme</a></li>
+                <li><a href="speakers.html">Speakers</a></li>
+                <li><a href="hotel.html">Hotel</a></li>
+                <li><a href="registration.html">Event Registration</a></li>
+                <li><a href="">Logout</a></li>
+              </ul>-->
               @section('navigation')
               @show
             </div><!--/.nav-collapse -->
-            
-            
+
+
           </div>
         </nav>
       </div>
-      
+
       <div class="wrapperBody">
         <div class="container">
           <div class="yellowBox" id="newsContainer">
@@ -59,7 +69,7 @@
             Save the date! The Shell Powering Progress Together will take place on Thursday, 3 March 2016, Manila Hotel
           </div>
         </div>
-        
+
         @section('carousel')
         @show
         <div class="container">
@@ -77,8 +87,9 @@
             </figure>
 
             <div class="pull-left yellowContent">
-              <span>CATCH THE SHELL POWERING PROGRESS TOGETHER 2016 LIVESTREAM <br> ON RAPPLER.COM ON 3 MARCH 2016 STARTING 9AM</span> <br>
-              Follow the discussion. Join in the conversation. Be part of the solution.
+              <span>CATCH THE SHELL POWERING PROGRESS TOGETHER 2016 LIVESTREAM
+              ON <a href="http://www.rappler.com/brandrap/shellPPT">http://www.rappler.com/brandrap/shellPPT</a>
+              ON 3 MARCH 2016 STARTING 9AM Follow the discussion. Join in the conversation. Be part of the solution.</span>
             </div>
           </div>
         </div>

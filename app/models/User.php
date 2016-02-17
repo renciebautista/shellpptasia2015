@@ -76,7 +76,7 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 				$user = User::where('email',$row->email)->first();
 				if(is_null($user)){
 					$designation = '';
-					if(!empty($row->designation =='')){
+					if($row->designation == ''){
 						$designation = $row->designation;
 					}
 

@@ -181,7 +181,7 @@ class AttendeeController extends \BaseController {
 		// return Input::file('file')->move(__DIR__.'/storage/',Input::file('file')->getClientOriginalName());
 
 		Excel::load($file_path, function($reader) {
-			User::batchInsert($reader->ignoreEmpty());
+			User::batchInsert($reader->get());
 		});
 
 		return Redirect::action('AttendeeController@index')

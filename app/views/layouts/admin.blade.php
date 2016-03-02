@@ -56,7 +56,10 @@
 						{{ HTML::linkAction('ExportController@index', 'Export List') }}
 					</li>	
 					<li>
-						{{ HTML::linkAction('ExportController@gms', 'Export For GMS') }}
+						{{ HTML::linkAction('ExportController@confirmed', 'Export Confirmed Attendee') }}
+					</li>
+					<li>
+						{{ HTML::linkAction('ExportController@pending', 'Export Pending Attendee') }}
 					</li>	
 					<li>
 						{{ HTML::linkAction('SettingsController@index', 'Settings') }}

@@ -27,13 +27,24 @@ class ExportController extends \BaseController {
 		})->export('xls');
 	}
 
-	public function gms()
+	public function confirmed()
 	{
-		$attendees = Attendee::getAttendee();
+		$attendees = Attendee::getConfirmedAttendee();
 		$data = json_decode(json_encode((array) $attendees), true);
-		// print_r($data);
-		Excel::create('Attendee_'.date('Ymd'), function($excel) use($data){
-			$excel->sheet('Attendee', function($sheet) use($data) {
+		Excel::create('Confirmed Attendees '.date('Ymd'), function($excel) use($data){
+			$excel->sheet('Confirmed', function($sheet) use($data) {
+				$sheet->fromArray($data);
+			});
+
+		})->export('xls');
+	}
+
+	public function pending()
+	{
+		$attendees = Attendee::getPendingAttendee();
+		$data = json_decode(json_encode((array) $attendees), true);
+		Excel::create('Pending Attendees '.date('Ymd'), function($excel) use($data){
+			$excel->sheet('Pending', function($sheet) use($data) {
 				$sheet->fromArray($data);
 			});
 

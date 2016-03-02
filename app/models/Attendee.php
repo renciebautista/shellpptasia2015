@@ -26,7 +26,7 @@ class Attendee extends \Eloquent {
 	 *
 	 * @return Response
 	 */
-	public static function getAttendee(){
+	public static function getConfirmedAttendee(){
 		return DB::select(DB::raw("select attendees.code as idno, attendees.last_name as lastname, 
 			attendees.first_name as firstname, prefered_name as nickname, 
 		    job_title as titled, company as company, 
@@ -39,5 +39,20 @@ class Attendee extends \Eloquent {
 		left join countries on attendees.country_id = countries.id
         left join users on attendees.user_id = users.id
         where users.registered ='2'"));
+	}
+
+	public static function getPendingAttendee(){
+		return DB::select(DB::raw("select '' as idno, users.last_name as lastname,
+			users.first_name as firstname, '' as nickname,
+			designation as titled,
+			department as company,
+			'' as aread, '' as schedule, '' as seqno, '' as tabled,
+			'' as countryd, 
+			'' as industryd, '' as address,'' as address2,'' as address3,
+			'' as telno, '' as faxno,
+			email, '' as website, '' as bday, '' as age, '' as walkin 
+			from users
+			where registered = 1
+			and type = 2"));
 	}
 }

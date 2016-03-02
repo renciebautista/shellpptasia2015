@@ -74,7 +74,8 @@ Route::group(array('before' => 'auth'), function()
 		Route::post('attendee/upload', 'AttendeeController@doUpload');
 		Route::get('attendee/export', 'ExportController@index');
 		Route::post('attendee/export', 'ExportController@exportlist');
-		Route::get('attendee/gms', 'ExportController@gms');
+		Route::get('attendee/confirmed', 'ExportController@confirmed');
+		Route::get('attendee/pending', 'ExportController@pending');
 		Route::resource('attendee', 'AttendeeController');
 		Route::resource('settings', 'SettingsController');
 	});
